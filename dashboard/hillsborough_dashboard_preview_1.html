@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hillsborough Lead Intelligence — Distressed Property Signal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Surface */
+      --bg:          #0a0a0c;
+      --bg-grain:    #0c0c0f;
+      --surface-1:   #111114;
+      --surface-2:   #16161b;
+      --surface-3:   #1c1c22;
+      --hairline:    #1f1f26;
+      --hairline-2:  #2a2a33;
+      --hairline-hi: #3a3a46;
+
+      /* Text */
+      --text:        #e8e6df;
+      --text-2:      #a8a59c;
+      --text-3:      #706d65;
+      --text-4:      #4a4842;
+
+      /* Brand & status */
+      --gold:        #c9a86a;      /* premium accent, sparingly */
+      --gold-soft:   #8a7448;
+      --gold-glow:   rgba(201,168,106,0.12);
+
+      --hot:         #d04a3d;      /* rust-red, less neon */
+      --hot-soft:    rgba(208,74,61,0.12);
+      --warm:        #c4862e;
+      --warm-soft:   rgba(196,134,46,0.12);
+      --cool:        #5a82a8;
+      --cool-soft:   rgba(90,130,168,0.12);
+      --teal:        #4a8b7a;
+      --teal-soft:   rgba(74,139,122,0.12);
+      --plum:        #8a6491;
+      --plum-soft:   rgba(138,100,145,0.12);
+      --rose:        #b87090;
+      --rose-soft:   rgba(184,112,144,0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body { background: var(--bg); }
+    body {
+      color: var(--text);
+      font-family: 'Geist', -apple-system, system-ui, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: 'ss01', 'cv11';
+      background-image:
+        radial-gradient(ellipse 1200px 600px at 50% -200px, rgba(201,168,106,0.04), transparent 70%);
+    }
+
+    /* Subtle film grain across whole page — premium touch */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+
+    /* ─────────────────────────── HEADER ─────────────────────────── */
+    .topbar {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(10,10,12,0.85);
+      backdrop-filter: blur(18px) saturate(120%);
+      -webkit-backdrop-filter: blur(18px) saturate(120%);
+      border-bottom: 1px solid var(--hairline);
+    }
+    .topbar-inner {
+      max-width: 1680px; margin: 0 auto;
+      display: flex; align-items: center;
+      padding: 14px 32px; gap: 20px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 14px;
+      padding-right: 22px; border-right: 1px solid var(--hairline);
+    }
+    .brand-mark {
+      width: 30px; height: 30px;
+      border: 1px solid var(--hairline-hi);
+      border-radius: 4px;
+      display: grid; place-items: center;
+      background: linear-gradient(180deg, var(--surface-2), var(--surface-1));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+      position: relative;
+    }
+    .brand-mark::after {
+      content: '';
+      position: absolute; inset: 4px;
+      border: 1px solid var(--gold-soft);
+      border-radius: 2px;
+      opacity: .6;
+    }
+    .brand-mark span {
+      font-family: 'Instrument Serif', serif;
+      font-size: 16px; color: var(--gold);
+      font-style: italic;
+      position: relative; z-index: 2;
+      line-height: 1;
+    }
+    .brand-name {
+      display: flex; flex-direction: column;
+      line-height: 1.15;
+    }
+    .brand-name .word {
+      font-family: 'Geist', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+    .brand-name .sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--text-3);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .crumbs {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-3);
+    }
+    .crumbs strong {
+      color: var(--text-2);
+      font-weight: 500;
+    }
+    .crumbs .sep { color: var(--text-4); }
+
+    .topbar-right {
+      margin-left: auto;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .live-pill {
+      display: flex; align-items: center; gap: 7px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-2);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border: 1px solid var(--hairline-2);
+      border-radius: 999px;
+      background: var(--surface-1);
+    }
+    .live-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #4a8b7a;
+      box-shadow: 0 0 0 0 rgba(74,139,122,0.7);
+      animation: livepulse 2.4s infinite;
+    }
+    @keyframes livepulse {
+      0%   { box-shadow: 0 0 0 0   rgba(74,139,122,0.6); }
+      70%  { box-shadow: 0 0 0 8px rgba(74,139,122,0); }
+      100% { box-shadow: 0 0 0 0   rgba(74,139,122,0); }
+    }
+
+    .meta-block {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-3);
+      text-align: right;
+      line-height: 1.5;
+      padding-right: 4px;
+    }
+    .meta-block strong {
+      color: var(--text-2);
+      font-weight: 500;
+    }
+
+    .icon-btn, .primary-btn {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-family: 'Geist', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.005em;
+      transition: all 140ms ease;
+      border: 1px solid transparent;
+    }
+    .icon-btn {
+      background: var(--surface-2);
+      border-color: var(--hairline-2);
+      color: var(--text-2);
+    }
+    .icon-btn:hover {
+      border-color: var(--hairline-hi);
+      color: var(--text);
+      background: var(--surface-3);
+    }
+    .primary-btn {
+      background: var(--text);
+      color: #15151a;
+      font-weight: 600;
+    }
+    .primary-btn:hover {
+      background: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px -8px rgba(255,255,255,0.25);
+    }
+    .primary-btn:active { transform: translateY(0); }
+
+    /* ─────────────────────────── HERO / TITLE ─────────────────────────── */
+    .hero {
+      max-width: 1680px; margin: 0 auto;
+      padding: 36px 32px 24px;
+      position: relative; z-index: 2;
+    }
+    .hero-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      width: 22px; height: 1px;
+      background: var(--gold-soft);
+    }
+    .hero h1 {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      font-size: clamp(34px, 4.5vw, 52px);
+      line-height: 1.02;
+      letter-spacing: -0.018em;
+      color: var(--text);
+      max-width: 920px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero p.lede {
+      margin-top: 14px;
+      max-width: 720px;
+      color: var(--text-2);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ─────────────────────────── KPI BAND ─────────────────────────── */
+    .kpi-band {
+      max-width: 1680px; margin: 0 auto;
+      padding: 12px 32px 0;
+      position: relative; z-index: 2;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0,1fr));
+      gap: 0;
+      border: 1px solid var(--hairline);
+      border-radius: 10px;
+      background: var(--surface-1);
+      overflow: hidden;
+    }
+    .kpi {
+      padding: 18px 20px 16px;
+      border-right: 1px solid var(--hairline);
+      position: relative;
+      transition: background 200ms ease;
+    }
+    .kpi:last-child { border-right: none; }
+    .kpi:hover { background: var(--surface-2); }
+    .kpi-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      color: var(--text-3);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .kpi-label .tick {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--text-4);
+    }
+    .kpi.is-hot .kpi-label .tick  { background: var(--hot); }
+    .kpi.is-warm .kpi-label .tick { background: var(--warm); }
+    .kpi.is-gold .kpi-label .tick { background: var(--gold); }
+    .kpi.is-teal .kpi-label .tick { background: var(--teal); }
+    .kpi.is-plum .kpi-label .tick { background: var(--plum); }
+    .kpi.is-cool .kpi-label .tick { background: var(--cool); }
+
+    .kpi-value {
+      font-family: 'Instrument Serif', serif;
+      font-size: 38px;
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      display: flex; align-items: baseline; gap: 8px;
+    }
+    .kpi-value .unit {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-3);
+      font-weight: 400;
+    }
+    .kpi-bar {
+      margin-top: 12px;
+      height: 3px;
+      background: var(--surface-3);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+    .kpi-bar > span {
+      display: block; height: 100%;
+      background: linear-gradient(90deg, var(--gold-soft), var(--gold));
+      border-radius: 2px;
+      transition: width 600ms cubic-bezier(.2,.8,.2,1);
+    }
+    .kpi.is-hot  .kpi-bar > span { background: linear-gradient(90deg, #6a2a23, var(--hot)); }
+    .kpi.is-warm .kpi-bar > span { background: linear-gradient(90deg, #5e4116, var(--warm)); }
+    .kpi.is-teal .kpi-bar > span { background: linear-gradient(90deg, #234038, var(--teal)); }
+    .kpi.is-plum .kpi-bar > span { background: linear-gradient(90deg, #3f2c43, var(--plum)); }
+    .kpi.is-cool .kpi-bar > span { background: linear-gradient(90deg, #2a3d4f, var(--cool)); }
+
+    .kpi-foot {
+      margin-top: 10px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.02em;
+      display: flex; align-items: center; gap: 6px;
+    }
+
+    /* ─────────────────────────── BREAKDOWN STRIP ─────────────────────────── */
+    .breakdown {
+      max-width: 1680px; margin: 0 auto;
+      padding: 18px 32px 0;
+      position: relative; z-index: 2;
+    }
+    .breakdown-card {
+      border: 1px solid var(--hairline);
+      border-radius: 10px;
+      background: var(--surface-1);
+      padding: 16px 20px;
+    }
+    .breakdown-head {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 14px;
+    }
+    .breakdown-title {
+      display: flex; align-items: center; gap: 12px;
+    }
+    .breakdown-title .label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .breakdown-title .name {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 18px;
+      color: var(--text);
+    }
+    .stack-bar {
+      display: flex;
+      width: 100%;
+      height: 28px;
+      border-radius: 4px;
+      overflow: hidden;
+      gap: 1px;
+      background: var(--surface-3);
+    }
+    .stack-bar > div {
+      transition: filter 160ms ease;
+      cursor: pointer;
+      position: relative;
+    }
+    .stack-bar > div:hover { filter: brightness(1.25); }
+    .stack-legend {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 22px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+    }
+    .stack-legend .item {
+      display: flex; align-items: center; gap: 7px;
+      color: var(--text-2);
+    }
+    .stack-legend .swatch {
+      width: 9px; height: 9px;
+      border-radius: 2px;
+    }
+    .stack-legend .count {
+      color: var(--text-3);
+    }
+
+    /* ─────────────────────────── CONTROLS ─────────────────────────── */
+    .controls {
+      max-width: 1680px; margin: 0 auto;
+      padding: 22px 32px 14px;
+      position: relative; z-index: 2;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .controls-title {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-right: auto;
+    }
+    .controls-title small {
+      font-family: 'JetBrains Mono', monospace;
+      font-style: normal;
+      font-size: 10px;
+      color: var(--text-3);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-left: 10px;
+    }
+    .search-wrap {
+      position: relative;
+      width: 280px;
+    }
+    .search-wrap input {
+      width: 100%;
+      background: var(--surface-1);
+      border: 1px solid var(--hairline);
+      color: var(--text);
+      padding: 9px 12px 9px 34px;
+      border-radius: 6px;
+      font-family: 'Geist', sans-serif;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 140ms ease, background 140ms ease;
+    }
+    .search-wrap input::placeholder { color: var(--text-4); }
+    .search-wrap input:focus {
+      border-color: var(--hairline-hi);
+      background: var(--surface-2);
+    }
+    .search-wrap .ico {
+      position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+      color: var(--text-3);
+      width: 14px; height: 14px;
+      pointer-events: none;
+    }
+    .filter-group {
+      display: flex;
+      border: 1px solid var(--hairline);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface-1);
+    }
+    .filter-group .filter-pill {
+      padding: 9px 13px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      color: var(--text-3);
+      background: transparent;
+      border: none;
+      border-right: 1px solid var(--hairline);
+      cursor: pointer;
+      transition: all 120ms ease;
+      white-space: nowrap;
+    }
+    .filter-group .filter-pill:last-child { border-right: none; }
+    .filter-group .filter-pill:hover {
+      color: var(--text);
+      background: var(--surface-2);
+    }
+    .filter-group .filter-pill.active {
+      color: #1a1a1f;
+      background: var(--gold);
+      font-weight: 600;
+    }
+    select.refined {
+      background: var(--surface-1);
+      border: 1px solid var(--hairline);
+      color: var(--text-2);
+      padding: 9px 30px 9px 12px;
+      border-radius: 6px;
+      font-family: 'Geist', sans-serif;
+      font-size: 12px;
+      outline: none;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%23706d65' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 11px center;
+    }
+    select.refined:focus { border-color: var(--hairline-hi); }
+    .results-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+      padding: 0 4px;
+    }
+    .results-count strong {
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* ─────────────────────────── TABLE ─────────────────────────── */
+    .table-shell {
+      max-width: 1680px; margin: 0 auto;
+      padding: 0 32px;
+      position: relative; z-index: 2;
+    }
+    .table-card {
+      border: 1px solid var(--hairline);
+      border-radius: 10px;
+      background: var(--surface-1);
+      overflow: hidden;
+    }
+    .table-wrap { overflow-x: auto; }
+    .table-wrap::-webkit-scrollbar { height: 8px; }
+    .table-wrap::-webkit-scrollbar-track { background: var(--surface-1); }
+    .table-wrap::-webkit-scrollbar-thumb { background: var(--hairline-2); border-radius: 4px; }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 12.5px;
+    }
+    thead th {
+      background: var(--surface-2);
+      color: var(--text-3);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 500;
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--hairline);
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+      transition: color 120ms ease;
+      position: sticky; top: 0;
+    }
+    thead th:hover { color: var(--text-2); }
+    thead th.sorted { color: var(--gold); }
+    thead th .arrow {
+      margin-left: 6px;
+      font-size: 10px;
+      opacity: .55;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--hairline);
+      transition: background 100ms ease;
+    }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover {
+      background: rgba(201,168,106,0.025);
+    }
+    tbody tr.is-hot {
+      background: linear-gradient(90deg, rgba(208,74,61,0.04), transparent 25%);
+    }
+    tbody tr.is-hot:hover {
+      background: linear-gradient(90deg, rgba(208,74,61,0.08), rgba(201,168,106,0.025));
+    }
+
+    tbody td {
+      padding: 13px 14px;
+      vertical-align: top;
+      border-bottom: 1px solid var(--hairline);
+    }
+
+    /* Score column = visual anchor */
+    .score-cell {
+      width: 76px;
+      vertical-align: middle;
+      padding-right: 4px !important;
+    }
+    .score-block {
+      display: flex; flex-direction: column; gap: 4px;
+      align-items: flex-start;
+    }
+    .score-num {
+      font-family: 'Instrument Serif', serif;
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+    }
+    .score-num.tier-hot  { color: var(--hot); }
+    .score-num.tier-warm { color: var(--warm); }
+    .score-num.tier-cool { color: var(--cool); }
+    .score-bar {
+      width: 56px;
+      height: 3px;
+      background: var(--surface-3);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .score-bar > span {
+      display: block; height: 100%;
+      border-radius: 2px;
+    }
+    .score-num.tier-hot ~ .score-bar > span,
+    .tier-hot ~ .score-bar > span { background: var(--hot); }
+    .score-tier-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-3);
+      margin-top: 1px;
+    }
+
+    .filed-cell {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-2);
+      white-space: nowrap;
+      width: 110px;
+    }
+    .filed-cell .relative {
+      display: block;
+      color: var(--text-4);
+      font-size: 9.5px;
+      margin-top: 2px;
+      letter-spacing: 0.06em;
+    }
+    .filed-cell .new-tag {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 1px 6px;
+      font-size: 8.5px;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      border: 1px solid var(--gold-soft);
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    .cat-cell {
+      width: 110px;
+    }
+    .cat-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 9px;
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: 1px solid;
+    }
+    .cat-LP      { color: var(--hot);  background: var(--hot-soft);  border-color: rgba(208,74,61,0.25); }
+    .cat-NOTICE  { color: var(--warm); background: var(--warm-soft); border-color: rgba(196,134,46,0.25); }
+    .cat-JUD     { color: var(--plum); background: var(--plum-soft); border-color: rgba(138,100,145,0.25); }
+    .cat-LN      { color: var(--cool); background: var(--cool-soft); border-color: rgba(90,130,168,0.25); }
+    .cat-LNHOA   { color: var(--cool); background: var(--cool-soft); border-color: rgba(90,130,168,0.25); }
+    .cat-LNMECH  { color: var(--cool); background: var(--cool-soft); border-color: rgba(90,130,168,0.25); }
+    .cat-PRO     { color: var(--teal); background: var(--teal-soft); border-color: rgba(74,139,122,0.25); }
+    .cat-MEDLN   { color: var(--rose); background: var(--rose-soft); border-color: rgba(184,112,144,0.25); }
+    .cat-label-line {
+      display: block;
+      margin-top: 4px;
+      font-size: 10px;
+      color: var(--text-3);
+      font-family: 'Geist', sans-serif;
+    }
+
+    .owner-cell {
+      min-width: 200px;
+    }
+    .owner-name {
+      font-weight: 600;
+      font-size: 13px;
+      color: var(--text);
+      letter-spacing: -0.005em;
+    }
+    .owner-grantee {
+      display: block;
+      margin-top: 3px;
+      font-size: 11px;
+      color: var(--text-3);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .owner-grantee::before {
+      content: '↳ ';
+      color: var(--text-4);
+    }
+
+    .addr-cell {
+      min-width: 220px;
+      max-width: 280px;
+    }
+    .addr-primary {
+      font-size: 12.5px;
+      color: var(--text);
+      letter-spacing: -0.005em;
+    }
+    .addr-secondary {
+      display: block;
+      font-size: 10.5px;
+      color: var(--text-3);
+      margin-top: 3px;
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.02em;
+    }
+    .addr-empty {
+      font-size: 11px;
+      color: var(--text-4);
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.04em;
+    }
+    .same-as {
+      display: inline-block;
+      margin-top: 3px;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      color: var(--teal);
+      font-family: 'JetBrains Mono', monospace;
+      text-transform: uppercase;
+    }
+
+    .amt-cell {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      color: var(--text);
+      white-space: nowrap;
+      text-align: right;
+      width: 120px;
+    }
+    .amt-cell .amount-num {
+      font-family: 'Instrument Serif', serif;
+      font-size: 17px;
+      letter-spacing: -0.01em;
+    }
+    .amt-cell .currency {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-3);
+      margin-right: 2px;
+    }
+    .amt-cell.empty { color: var(--text-4); font-size: 11px; }
+
+    .flags-cell {
+      max-width: 240px;
+    }
+    .flag-chip {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 3px 8px 3px 7px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-weight: 500;
+      margin: 2px 3px 2px 0;
+      white-space: nowrap;
+      letter-spacing: -0.005em;
+      border: 1px solid transparent;
+    }
+    .flag-chip::before {
+      content: '';
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .flag-red    { background: var(--hot-soft);  color: var(--hot);  border-color: rgba(208,74,61,0.2); }
+    .flag-red::before    { background: var(--hot); }
+    .flag-orange { background: var(--warm-soft); color: var(--warm); border-color: rgba(196,134,46,0.2); }
+    .flag-orange::before { background: var(--warm); }
+    .flag-blue   { background: var(--cool-soft); color: var(--cool); border-color: rgba(90,130,168,0.2); }
+    .flag-blue::before   { background: var(--cool); }
+    .flag-green  { background: var(--teal-soft); color: var(--teal); border-color: rgba(74,139,122,0.2); }
+    .flag-green::before  { background: var(--teal); }
+    .flag-purple { background: var(--plum-soft); color: var(--plum); border-color: rgba(138,100,145,0.2); }
+    .flag-purple::before { background: var(--plum); }
+    .flag-gold   { background: var(--gold-glow); color: var(--gold); border-color: rgba(201,168,106,0.25); }
+    .flag-gold::before   { background: var(--gold); }
+
+    .doc-cell {
+      width: 180px;
+    }
+    .doc-link {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--gold);
+      letter-spacing: 0.01em;
+      transition: color 120ms;
+    }
+    .doc-link:hover { color: #e6c283; text-decoration: underline; }
+    .doc-link svg {
+      width: 9px; height: 9px;
+      margin-left: 4px;
+      opacity: .6;
+      vertical-align: -1px;
+    }
+    .doc-type {
+      display: block;
+      margin-top: 3px;
+      font-size: 9.5px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─────────────────────────── PAGINATION ─────────────────────────── */
+    .pagination {
+      max-width: 1680px; margin: 0 auto;
+      padding: 22px 32px 40px;
+      position: relative; z-index: 2;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 16px;
+    }
+    .pagination-info {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-3);
+      letter-spacing: 0.04em;
+    }
+    .pagination-info strong {
+      color: var(--text-2);
+      font-weight: 500;
+    }
+    .pagination-controls {
+      display: flex; gap: 6px; align-items: center;
+    }
+    .page-btn {
+      background: var(--surface-1);
+      border: 1px solid var(--hairline);
+      color: var(--text-2);
+      padding: 7px 12px;
+      border-radius: 5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      transition: all 120ms;
+    }
+    .page-btn:hover:not(:disabled) {
+      border-color: var(--hairline-hi);
+      color: var(--text);
+      background: var(--surface-2);
+    }
+    .page-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+    .page-num {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 16px;
+      color: var(--text);
+      padding: 0 8px;
+    }
+
+    /* ─────────────────────────── EMPTY / LOADING ─────────────────────────── */
+    #loadingMsg {
+      padding: 80px 24px;
+      text-align: center;
+      color: var(--text-3);
+    }
+    .empty-state {
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .empty-state .icon {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 56px;
+      color: var(--text-4);
+      margin-bottom: 12px;
+    }
+    .empty-state h3 {
+      font-family: 'Instrument Serif', serif;
+      font-size: 22px;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .empty-state p {
+      color: var(--text-3);
+      font-size: 13px;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    /* ─────────────────────────── FOOTER ─────────────────────────── */
+    .footer {
+      max-width: 1680px; margin: 0 auto;
+      padding: 24px 32px 56px;
+      position: relative; z-index: 2;
+      border-top: 1px solid var(--hairline);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--text-4);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .footer-mark {
+      font-family: 'Instrument Serif', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--gold);
+      text-transform: none;
+      letter-spacing: -0.005em;
+    }
+
+    /* ─────────────────────────── RESPONSIVE ─────────────────────────── */
+    @media (max-width: 1100px) {
+      .kpi-grid { grid-template-columns: repeat(3, 1fr); }
+      .kpi:nth-child(3) { border-right: none; }
+      .kpi:nth-child(1), .kpi:nth-child(2), .kpi:nth-child(3) {
+        border-bottom: 1px solid var(--hairline);
+      }
+    }
+    @media (max-width: 720px) {
+      .topbar-inner { padding: 12px 18px; }
+      .hero { padding: 24px 18px 16px; }
+      .kpi-band, .breakdown, .controls, .table-shell, .pagination, .footer { padding-left: 18px; padding-right: 18px; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .kpi { border-bottom: 1px solid var(--hairline); }
+      .kpi:nth-child(odd) { border-right: 1px solid var(--hairline); }
+      .kpi:nth-child(even) { border-right: none; }
+      .controls-title { width: 100%; margin-bottom: 4px; }
+      .search-wrap { width: 100%; }
+      .meta-block { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ──────────────────────── TOP BAR ──────────────────────── -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark"><span>H</span></div>
+      <div class="brand-name">
+        <span class="word">Hillsborough Lead Intelligence</span>
+        <span class="sub">Distressed Property Signal · v1.0</span>
+      </div>
+    </div>
+    <div class="crumbs">
+      <strong>FL · Hillsborough County</strong>
+      <span class="sep">/</span>
+      <span>Public Records</span>
+      <span class="sep">/</span>
+      <span>Motivated Seller Index</span>
+    </div>
+    <div class="topbar-right">
+      <div class="live-pill"><span class="live-dot"></span>Live · Sync OK</div>
+      <div class="meta-block" id="metaBlock">Loading…</div>
+      <button class="primary-btn" onclick="exportCSV()">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Export CSV
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ──────────────────────── HERO ──────────────────────── -->
+<section class="hero">
+  <div class="hero-eyebrow">Weekly Filing Brief · <span id="heroDateRange">—</span></div>
+  <h1>Distressed property signal, <em>refined</em> — every fresh filing in the county, scored for seller motivation.</h1>
+  <p class="lede">A continuous read of Lis Pendens, tax deed notices, judgments, liens, and probate openings filed at the Hillsborough Clerk of Court. Records are enriched with property addresses, scored from 0–100, and ranked so the strongest seller signals surface first.</p>
+</section>
+
+<!-- ──────────────────────── KPI BAND ──────────────────────── -->
+<section class="kpi-band">
+  <div class="kpi-grid" id="kpiGrid"></div>
+</section>
+
+<!-- ──────────────────────── BREAKDOWN ──────────────────────── -->
+<section class="breakdown">
+  <div class="breakdown-card" id="breakdownCard">
+    <div class="breakdown-head">
+      <div class="breakdown-title">
+        <span class="label">Filing Mix</span>
+        <span class="name">By instrument type</span>
+      </div>
+      <span class="results-count" id="totalCounter"></span>
+    </div>
+    <div class="stack-bar" id="stackBar"></div>
+    <div class="stack-legend" id="stackLegend"></div>
+  </div>
+</section>
+
+<!-- ──────────────────────── CONTROLS ──────────────────────── -->
+<section class="controls">
+  <div class="controls-title">The Ledger <small id="ledgerSub">All instruments</small></div>
+  <div class="search-wrap">
+    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input id="search" type="text" placeholder="Search owner, address, document #…" oninput="applyFilters()">
+  </div>
+  <div class="filter-group" id="scoreFilter" role="tablist">
+    <button class="filter-pill active" data-score="" type="button">All</button>
+    <button class="filter-pill" data-score="70" type="button">🔥 Hot ≥70</button>
+    <button class="filter-pill" data-score="50" type="button">Warm ≥50</button>
+    <button class="filter-pill" data-score="addr" type="button">Has Address</button>
+  </div>
+  <select id="filterCat" class="refined" onchange="applyFilters()">
+    <option value="">All Instrument Types</option>
+    <option value="LP">Lis Pendens</option>
+    <option value="NOTICE">Tax Deed Sale</option>
+    <option value="JUD">Judgment</option>
+    <option value="LN">Lien</option>
+    <option value="LNMECH">Mechanic Lien</option>
+    <option value="LNHOA">HOA Lien</option>
+    <option value="MEDLN">Medicaid Lien</option>
+    <option value="PRO">Probate / Estate</option>
+  </select>
+  <span class="results-count" id="resultsCt"></span>
+</section>
+
+<!-- ──────────────────────── TABLE ──────────────────────── -->
+<section class="table-shell">
+  <div class="table-card">
+    <div class="table-wrap" id="tableWrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-col="score" class="sorted">Score <span class="arrow">↓</span></th>
+            <th data-col="filed">Filed <span class="arrow"></span></th>
+            <th data-col="cat">Instrument <span class="arrow"></span></th>
+            <th data-col="owner">Owner / Counterparty <span class="arrow"></span></th>
+            <th data-col="prop_address">Property <span class="arrow"></span></th>
+            <th data-col="mail_address">Mailing <span class="arrow"></span></th>
+            <th data-col="amount" style="text-align:right">Amount <span class="arrow"></span></th>
+            <th>Signals</th>
+            <th data-col="doc_num">Document <span class="arrow"></span></th>
+          </tr>
+        </thead>
+        <tbody id="leadsBody"></tbody>
+      </table>
+    </div>
+    <div id="loadingMsg">Loading filings…</div>
+  </div>
+</section>
+
+<!-- ──────────────────────── PAGINATION ──────────────────────── -->
+<div class="pagination" id="pagination"></div>
+
+<!-- ──────────────────────── FOOTER ──────────────────────── -->
+<footer class="footer">
+  <div>
+    <span class="footer-mark">H · Hillsborough Lead Intelligence</span>
+    &nbsp;&nbsp;·&nbsp;&nbsp;Source: Hillsborough Clerk of Court · OR Public Access
+  </div>
+  <div id="footerBuild">Build —</div>
+</footer>
+
+<script>
+/* ──────────────────────── SAMPLE DATA (replaced by records.json on deploy) ──────────────────────── */
+const SAMPLE_DATA = {
+  fetched_at: new Date().toISOString(),
+  source: "Hillsborough County Clerk of Court (SAMPLE)",
+  date_range: { from: "04/18/2026", to: "04/25/2026" },
+  total: 14,
+  with_address: 11,
+  records: [
+    { doc_num:"2026-LP-041823", doc_type:"LIS PENDENS", filed:"2026-04-23", cat:"LP", cat_label:"Lis Pendens",
+      owner:"MARTINEZ, CARLOS R", grantee:"WELLS FARGO BANK NA", amount:287500,
+      legal:"LOT 14 BLOCK 22 CARROLLWOOD VILLAGE PHASE I", prop_address:"4821 LONGFELLOW DR",
+      prop_city:"TAMPA", prop_state:"FL", prop_zip:"33624",
+      mail_address:"4821 LONGFELLOW DR", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33624",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Lis pendens","Pre-foreclosure","New this week","Has address"], score:90 },
+    { doc_num:"2026-LP-041799", doc_type:"LIS PENDENS", filed:"2026-04-22", cat:"LP", cat_label:"Lis Pendens",
+      owner:"GREENFIELD PROPERTIES LLC", grantee:"FIRST HORIZON BANK",  amount:412000,
+      legal:"LOT 7 BLOCK 3 WESTCHASE SECTION ONE", prop_address:"11203 LAKEVIEW RIDGE LOOP",
+      prop_city:"TAMPA", prop_state:"FL", prop_zip:"33626",
+      mail_address:"PO BOX 5544", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33675",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Lis pendens","Pre-foreclosure","LLC / corp owner","New this week","Has address"], score:95 },
+    { doc_num:"2026-NOTICE-041711", doc_type:"NOTICE OF TAX DEED SALE", filed:"2026-04-21", cat:"NOTICE", cat_label:"Tax Deed Sale",
+      owner:"JOHNSON SARAH K", grantee:"HILLSBOROUGH COUNTY TAX COLLECTOR", amount:9840,
+      legal:"LOT 22 BRANDON GROVE UNIT 3", prop_address:"2104 HICKORY CREEK LN",
+      prop_city:"BRANDON", prop_state:"FL", prop_zip:"33510",
+      mail_address:"3301 GULF TO BAY BLVD APT 204", mail_city:"CLEARWATER", mail_state:"FL", mail_zip:"33759",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Tax lien","New this week","Has address"], score:75 },
+    { doc_num:"2026-JUD-041654", doc_type:"FINAL JUDGMENT", filed:"2026-04-20", cat:"JUD", cat_label:"Judgment",
+      owner:"NGUYEN THANH V", grantee:"CAPITAL ONE BANK USA NA", amount:34200,
+      legal:"LOT 4 BLOCK 1 PALM RIVER ESTATES", prop_address:"6714 PALM RIVER RD",
+      prop_city:"TAMPA", prop_state:"FL", prop_zip:"33619",
+      mail_address:"6714 PALM RIVER RD", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33619",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Judgment lien","Has address"], score:60 },
+    { doc_num:"2026-PRO-041588", doc_type:"PETITION FOR ADMINISTRATION", filed:"2026-04-19", cat:"PRO", cat_label:"Probate",
+      owner:"ESTATE OF DOROTHY ANN WHITFIELD", grantee:"", amount:null,
+      legal:"LOT 31 TEMPLE TERRACE ESTATES", prop_address:"9012 TEMPLE RD",
+      prop_city:"TEMPLE TERRACE", prop_state:"FL", prop_zip:"33617",
+      mail_address:"9012 TEMPLE RD", mail_city:"TEMPLE TERRACE", mail_state:"FL", mail_zip:"33617",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Probate / estate","New this week","Has address"], score:75 },
+    { doc_num:"2026-LNHOA-041502", doc_type:"CLAIM OF LIEN (HOA)", filed:"2026-04-18", cat:"LNHOA", cat_label:"HOA Lien",
+      owner:"RODRIGUEZ MIGUEL A", grantee:"HUNTER'S GREEN COMMUNITY ASSOC", amount:4750,
+      legal:"LOT 19 HUNTER'S GREEN PHASE 2", prop_address:"17913 ARBOR HAVEN DR",
+      prop_city:"TAMPA", prop_state:"FL", prop_zip:"33647",
+      mail_address:"17913 ARBOR HAVEN DR", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33647",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["HOA lien","Has address"], score:55 },
+    { doc_num:"2026-LP-041477", doc_type:"LIS PENDENS", filed:"2026-04-18", cat:"LP", cat_label:"Lis Pendens",
+      owner:"PATEL KRISHNA D", grantee:"ROCKET MORTGAGE LLC",  amount:198000,
+      legal:"LOT 8 SEFFNER GROVE SUBDIVISION", prop_address:"2803 SLEEPY HOLLOW DR",
+      prop_city:"SEFFNER", prop_state:"FL", prop_zip:"33584",
+      mail_address:"2803 SLEEPY HOLLOW DR", mail_city:"SEFFNER", mail_state:"FL", mail_zip:"33584",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Lis pendens","Pre-foreclosure","Has address"], score:80 },
+    { doc_num:"2026-JUD-041421", doc_type:"JUDGMENT LIEN", filed:"2026-04-17", cat:"JUD", cat_label:"Judgment",
+      owner:"BAKER ROBERT T", grantee:"LVNV FUNDING LLC", amount:8900,
+      legal:"", prop_address:"",
+      prop_city:"", prop_state:"FL", prop_zip:"",
+      mail_address:"4419 N 34TH ST", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33610",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Judgment lien"], score:40 },
+    { doc_num:"2026-MEDLN-041388", doc_type:"MEDICAID LIEN", filed:"2026-04-17", cat:"MEDLN", cat_label:"Medicaid Lien",
+      owner:"THOMPSON JAMES H", grantee:"STATE OF FLORIDA AHCA", amount:62400,
+      legal:"LOT 5 RIVERVIEW MEADOWS", prop_address:"10321 BOYETTE CREEK BLVD",
+      prop_city:"RIVERVIEW", prop_state:"FL", prop_zip:"33569",
+      mail_address:"10321 BOYETTE CREEK BLVD", mail_city:"RIVERVIEW", mail_state:"FL", mail_zip:"33569",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Medicaid lien","Has address"], score:55 },
+    { doc_num:"2026-PRO-041301", doc_type:"ORDER ADMITTING WILL", filed:"2026-04-16", cat:"PRO", cat_label:"Probate",
+      owner:"ESTATE OF JAMES WILLIAM TURNER SR", grantee:"", amount:null,
+      legal:"LOT 12 BLOCK 4 SUNSET PARK", prop_address:"3819 W MORRISON AVE",
+      prop_city:"TAMPA", prop_state:"FL", prop_zip:"33629",
+      mail_address:"3819 W MORRISON AVE", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33629",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Probate / estate","Has address"], score:65 },
+    { doc_num:"2026-LNMECH-041255", doc_type:"CLAIM OF LIEN (MECH)", filed:"2026-04-16", cat:"LNMECH", cat_label:"Mechanic Lien",
+      owner:"FERNANDEZ DIANA L", grantee:"ACME ROOFING CONTRACTORS INC", amount:17600,
+      legal:"LOT 3 BLOCK 9 LUTZ LAKE FERN ESTATES", prop_address:"17502 LAKE FERN DR",
+      prop_city:"LUTZ", prop_state:"FL", prop_zip:"33558",
+      mail_address:"17502 LAKE FERN DR", mail_city:"LUTZ", mail_state:"FL", mail_zip:"33558",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Mechanic lien","Has address"], score:50 },
+    { doc_num:"2026-NOTICE-041198", doc_type:"NOTICE OF TAX DEED SALE", filed:"2026-04-15", cat:"NOTICE", cat_label:"Tax Deed Sale",
+      owner:"OKAFOR CHINEDU O", grantee:"HILLSBOROUGH COUNTY TAX COLLECTOR", amount:5420,
+      legal:"LOT 9 PALM CREST VILLAGE", prop_address:"",
+      prop_city:"", prop_state:"FL", prop_zip:"",
+      mail_address:"6202 N 15TH ST", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33604",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Tax lien"], score:40 },
+    { doc_num:"2026-LP-041102", doc_type:"LIS PENDENS", filed:"2026-04-14", cat:"LP", cat_label:"Lis Pendens",
+      owner:"SUNRISE VENTURES CORP", grantee:"FEDERAL NATIONAL MORTGAGE ASSOC", amount:545000,
+      legal:"LOT 2 FISH HAWK TRAILS", prop_address:"5011 OSPREY RIDGE DR",
+      prop_city:"LITHIA", prop_state:"FL", prop_zip:"33547",
+      mail_address:"1801 N HIGHLAND AVE STE 100", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33602",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Lis pendens","Pre-foreclosure","LLC / corp owner","Has address"], score:90 },
+    { doc_num:"2026-JUD-040998", doc_type:"FINAL JUDGMENT", filed:"2026-04-13", cat:"JUD", cat_label:"Judgment",
+      owner:"HAYES PATRICIA M", grantee:"PORTFOLIO RECOVERY ASSOC LLC", amount:11750,
+      legal:"LOT 16 BLOCK 2 TOWN N COUNTRY", prop_address:"7821 W BROAD ST",
+      prop_city:"TAMPA", prop_state:"FL", prop_zip:"33615",
+      mail_address:"7821 W BROAD ST", mail_city:"TAMPA", mail_state:"FL", mail_zip:"33615",
+      clerk_url:"https://publicaccess.hillsclerk.com/oripublicaccess/",
+      flags:["Judgment lien","Has address"], score:55 }
+  ]
+};
+
+/* ──────────────────────── STATE ──────────────────────── */
+let allRecords = [];
+let filtered   = [];
+let page       = 1;
+const PAGE_SIZE = 25;
+let sortCol    = "score";
+let sortAsc    = false;
+let scoreMode  = "";
+let dataMeta   = {};
+
+const FLAG_STYLE = {
+  "Lis pendens":       "flag-red",
+  "Pre-foreclosure":   "flag-red",
+  "Judgment lien":     "flag-purple",
+  "Tax lien":          "flag-orange",
+  "Mechanic lien":     "flag-blue",
+  "HOA lien":          "flag-blue",
+  "Medicaid lien":     "flag-purple",
+  "Probate / estate":  "flag-green",
+  "LLC / corp owner":  "flag-orange",
+  "New this week":     "flag-gold",
+  "Has address":       "flag-blue",
+};
+const CAT_COLOR = {
+  LP:     'var(--hot)',
+  NOTICE: 'var(--warm)',
+  JUD:    'var(--plum)',
+  LN:     'var(--cool)',
+  LNHOA:  'var(--cool)',
+  LNMECH: 'var(--cool)',
+  PRO:    'var(--teal)',
+  MEDLN:  'var(--rose)',
+};
+const CAT_LABEL = {
+  LP: 'Lis Pendens', NOTICE: 'Tax Deed Sale', JUD: 'Judgment',
+  LN: 'Lien', LNHOA: 'HOA Lien', LNMECH: 'Mech. Lien',
+  PRO: 'Probate', MEDLN: 'Medicaid Lien'
+};
+
+/* ──────────────────────── LOAD ──────────────────────── */
+function loadData() {
+  fetch("records.json")
+    .then(r => r.ok ? r.json() : Promise.reject())
+    .then(initDashboard)
+    .catch(() => initDashboard(SAMPLE_DATA));
+}
+
+function initDashboard(data) {
+  dataMeta = data;
+  allRecords = data.records || [];
+
+  const fetchedDate = data.fetched_at ? new Date(data.fetched_at) : null;
+  const fetchedStr  = fetchedDate
+    ? fetchedDate.toISOString().slice(0,16).replace('T',' ') + ' UTC'
+    : '—';
+
+  document.getElementById("metaBlock").innerHTML =
+    `<strong>${(data.records||[]).length}</strong> records · synced ${fetchedStr}` +
+    (data.source?.includes('SAMPLE') ? ' · <span style="color:var(--warm)">DEMO</span>' : '');
+
+  document.getElementById("heroDateRange").textContent =
+    `${data.date_range?.from || '—'} → ${data.date_range?.to || '—'}`;
+
+  document.getElementById("footerBuild").textContent =
+    `Build ${fetchedDate ? fetchedDate.toISOString().slice(0,10) : '—'} · ${(data.records||[]).length} filings indexed`;
+
+  renderKPIs();
+  renderBreakdown();
+  applyFilters();
+}
+
+/* ──────────────────────── KPIs ──────────────────────── */
+function renderKPIs() {
+  const recs = allRecords;
+  const total = recs.length;
+  const hot   = recs.filter(r => r.score >= 70).length;
+  const warm  = recs.filter(r => r.score >= 50 && r.score < 70).length;
+  const withAddr = recs.filter(r => r.prop_address || r.mail_address).length;
+  const totalAmt = recs.reduce((s,r) => s + (r.amount || 0), 0);
+  const newWk   = recs.filter(r => (r.flags || []).includes("New this week")).length;
+
+  const fmt = n => n >= 1e6 ? (n/1e6).toFixed(1)+'M' : n >= 1e3 ? (n/1e3).toFixed(0)+'K' : n.toString();
+  const pct = (a,b) => b ? Math.min(100, Math.round(a/b*100)) : 0;
+
+  const kpis = [
+    { label: "Total Filings",     val: total,    bar: 100, foot: `Within reporting window`,                  cls: "is-gold" },
+    { label: "Hot Leads · ≥70",   val: hot,      bar: pct(hot, total),  foot: `${pct(hot,total)}% of feed`,  cls: "is-hot" },
+    { label: "Warm · 50–69",      val: warm,     bar: pct(warm,total),  foot: `${pct(warm,total)}% of feed`, cls: "is-warm" },
+    { label: "Address Resolved",  val: withAddr, bar: pct(withAddr,total), foot: `${pct(withAddr,total)}% mailable`, cls: "is-teal" },
+    { label: "Filed This Week",   val: newWk,    bar: pct(newWk,total),    foot: `Fresh filings`, cls: "is-plum" },
+    { label: "Aggregate Exposure", val: '$'+fmt(totalAmt), unit: '', bar: 100, foot: `Sum of indexed amounts`, cls: "is-cool" },
+  ];
+
+  document.getElementById("kpiGrid").innerHTML = kpis.map(k => `
+    <div class="kpi ${k.cls}">
+      <div class="kpi-label"><span class="tick"></span>${k.label}</div>
+      <div class="kpi-value">${k.val}${k.unit ? `<span class="unit">${k.unit}</span>` : ''}</div>
+      <div class="kpi-bar"><span style="width:${k.bar}%"></span></div>
+      <div class="kpi-foot">${k.foot}</div>
+    </div>
+  `).join('');
+}
+
+/* ──────────────────────── BREAKDOWN STACK BAR ──────────────────────── */
+function renderBreakdown() {
+  const counts = {};
+  allRecords.forEach(r => { counts[r.cat] = (counts[r.cat]||0) + 1; });
+  const total = allRecords.length || 1;
+  const ordered = Object.entries(counts).sort((a,b) => b[1] - a[1]);
+
+  document.getElementById("totalCounter").innerHTML =
+    `<strong>${allRecords.length}</strong> &nbsp;total instruments`;
+
+  document.getElementById("stackBar").innerHTML = ordered.map(([cat, n]) => {
+    const w = (n/total*100).toFixed(2);
+    return `<div title="${CAT_LABEL[cat]||cat}: ${n}" style="width:${w}%; background:${CAT_COLOR[cat]||'var(--text-3)'}"></div>`;
+  }).join('');
+
+  document.getElementById("stackLegend").innerHTML = ordered.map(([cat, n]) => `
+    <span class="item">
+      <span class="swatch" style="background:${CAT_COLOR[cat]||'var(--text-3)'}"></span>
+      ${CAT_LABEL[cat] || cat}
+      <span class="count">· ${n}</span>
+    </span>
+  `).join('');
+}
+
+/* ──────────────────────── FILTERS ──────────────────────── */
+function applyFilters() {
+  const q  = document.getElementById("search").value.toLowerCase().trim();
+  const ct = document.getElementById("filterCat").value;
+
+  filtered = allRecords.filter(r => {
+    if (ct && r.cat !== ct) return false;
+    if (scoreMode === "70" && r.score < 70) return false;
+    if (scoreMode === "50" && r.score < 50) return false;
+    if (scoreMode === "addr" && !r.prop_address && !r.mail_address) return false;
+    if (q) {
+      const blob = [r.owner, r.doc_num, r.doc_type, r.prop_address, r.mail_address, r.legal, r.grantee, r.cat_label].join(" ").toLowerCase();
+      if (!blob.includes(q)) return false;
+    }
+    return true;
+  });
+
+  filtered.sort((a, b) => {
+    let va = a[sortCol] ?? "", vb = b[sortCol] ?? "";
+    if (typeof va === "number" || typeof vb === "number") {
+      va = va || 0; vb = vb || 0;
+      return sortAsc ? va - vb : vb - va;
+    }
+    va = String(va).toLowerCase(); vb = String(vb).toLowerCase();
+    return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+  });
+
+  // counts and labels
+  document.getElementById("resultsCt").innerHTML =
+    `<strong>${filtered.length}</strong> showing`;
+  document.getElementById("ledgerSub").textContent =
+    ct ? CAT_LABEL[ct] : (scoreMode === '70' ? 'Hot leads only'
+                       : scoreMode === '50' ? 'Warm + Hot'
+                       : scoreMode === 'addr' ? 'With address only' : 'All instruments');
+
+  page = 1;
+  renderTable();
+}
+
+/* ──────────────────────── TABLE ──────────────────────── */
+function renderTable() {
+  const start = (page - 1) * PAGE_SIZE;
+  const slice = filtered.slice(start, start + PAGE_SIZE);
+  const msg   = document.getElementById("loadingMsg");
+  const wrap  = document.getElementById("tableWrap");
+
+  if (filtered.length === 0) {
+    msg.style.display = "";
+    msg.innerHTML = `
+      <div class="empty-state">
+        <div class="icon">∅</div>
+        <h3>No filings match your filters</h3>
+        <p>Try widening the score band, clearing the search, or switching to <em>All instruments</em>.</p>
+      </div>`;
+    wrap.style.display = "none";
+    document.getElementById("pagination").innerHTML = "";
+    return;
+  }
+
+  msg.style.display  = "none";
+  wrap.style.display = "";
+
+  document.getElementById("leadsBody").innerHTML = slice.map(r => {
+    const tier  = r.score >= 70 ? "hot" : r.score >= 50 ? "warm" : "cool";
+    const tierColor = tier === "hot" ? "var(--hot)" : tier === "warm" ? "var(--warm)" : "var(--cool)";
+    const tierLabel = tier === "hot" ? "Hot" : tier === "warm" ? "Warm" : "Cool";
+
+    const flagHtml = (r.flags || []).map(f =>
+      `<span class="flag-chip ${FLAG_STYLE[f] || "flag-blue"}">${esc(f)}</span>`
+    ).join("");
+
+    const propAddrLine1 = r.prop_address ? esc(r.prop_address) : "";
+    const propAddrLine2 = [r.prop_city, r.prop_state, r.prop_zip].filter(Boolean).join(", ");
+    const mailAddrLine1 = r.mail_address ? esc(r.mail_address) : "";
+    const mailAddrLine2 = [r.mail_city, r.mail_state, r.mail_zip].filter(Boolean).join(", ");
+    const sameMail = r.prop_address && r.mail_address && r.prop_address === r.mail_address;
+
+    const amtHtml = (r.amount != null && r.amount !== "")
+      ? `<span class="currency">$</span><span class="amount-num">${Number(r.amount).toLocaleString()}</span>`
+      : `<span style="font-family:'JetBrains Mono',monospace;color:var(--text-4)">—</span>`;
+
+    const link = r.clerk_url
+      ? `<a class="doc-link" href="${esc(r.clerk_url)}" target="_blank" rel="noopener">${esc(r.doc_num)}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 7h10v10M7 17L17 7"/></svg></a>`
+      : `<span class="doc-link">${esc(r.doc_num || "—")}</span>`;
+
+    const filed = r.filed || "—";
+    const relative = relativeDate(r.filed);
+    const isNew = (r.flags || []).includes("New this week");
+
+    return `<tr class="${tier === 'hot' ? 'is-hot' : ''}">
+      <td class="score-cell">
+        <div class="score-block">
+          <span class="score-num tier-${tier}">${r.score}</span>
+          <div class="score-bar"><span style="width:${r.score}%; background:${tierColor}"></span></div>
+          <span class="score-tier-label">${tierLabel}</span>
+        </div>
+      </td>
+      <td class="filed-cell">
+        ${esc(filed)}
+        ${relative ? `<span class="relative">${relative}</span>` : ''}
+        ${isNew ? `<div class="new-tag">★ New</div>` : ''}
+      </td>
+      <td class="cat-cell">
+        <span class="cat-badge cat-${esc(r.cat)}">${esc(r.cat)}</span>
+        <span class="cat-label-line">${esc(r.cat_label || "")}</span>
+      </td>
+      <td class="owner-cell">
+        <span class="owner-name">${esc(r.owner || "—")}</span>
+        ${r.grantee ? `<span class="owner-grantee">${esc(r.grantee)}</span>` : ""}
+      </td>
+      <td class="addr-cell">
+        ${propAddrLine1
+          ? `<span class="addr-primary">${propAddrLine1}</span>${propAddrLine2 ? `<span class="addr-secondary">${esc(propAddrLine2)}</span>` : ''}${r.legal ? `<span class="addr-secondary">${esc(r.legal.substring(0, 60))}${r.legal.length > 60 ? '…' : ''}</span>` : ''}`
+          : `<span class="addr-empty">— No property address —</span>`}
+      </td>
+      <td class="addr-cell">
+        ${mailAddrLine1
+          ? `<span class="addr-primary">${mailAddrLine1}</span>${mailAddrLine2 ? `<span class="addr-secondary">${esc(mailAddrLine2)}</span>` : ''}${sameMail ? `<span class="same-as">↺ Same as property</span>` : ''}`
+          : `<span class="addr-empty">—</span>`}
+      </td>
+      <td class="amt-cell ${(r.amount == null) ? 'empty' : ''}">${amtHtml}</td>
+      <td class="flags-cell">${flagHtml || `<span class="addr-empty">—</span>`}</td>
+      <td class="doc-cell">
+        ${link}
+        <span class="doc-type">${esc(r.doc_type || "")}</span>
+      </td>
+    </tr>`;
+  }).join("");
+
+  renderPagination();
+}
+
+function relativeDate(iso) {
+  if (!iso) return null;
+  const then = new Date(iso);
+  const now = new Date();
+  const days = Math.round((now - then) / (1000 * 60 * 60 * 24));
+  if (days === 0) return "today";
+  if (days === 1) return "yesterday";
+  if (days < 7)  return `${days} days ago`;
+  if (days < 30) return `${Math.floor(days/7)}w ago`;
+  return `${Math.floor(days/30)}mo ago`;
+}
+
+function renderPagination() {
+  const pages = Math.ceil(filtered.length / PAGE_SIZE);
+  const pag = document.getElementById("pagination");
+  if (pages <= 1) {
+    pag.innerHTML = `
+      <div class="pagination-info"><strong>${filtered.length}</strong> filings · single page</div>
+      <div></div>`;
+    return;
+  }
+  const showing = `${(page-1)*PAGE_SIZE + 1}–${Math.min(page*PAGE_SIZE, filtered.length)}`;
+  pag.innerHTML = `
+    <div class="pagination-info">Showing <strong>${showing}</strong> of <strong>${filtered.length}</strong> filings</div>
+    <div class="pagination-controls">
+      <button class="page-btn" onclick="goPage(${page-1})" ${page<=1?"disabled":""}>← Prev</button>
+      <span class="page-num">${page}</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--text-4);letter-spacing:.1em">/ ${pages}</span>
+      <button class="page-btn" onclick="goPage(${page+1})" ${page>=pages?"disabled":""}>Next →</button>
+    </div>`;
+}
+function goPage(n) { page = n; renderTable(); window.scrollTo({top: 0, behavior: 'smooth'}); }
+
+/* ──────────────────────── SORT HEADERS ──────────────────────── */
+document.querySelectorAll("thead th[data-col]").forEach(th => {
+  th.addEventListener("click", () => {
+    const col = th.dataset.col;
+    if (sortCol === col) sortAsc = !sortAsc;
+    else { sortCol = col; sortAsc = false; }
+    document.querySelectorAll("thead th").forEach(t => {
+      t.classList.remove("sorted");
+      const a = t.querySelector(".arrow"); if (a) a.textContent = "";
+    });
+    th.classList.add("sorted");
+    const a = th.querySelector(".arrow"); if (a) a.textContent = sortAsc ? "↑" : "↓";
+    applyFilters();
+  });
+});
+
+/* ──────────────────────── SCORE FILTER PILLS ──────────────────────── */
+document.querySelectorAll("#scoreFilter .filter-pill").forEach(b => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll("#scoreFilter .filter-pill").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    scoreMode = b.dataset.score;
+    applyFilters();
+  });
+});
+
+/* ──────────────────────── CSV EXPORT ──────────────────────── */
+function exportCSV() {
+  const cols = ["First Name","Last Name","Mailing Address","Mailing City","Mailing State","Mailing Zip",
+                "Property Address","Property City","Property State","Property Zip",
+                "Lead Type","Document Type","Date Filed","Document Number",
+                "Amount/Debt Owed","Seller Score","Motivated Seller Flags","Source","Public Records URL"];
+  const rows = [cols.join(",")];
+  filtered.forEach(r => {
+    const [fn, ln] = splitName(r.owner || "");
+    rows.push([
+      fn, ln, r.mail_address||"", r.mail_city||"", r.mail_state||"FL", r.mail_zip||"",
+      r.prop_address||"", r.prop_city||"", r.prop_state||"FL", r.prop_zip||"",
+      r.cat_label||r.cat||"", r.doc_type||"", r.filed||"", r.doc_num||"",
+      r.amount != null ? r.amount : "", r.score||0,
+      (r.flags||[]).join("; "), "Hillsborough County Clerk of Court", r.clerk_url||""
+    ].map(cell).join(","));
+  });
+  const blob = new Blob([rows.join("\n")], {type:"text/csv"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = `hillsborough_leads_${new Date().toISOString().slice(0,10)}.csv`;
+  a.click();
+}
+function cell(v) { const s = String(v??""); return /[",\n]/.test(s) ? `"${s.replace(/"/g,'""')}"` : s; }
+function splitName(full) {
+  const clean = full.replace(/\b(JR\.?|SR\.?|II|III|IV|EST\.?|LLC|INC\.?|CORP\.?|TRUSTEE)\b/gi,"").trim().replace(/,$/,"").trim();
+  if (clean.includes(",")) { const [l,f]=clean.split(",",2).map(s=>s.trim()); return [f||"",l||""]; }
+  const t = clean.split(/\s+/);
+  return t.length>=2 ? [t[0], t.slice(1).join(" ")] : ["", clean];
+}
+function esc(s) { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+loadData();
+</script>
+</body>
+</html>

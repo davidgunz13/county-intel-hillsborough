@@ -1,0 +1,2090 @@
+15:27:06  INFO     ========================================================
+15:27:06  INFO     Hillsborough County Motivated Seller Lead Scraper
+15:27:06  INFO     Look-back : 7 days  (04/18/2026 to 04/25/2026)
+15:27:06  INFO     ========================================================
+15:27:08  INFO     Loading clerk portal...
+15:27:19  INFO     Document Type search active.
+15:27:19  INFO     --- Searching: LP ---
+15:27:20  INFO       Submitted. Waiting...
+15:27:21  INFO       Page 1: 32 rows (total: 32)
+15:27:21  INFO       Pager HTML: <div id="resultsActionBar" class="hide-no-results" style=""><div id="resultActionButtons"><button id="printVisible" class="btn btn-primary btn-xs btn-print hide-print btn-result-action hide-no-results
+15:27:22  INFO       Next page: clicked: Next
+15:27:24  INFO       Page 2: 32 rows (total: 64)
+15:27:24  INFO       Next page: clicked: Next
+15:27:26  INFO       Page 3: 10 rows (total: 74)
+15:27:26  INFO       Next page: clicked: Next
+15:27:28  INFO       Page 4: 10 rows (total: 84)
+15:27:28  INFO       Next page: clicked: Next
+15:27:30  INFO       Page 5: 10 rows (total: 94)
+15:27:30  INFO       Next page: clicked: Next
+15:27:32  INFO       Page 6: 10 rows (total: 104)
+15:27:32  INFO       Next page: clicked: Next
+15:27:34  INFO       Page 7: 10 rows (total: 114)
+15:27:34  INFO       Next page: clicked: Next
+15:27:36  INFO       Page 8: 10 rows (total: 124)
+15:27:36  INFO       Next page: clicked: Next
+15:27:38  INFO       Page 9: 10 rows (total: 134)
+15:27:38  INFO       Next page: clicked: Next
+15:27:40  INFO       Page 10: 10 rows (total: 144)
+15:27:40  INFO       Next page: clicked: Next
+15:27:42  INFO       Page 11: 10 rows (total: 154)
+15:27:42  INFO       Next page: clicked: Next
+15:27:44  INFO       Page 12: 10 rows (total: 164)
+15:27:44  INFO       Next page: clicked: Next
+15:27:46  INFO       Page 13: 10 rows (total: 174)
+15:27:46  INFO       Next page: clicked: Next
+15:27:48  INFO       Page 14: 10 rows (total: 184)
+15:27:48  INFO       Next page: clicked: Next
+15:27:50  INFO       Page 15: 10 rows (total: 194)
+15:27:50  INFO       Next page: clicked: Next
+15:27:52  INFO       Page 16: 10 rows (total: 204)
+15:27:52  INFO       Next page: clicked: Next
+15:27:54  INFO       Page 17: 10 rows (total: 214)
+15:27:54  INFO       Next page: clicked: Next
+15:27:56  INFO       Page 18: 10 rows (total: 224)
+15:27:56  INFO       Next page: clicked: Next
+15:27:58  INFO       Page 19: 10 rows (total: 234)
+15:27:58  INFO       Next page: clicked: Next
+15:28:00  INFO       Page 20: 10 rows (total: 244)
+15:28:00  INFO       Next page: clicked: Next
+15:28:02  INFO       Page 21: 10 rows (total: 254)
+15:28:02  INFO       Next page: clicked: Next
+15:28:04  INFO       Page 22: 10 rows (total: 264)
+15:28:04  INFO       Next page: clicked: Next
+15:28:06  INFO       Page 23: 10 rows (total: 274)
+15:28:06  INFO       Next page: clicked: Next
+15:28:09  INFO       Page 24: 10 rows (total: 284)
+15:28:09  INFO       Next page: clicked: Next
+15:28:11  INFO       Page 25: 10 rows (total: 294)
+15:28:11  INFO       Next page: clicked: Next
+15:28:13  INFO       Page 26: 10 rows (total: 304)
+15:28:13  INFO       Next page: clicked: Next
+15:28:15  INFO       Page 27: 10 rows (total: 314)
+15:28:15  INFO       Next page: clicked: Next
+15:28:17  INFO       Page 28: 10 rows (total: 324)
+15:28:17  INFO       Next page: clicked: Next
+15:28:19  INFO       Page 29: 10 rows (total: 334)
+15:28:19  INFO       Next page: clicked: Next
+15:28:21  INFO       Page 30: 10 rows (total: 344)
+15:28:21  INFO       Next page: clicked: Next
+15:28:23  INFO       Page 31: 10 rows (total: 354)
+15:28:23  INFO       Next page: clicked: Next
+15:28:25  INFO       Page 32: 10 rows (total: 364)
+15:28:25  INFO       Next page: clicked: Next
+15:28:27  INFO       Page 33: 10 rows (total: 374)
+15:28:27  INFO       Next page: clicked: Next
+15:28:29  INFO       Page 34: 10 rows (total: 384)
+15:28:29  INFO       Next page: clicked: Next
+15:28:31  INFO       Page 35: 10 rows (total: 394)
+15:28:31  INFO       Next page: clicked: Next
+15:28:33  INFO       Page 36: 10 rows (total: 404)
+15:28:33  INFO       Next page: clicked: Next
+15:28:35  INFO       Page 37: 10 rows (total: 414)
+15:28:35  INFO       Next page: clicked: Next
+15:28:37  INFO       Page 38: 10 rows (total: 424)
+15:28:37  INFO       Next page: clicked: Next
+15:28:39  INFO       Page 39: 10 rows (total: 434)
+15:28:39  INFO       Next page: clicked: Next
+15:28:41  INFO       Page 40: 10 rows (total: 444)
+15:28:41  INFO       Next page: clicked: Next
+15:28:43  INFO       Page 41: 10 rows (total: 454)
+15:28:43  INFO       Next page: clicked: Next
+15:28:45  INFO       Page 42: 10 rows (total: 464)
+15:28:45  INFO       Next page: clicked: Next
+15:28:47  INFO       Page 43: 10 rows (total: 474)
+15:28:47  INFO       Next page: clicked: Next
+15:28:49  INFO       Page 44: 10 rows (total: 484)
+15:28:49  INFO       Next page: clicked: Next
+15:28:51  INFO       Page 45: 10 rows (total: 494)
+15:28:51  INFO       Next page: clicked: Next
+15:28:54  INFO       Page 46: 10 rows (total: 504)
+15:28:54  INFO       Next page: clicked: Next
+15:28:56  INFO       Page 47: 10 rows (total: 514)
+15:28:56  INFO       Next page: clicked: Next
+15:28:58  INFO       Page 48: 10 rows (total: 524)
+15:28:58  INFO       Next page: clicked: Next
+15:29:00  INFO       Page 49: 10 rows (total: 534)
+15:29:00  INFO       Next page: clicked: Next
+15:29:02  INFO       Page 50: 10 rows (total: 544)
+15:29:02  INFO       Next page: clicked: Next
+15:29:04  INFO       Page 51: 10 rows (total: 554)
+15:29:04  INFO       Next page: clicked: Next
+15:29:06  INFO       Page 52: 10 rows (total: 564)
+15:29:06  INFO       Next page: clicked: Next
+15:29:08  INFO       Page 53: 10 rows (total: 574)
+15:29:08  INFO       Next page: clicked: Next
+15:29:10  INFO       Page 54: 10 rows (total: 584)
+15:29:10  INFO       Next page: clicked: Next
+15:29:12  INFO       Page 55: 10 rows (total: 594)
+15:29:12  INFO       Next page: clicked: Next
+15:29:14  INFO       Page 56: 10 rows (total: 604)
+15:29:14  INFO       Next page: clicked: Next
+15:29:16  INFO       Page 57: 10 rows (total: 614)
+15:29:16  INFO       Next page: clicked: Next
+15:29:18  INFO       Page 58: 10 rows (total: 624)
+15:29:18  INFO       Next page: clicked: Next
+15:29:20  INFO       Page 59: 10 rows (total: 634)
+15:29:20  INFO       Next page: clicked: Next
+15:29:22  INFO       Page 60: 10 rows (total: 644)
+15:29:22  INFO       Next page: clicked: Next
+15:29:24  INFO       Page 61: 10 rows (total: 654)
+15:29:24  INFO       Next page: clicked: Next
+15:29:26  INFO       Page 62: 10 rows (total: 664)
+15:29:26  INFO       Next page: clicked: Next
+15:29:28  INFO       Page 63: 10 rows (total: 674)
+15:29:28  INFO       Next page: clicked: Next
+15:29:30  INFO       Page 64: 10 rows (total: 684)
+15:29:30  INFO       Next page: clicked: Next
+15:29:32  INFO       Page 65: 10 rows (total: 694)
+15:29:32  INFO       Next page: clicked: Next
+15:29:34  INFO       Page 66: 10 rows (total: 704)
+15:29:34  INFO       Next page: clicked: Next
+15:29:36  INFO       Page 67: 10 rows (total: 714)
+15:29:36  INFO       Next page: clicked: Next
+15:29:39  INFO       Page 68: 10 rows (total: 724)
+15:29:39  INFO       Next page: clicked: Next
+15:29:41  INFO       Page 69: 10 rows (total: 734)
+15:29:41  INFO       Next page: clicked: Next
+15:29:43  INFO       Page 70: 10 rows (total: 744)
+15:29:43  INFO       Next page: clicked: Next
+15:29:45  INFO       Page 71: 10 rows (total: 754)
+15:29:45  INFO       Next page: clicked: Next
+15:29:47  INFO       Page 72: 10 rows (total: 764)
+15:29:47  INFO       Next page: clicked: Next
+15:29:49  INFO       Page 73: 10 rows (total: 774)
+15:29:49  INFO       Next page: clicked: Next
+15:29:51  INFO       Page 74: 10 rows (total: 784)
+15:29:51  INFO       Next page: clicked: Next
+15:29:53  INFO       Page 75: 10 rows (total: 794)
+15:29:53  INFO       Next page: clicked: Next
+15:29:55  INFO       Page 76: 10 rows (total: 804)
+15:29:55  INFO       Next page: clicked: Next
+15:29:57  INFO       Page 77: 10 rows (total: 814)
+15:29:57  INFO       Next page: clicked: Next
+15:29:59  INFO       Page 78: 10 rows (total: 824)
+15:29:59  INFO       Next page: clicked: Next
+15:30:01  INFO       Page 79: 10 rows (total: 834)
+15:30:01  INFO       Next page: clicked: Next
+15:30:03  INFO       Page 80: 10 rows (total: 844)
+15:30:03  INFO       Next page: clicked: Next
+15:30:05  INFO       Page 81: 10 rows (total: 854)
+15:30:05  INFO       Next page: clicked: Next
+15:30:07  INFO       Page 82: 10 rows (total: 864)
+15:30:07  INFO       Next page: clicked: Next
+15:30:09  INFO       Page 83: 10 rows (total: 874)
+15:30:09  INFO       Next page: clicked: Next
+15:30:11  INFO       Page 84: 10 rows (total: 884)
+15:30:11  INFO       Next page: clicked: Next
+15:30:13  INFO       Page 85: 10 rows (total: 894)
+15:30:13  INFO       Next page: clicked: Next
+15:30:15  INFO       Page 86: 10 rows (total: 904)
+15:30:15  INFO       Next page: clicked: Next
+15:30:17  INFO       Page 87: 10 rows (total: 914)
+15:30:17  INFO       Next page: clicked: Next
+15:30:19  INFO       Page 88: 10 rows (total: 924)
+15:30:19  INFO       Next page: clicked: Next
+15:30:22  INFO       Page 89: 10 rows (total: 934)
+15:30:22  INFO       Next page: clicked: Next
+15:30:24  INFO       Page 90: 10 rows (total: 944)
+15:30:24  INFO       Next page: clicked: Next
+15:30:26  INFO       Page 91: 10 rows (total: 954)
+15:30:26  INFO       Next page: clicked: Next
+15:30:28  INFO       Page 92: 10 rows (total: 964)
+15:30:28  INFO       Next page: clicked: Next
+15:30:30  INFO       Page 93: 10 rows (total: 974)
+15:30:30  INFO       Next page: clicked: Next
+15:30:32  INFO       Page 94: 10 rows (total: 984)
+15:30:32  INFO       Next page: clicked: Next
+15:30:34  INFO       Page 95: 10 rows (total: 994)
+15:30:34  INFO       Next page: clicked: Next
+15:30:36  INFO       Page 96: 10 rows (total: 1004)
+15:30:36  INFO       Next page: clicked: Next
+15:30:38  INFO       Page 97: 10 rows (total: 1014)
+15:30:38  INFO       Next page: clicked: Next
+15:30:40  INFO       Page 98: 10 rows (total: 1024)
+15:30:40  INFO       Next page: clicked: Next
+15:30:42  INFO       Page 99: 10 rows (total: 1034)
+15:30:42  INFO       Next page: clicked: Next
+15:30:44  INFO       Page 100: 10 rows (total: 1044)
+15:30:44  INFO       Next page: clicked: Next
+15:30:46  WARNING    Hit 100-page safety cap.
+15:30:46  INFO       Total: 68 records
+15:30:47  INFO     --- Searching: JUD ---
+15:30:49  INFO       Submitted. Waiting...
+15:30:50  INFO       Page 1: 32 rows (total: 32)
+15:30:50  INFO       Pager HTML: <div id="resultsActionBar" class="hide-no-results" style=""><div id="resultActionButtons"><button id="printVisible" class="btn btn-primary btn-xs btn-print hide-print btn-result-action hide-no-results
+15:30:51  INFO       Next page: clicked: Next
+15:30:53  INFO       Page 2: 32 rows (total: 64)
+15:30:53  INFO       Next page: clicked: Next
+15:30:55  INFO       Page 3: 32 rows (total: 96)
+15:30:55  INFO       Next page: clicked: Next
+15:30:57  INFO       Page 4: 32 rows (total: 128)
+15:30:57  INFO       Next page: clicked: Next
+15:30:59  INFO       Page 5: 32 rows (total: 160)
+15:30:59  INFO       Next page: clicked: Next
+15:31:01  INFO       Page 6: 32 rows (total: 192)
+15:31:01  INFO       Next page: clicked: Next
+15:31:03  INFO       Page 7: 32 rows (total: 224)
+15:31:03  INFO       Next page: clicked: Next
+15:31:05  INFO       Page 8: 32 rows (total: 256)
+15:31:05  INFO       Next page: clicked: Next
+15:31:08  INFO       Page 9: 32 rows (total: 288)
+15:31:08  INFO       Next page: clicked: Next
+15:31:10  INFO       Page 10: 32 rows (total: 320)
+15:31:10  INFO       Next page: clicked: Next
+15:31:12  INFO       Page 11: 32 rows (total: 352)
+15:31:12  INFO       Next page: clicked: Next
+15:31:14  INFO       Page 12: 32 rows (total: 384)
+15:31:14  INFO       Next page: clicked: Next
+15:31:16  INFO       Page 13: 32 rows (total: 416)
+15:31:16  INFO       Next page: clicked: Next
+15:31:18  INFO       Page 14: 32 rows (total: 448)
+15:31:18  INFO       Next page: clicked: Next
+15:31:20  INFO       Page 15: 32 rows (total: 480)
+15:31:20  INFO       Next page: clicked: Next
+15:31:22  INFO       Page 16: 32 rows (total: 512)
+15:31:22  INFO       Next page: clicked: Next
+15:31:24  INFO       Page 17: 32 rows (total: 544)
+15:31:25  INFO       Next page: clicked: Next
+15:31:27  INFO       Page 18: 32 rows (total: 576)
+15:31:27  INFO       Next page: clicked: Next
+15:31:29  INFO       Page 19: 32 rows (total: 608)
+15:31:29  INFO       Next page: clicked: Next
+15:31:31  INFO       Page 20: 32 rows (total: 640)
+15:31:31  INFO       Next page: clicked: Next
+15:31:33  INFO       Page 21: 32 rows (total: 672)
+15:31:33  INFO       Next page: clicked: Next
+15:31:35  INFO       Page 22: 32 rows (total: 704)
+15:31:35  INFO       Next page: clicked: Next
+15:31:37  INFO       Page 23: 32 rows (total: 736)
+15:31:37  INFO       Next page: clicked: Next
+15:31:39  INFO       Page 24: 5 rows (total: 741)
+15:31:39  INFO       Next page: clicked: Next
+15:31:41  INFO       Page 25: 5 rows (total: 746)
+15:31:41  INFO       Next page: clicked: Next
+15:31:43  INFO       Page 26: 5 rows (total: 751)
+15:31:43  INFO       Next page: clicked: Next
+15:31:45  INFO       Page 27: 5 rows (total: 756)
+15:31:45  INFO       Next page: clicked: Next
+15:31:47  INFO       Page 28: 5 rows (total: 761)
+15:31:47  INFO       Next page: clicked: Next
+15:31:49  INFO       Page 29: 5 rows (total: 766)
+15:31:50  INFO       Next page: clicked: Next
+15:31:52  INFO       Page 30: 5 rows (total: 771)
+15:31:52  INFO       Next page: clicked: Next
+15:31:54  INFO       Page 31: 5 rows (total: 776)
+15:31:54  INFO       Next page: clicked: Next
+15:31:56  INFO       Page 32: 5 rows (total: 781)
+15:31:56  INFO       Next page: clicked: Next
+15:31:58  INFO       Page 33: 5 rows (total: 786)
+15:31:58  INFO       Next page: clicked: Next
+15:32:00  INFO       Page 34: 5 rows (total: 791)
+15:32:00  INFO       Next page: clicked: Next
+15:32:02  INFO       Page 35: 5 rows (total: 796)
+15:32:02  INFO       Next page: clicked: Next
+15:32:04  INFO       Page 36: 5 rows (total: 801)
+15:32:04  INFO       Next page: clicked: Next
+15:32:06  INFO       Page 37: 5 rows (total: 806)
+15:32:06  INFO       Next page: clicked: Next
+15:32:08  INFO       Page 38: 5 rows (total: 811)
+15:32:08  INFO       Next page: clicked: Next
+15:32:10  INFO       Page 39: 5 rows (total: 816)
+15:32:10  INFO       Next page: clicked: Next
+15:32:12  INFO       Page 40: 5 rows (total: 821)
+15:32:12  INFO       Next page: clicked: Next
+15:32:14  INFO       Page 41: 5 rows (total: 826)
+15:32:14  INFO       Next page: clicked: Next
+15:32:16  INFO       Page 42: 5 rows (total: 831)
+15:32:16  INFO       Next page: clicked: Next
+15:32:18  INFO       Page 43: 5 rows (total: 836)
+15:32:18  INFO       Next page: clicked: Next
+15:32:20  INFO       Page 44: 5 rows (total: 841)
+15:32:20  INFO       Next page: clicked: Next
+15:32:22  INFO       Page 45: 5 rows (total: 846)
+15:32:22  INFO       Next page: clicked: Next
+15:32:24  INFO       Page 46: 5 rows (total: 851)
+15:32:24  INFO       Next page: clicked: Next
+15:32:26  INFO       Page 47: 5 rows (total: 856)
+15:32:26  INFO       Next page: clicked: Next
+15:32:28  INFO       Page 48: 5 rows (total: 861)
+15:32:28  INFO       Next page: clicked: Next
+15:32:30  INFO       Page 49: 5 rows (total: 866)
+15:32:30  INFO       Next page: clicked: Next
+15:32:32  INFO       Page 50: 5 rows (total: 871)
+15:32:32  INFO       Next page: clicked: Next
+15:32:34  INFO       Page 51: 5 rows (total: 876)
+15:32:35  INFO       Next page: clicked: Next
+15:32:37  INFO       Page 52: 5 rows (total: 881)
+15:32:37  INFO       Next page: clicked: Next
+15:32:39  INFO       Page 53: 5 rows (total: 886)
+15:32:39  INFO       Next page: clicked: Next
+15:32:41  INFO       Page 54: 5 rows (total: 891)
+15:32:41  INFO       Next page: clicked: Next
+15:32:43  INFO       Page 55: 5 rows (total: 896)
+15:32:43  INFO       Next page: clicked: Next
+15:32:45  INFO       Page 56: 5 rows (total: 901)
+15:32:45  INFO       Next page: clicked: Next
+15:32:47  INFO       Page 57: 5 rows (total: 906)
+15:32:47  INFO       Next page: clicked: Next
+15:32:49  INFO       Page 58: 5 rows (total: 911)
+15:32:49  INFO       Next page: clicked: Next
+15:32:51  INFO       Page 59: 5 rows (total: 916)
+15:32:51  INFO       Next page: clicked: Next
+15:32:53  INFO       Page 60: 5 rows (total: 921)
+15:32:53  INFO       Next page: clicked: Next
+15:32:55  INFO       Page 61: 5 rows (total: 926)
+15:32:55  INFO       Next page: clicked: Next
+15:32:57  INFO       Page 62: 5 rows (total: 931)
+15:32:57  INFO       Next page: clicked: Next
+15:32:59  INFO       Page 63: 5 rows (total: 936)
+15:32:59  INFO       Next page: clicked: Next
+15:33:01  INFO       Page 64: 5 rows (total: 941)
+15:33:01  INFO       Next page: clicked: Next
+15:33:03  INFO       Page 65: 5 rows (total: 946)
+15:33:03  INFO       Next page: clicked: Next
+15:33:05  INFO       Page 66: 5 rows (total: 951)
+15:33:05  INFO       Next page: clicked: Next
+15:33:07  INFO       Page 67: 5 rows (total: 956)
+15:33:07  INFO       Next page: clicked: Next
+15:33:09  INFO       Page 68: 5 rows (total: 961)
+15:33:09  INFO       Next page: clicked: Next
+15:33:11  INFO       Page 69: 5 rows (total: 966)
+15:33:11  INFO       Next page: clicked: Next
+15:33:13  INFO       Page 70: 5 rows (total: 971)
+15:33:13  INFO       Next page: clicked: Next
+15:33:15  INFO       Page 71: 5 rows (total: 976)
+15:33:15  INFO       Next page: clicked: Next
+15:33:17  INFO       Page 72: 5 rows (total: 981)
+15:33:17  INFO       Next page: clicked: Next
+15:33:19  INFO       Page 73: 5 rows (total: 986)
+15:33:19  INFO       Next page: clicked: Next
+15:33:21  INFO       Page 74: 5 rows (total: 991)
+15:33:21  INFO       Next page: clicked: Next
+15:33:23  INFO       Page 75: 5 rows (total: 996)
+15:33:23  INFO       Next page: clicked: Next
+15:33:26  INFO       Page 76: 5 rows (total: 1001)
+15:33:26  INFO       Next page: clicked: Next
+15:33:28  INFO       Page 77: 5 rows (total: 1006)
+15:33:28  INFO       Next page: clicked: Next
+15:33:30  INFO       Page 78: 5 rows (total: 1011)
+15:33:30  INFO       Next page: clicked: Next
+15:33:32  INFO       Page 79: 5 rows (total: 1016)
+15:33:32  INFO       Next page: clicked: Next
+15:33:34  INFO       Page 80: 5 rows (total: 1021)
+15:33:34  INFO       Next page: clicked: Next
+15:33:36  INFO       Page 81: 5 rows (total: 1026)
+15:33:36  INFO       Next page: clicked: Next
+15:33:38  INFO       Page 82: 5 rows (total: 1031)
+15:33:38  INFO       Next page: clicked: Next
+15:33:40  INFO       Page 83: 5 rows (total: 1036)
+15:33:40  INFO       Next page: clicked: Next
+15:33:42  INFO       Page 84: 5 rows (total: 1041)
+15:33:42  INFO       Next page: clicked: Next
+15:33:44  INFO       Page 85: 5 rows (total: 1046)
+15:33:44  INFO       Next page: clicked: Next
+15:33:46  INFO       Page 86: 5 rows (total: 1051)
+15:33:46  INFO       Next page: clicked: Next
+15:33:48  INFO       Page 87: 5 rows (total: 1056)
+15:33:48  INFO       Next page: clicked: Next
+15:33:50  INFO       Page 88: 5 rows (total: 1061)
+15:33:50  INFO       Next page: clicked: Next
+15:33:52  INFO       Page 89: 5 rows (total: 1066)
+15:33:52  INFO       Next page: clicked: Next
+15:33:54  INFO       Page 90: 5 rows (total: 1071)
+15:33:54  INFO       Next page: clicked: Next
+15:33:56  INFO       Page 91: 5 rows (total: 1076)
+15:33:56  INFO       Next page: clicked: Next
+15:33:58  INFO       Page 92: 5 rows (total: 1081)
+15:33:58  INFO       Next page: clicked: Next
+15:34:00  INFO       Page 93: 5 rows (total: 1086)
+15:34:00  INFO       Next page: clicked: Next
+15:34:02  INFO       Page 94: 5 rows (total: 1091)
+15:34:02  INFO       Next page: clicked: Next
+15:34:04  INFO       Page 95: 5 rows (total: 1096)
+15:34:04  INFO       Next page: clicked: Next
+15:34:06  INFO       Page 96: 5 rows (total: 1101)
+15:34:06  INFO       Next page: clicked: Next
+15:34:08  INFO       Page 97: 5 rows (total: 1106)
+15:34:08  INFO       Next page: clicked: Next
+15:34:11  INFO       Page 98: 5 rows (total: 1111)
+15:34:11  INFO       Next page: clicked: Next
+15:34:13  INFO       Page 99: 5 rows (total: 1116)
+15:34:13  INFO       Next page: clicked: Next
+15:34:15  INFO       Page 100: 5 rows (total: 1121)
+15:34:15  INFO       Next page: clicked: Next
+15:34:17  WARNING    Hit 100-page safety cap.
+15:34:17  INFO       Total: 693 records
+15:34:18  INFO     --- Searching: LN ---
+15:34:19  INFO       Submitted. Waiting...
+15:34:21  INFO       Page 1: 32 rows (total: 32)
+15:34:21  INFO       Pager HTML: <div id="resultsActionBar" class="hide-no-results" style=""><div id="resultActionButtons"><button id="printVisible" class="btn btn-primary btn-xs btn-print hide-print btn-result-action hide-no-results
+15:34:21  INFO       Next page: clicked: Next
+15:34:23  INFO       Page 2: 32 rows (total: 64)
+15:34:23  INFO       Next page: clicked: Next
+15:34:25  INFO       Page 3: 32 rows (total: 96)
+15:34:25  INFO       Next page: clicked: Next
+15:34:27  INFO       Page 4: 32 rows (total: 128)
+15:34:27  INFO       Next page: clicked: Next
+15:34:29  INFO       Page 5: 32 rows (total: 160)
+15:34:29  INFO       Next page: clicked: Next
+15:34:31  INFO       Page 6: 32 rows (total: 192)
+15:34:31  INFO       Next page: clicked: Next
+15:34:33  INFO       Page 7: 30 rows (total: 222)
+15:34:34  INFO       Next page: clicked: Next
+15:34:36  INFO       Page 8: 30 rows (total: 252)
+15:34:36  INFO       Next page: clicked: Next
+15:34:38  INFO       Page 9: 30 rows (total: 282)
+15:34:38  INFO       Next page: clicked: Next
+15:34:40  INFO       Page 10: 30 rows (total: 312)
+15:34:40  INFO       Next page: clicked: Next
+15:34:42  INFO       Page 11: 30 rows (total: 342)
+15:34:42  INFO       Next page: clicked: Next
+15:34:44  INFO       Page 12: 30 rows (total: 372)
+15:34:44  INFO       Next page: clicked: Next
+15:34:46  INFO       Page 13: 30 rows (total: 402)
+15:34:46  INFO       Next page: clicked: Next
+15:34:48  INFO       Page 14: 30 rows (total: 432)
+15:34:48  INFO       Next page: clicked: Next
+15:34:50  INFO       Page 15: 30 rows (total: 462)
+15:34:50  INFO       Next page: clicked: Next
+15:34:52  INFO       Page 16: 30 rows (total: 492)
+15:34:52  INFO       Next page: clicked: Next
+15:34:54  INFO       Page 17: 30 rows (total: 522)
+15:34:54  INFO       Next page: clicked: Next
+15:34:56  INFO       Page 18: 30 rows (total: 552)
+15:34:56  INFO       Next page: clicked: Next
+15:34:58  INFO       Page 19: 30 rows (total: 582)
+15:34:58  INFO       Next page: clicked: Next
+15:35:00  INFO       Page 20: 30 rows (total: 612)
+15:35:00  INFO       Next page: clicked: Next
+15:35:02  INFO       Page 21: 30 rows (total: 642)
+15:35:02  INFO       Next page: clicked: Next
+15:35:04  INFO       Page 22: 30 rows (total: 672)
+15:35:04  INFO       Next page: clicked: Next
+15:35:06  INFO       Page 23: 30 rows (total: 702)
+15:35:06  INFO       Next page: clicked: Next
+15:35:08  INFO       Page 24: 30 rows (total: 732)
+15:35:08  INFO       Next page: clicked: Next
+15:35:11  INFO       Page 25: 30 rows (total: 762)
+15:35:11  INFO       Next page: clicked: Next
+15:35:13  INFO       Page 26: 30 rows (total: 792)
+15:35:13  INFO       Next page: clicked: Next
+15:35:15  INFO       Page 27: 30 rows (total: 822)
+15:35:15  INFO       Next page: clicked: Next
+15:35:17  INFO       Page 28: 30 rows (total: 852)
+15:35:17  INFO       Next page: clicked: Next
+15:35:19  INFO       Page 29: 30 rows (total: 882)
+15:35:19  INFO       Next page: clicked: Next
+15:35:21  INFO       Page 30: 30 rows (total: 912)
+15:35:21  INFO       Next page: clicked: Next
+15:35:23  INFO       Page 31: 30 rows (total: 942)
+15:35:23  INFO       Next page: clicked: Next
+15:35:25  INFO       Page 32: 30 rows (total: 972)
+15:35:25  INFO       Next page: clicked: Next
+15:35:27  INFO       Page 33: 30 rows (total: 1002)
+15:35:27  INFO       Next page: clicked: Next
+15:35:29  INFO       Page 34: 30 rows (total: 1032)
+15:35:29  INFO       Next page: clicked: Next
+15:35:31  INFO       Page 35: 30 rows (total: 1062)
+15:35:31  INFO       Next page: clicked: Next
+15:35:33  INFO       Page 36: 30 rows (total: 1092)
+15:35:33  INFO       Next page: clicked: Next
+15:35:35  INFO       Page 37: 30 rows (total: 1122)
+15:35:35  INFO       Next page: clicked: Next
+15:35:37  INFO       Page 38: 30 rows (total: 1152)
+15:35:37  INFO       Next page: clicked: Next
+15:35:39  INFO       Page 39: 30 rows (total: 1182)
+15:35:39  INFO       Next page: clicked: Next
+15:35:41  INFO       Page 40: 30 rows (total: 1212)
+15:35:41  INFO       Next page: clicked: Next
+15:35:43  INFO       Page 41: 30 rows (total: 1242)
+15:35:43  INFO       Next page: clicked: Next
+15:35:45  INFO       Page 42: 30 rows (total: 1272)
+15:35:46  INFO       Next page: clicked: Next
+15:35:48  INFO       Page 43: 30 rows (total: 1302)
+15:35:48  INFO       Next page: clicked: Next
+15:35:50  INFO       Page 44: 30 rows (total: 1332)
+15:35:50  INFO       Next page: clicked: Next
+15:35:52  INFO       Page 45: 30 rows (total: 1362)
+15:35:52  INFO       Next page: clicked: Next
+15:35:54  INFO       Page 46: 30 rows (total: 1392)
+15:35:54  INFO       Next page: clicked: Next
+15:35:56  INFO       Page 47: 30 rows (total: 1422)
+15:35:56  INFO       Next page: clicked: Next
+15:35:58  INFO       Page 48: 30 rows (total: 1452)
+15:35:58  INFO       Next page: clicked: Next
+15:36:00  INFO       Page 49: 30 rows (total: 1482)
+15:36:00  INFO       Next page: clicked: Next
+15:36:02  INFO       Page 50: 30 rows (total: 1512)
+15:36:02  INFO       Next page: clicked: Next
+15:36:04  INFO       Page 51: 30 rows (total: 1542)
+15:36:04  INFO       Next page: clicked: Next
+15:36:06  INFO       Page 52: 30 rows (total: 1572)
+15:36:06  INFO       Next page: clicked: Next
+15:36:08  INFO       Page 53: 30 rows (total: 1602)
+15:36:08  INFO       Next page: clicked: Next
+15:36:10  INFO       Page 54: 30 rows (total: 1632)
+15:36:10  INFO       Next page: clicked: Next
+15:36:12  INFO       Page 55: 30 rows (total: 1662)
+15:36:12  INFO       Next page: clicked: Next
+15:36:14  INFO       Page 56: 30 rows (total: 1692)
+15:36:14  INFO       Next page: clicked: Next
+15:36:16  INFO       Page 57: 30 rows (total: 1722)
+15:36:16  INFO       Next page: clicked: Next
+15:36:18  INFO       Page 58: 30 rows (total: 1752)
+15:36:18  INFO       Next page: clicked: Next
+15:36:21  INFO       Page 59: 30 rows (total: 1782)
+15:36:21  INFO       Next page: clicked: Next
+15:36:23  INFO       Page 60: 30 rows (total: 1812)
+15:36:23  INFO       Next page: clicked: Next
+15:36:25  INFO       Page 61: 30 rows (total: 1842)
+15:36:25  INFO       Next page: clicked: Next
+15:36:27  INFO       Page 62: 30 rows (total: 1872)
+15:36:27  INFO       Next page: clicked: Next
+15:36:29  INFO       Page 63: 30 rows (total: 1902)
+15:36:29  INFO       Next page: clicked: Next
+15:36:31  INFO       Page 64: 30 rows (total: 1932)
+15:36:31  INFO       Next page: clicked: Next
+15:36:33  INFO       Page 65: 30 rows (total: 1962)
+15:36:33  INFO       Next page: clicked: Next
+15:36:35  INFO       Page 66: 30 rows (total: 1992)
+15:36:35  INFO       Next page: clicked: Next
+15:36:37  INFO       Page 67: 30 rows (total: 2022)
+15:36:37  INFO       Next page: clicked: Next
+15:36:39  INFO       Page 68: 30 rows (total: 2052)
+15:36:39  INFO       Next page: clicked: Next
+15:36:41  INFO       Page 69: 30 rows (total: 2082)
+15:36:41  INFO       Next page: clicked: Next
+15:36:43  INFO       Page 70: 30 rows (total: 2112)
+15:36:43  INFO       Next page: clicked: Next
+15:36:45  INFO       Page 71: 30 rows (total: 2142)
+15:36:45  INFO       Next page: clicked: Next
+15:36:47  INFO       Page 72: 30 rows (total: 2172)
+15:36:47  INFO       Next page: clicked: Next
+15:36:49  INFO       Page 73: 30 rows (total: 2202)
+15:36:49  INFO       Next page: clicked: Next
+15:36:51  INFO       Page 74: 30 rows (total: 2232)
+15:36:51  INFO       Next page: clicked: Next
+15:36:53  INFO       Page 75: 30 rows (total: 2262)
+15:36:53  INFO       Next page: clicked: Next
+15:36:55  INFO       Page 76: 30 rows (total: 2292)
+15:36:55  INFO       Next page: clicked: Next
+15:36:58  INFO       Page 77: 30 rows (total: 2322)
+15:36:58  INFO       Next page: clicked: Next
+15:37:00  INFO       Page 78: 30 rows (total: 2352)
+15:37:00  INFO       Next page: clicked: Next
+15:37:02  INFO       Page 79: 30 rows (total: 2382)
+15:37:02  INFO       Next page: clicked: Next
+15:37:04  INFO       Page 80: 30 rows (total: 2412)
+15:37:04  INFO       Next page: clicked: Next
+15:37:06  INFO       Page 81: 30 rows (total: 2442)
+15:37:06  INFO       Next page: clicked: Next
+15:37:08  INFO       Page 82: 30 rows (total: 2472)
+15:37:08  INFO       Next page: clicked: Next
+15:37:10  INFO       Page 83: 30 rows (total: 2502)
+15:37:10  INFO       Next page: clicked: Next
+15:37:12  INFO       Page 84: 30 rows (total: 2532)
+15:37:12  INFO       Next page: clicked: Next
+15:37:14  INFO       Page 85: 30 rows (total: 2562)
+15:37:14  INFO       Next page: clicked: Next
+15:37:16  INFO       Page 86: 30 rows (total: 2592)
+15:37:16  INFO       Next page: clicked: Next
+15:37:18  INFO       Page 87: 30 rows (total: 2622)
+15:37:18  INFO       Next page: clicked: Next
+15:37:20  INFO       Page 88: 30 rows (total: 2652)
+15:37:20  INFO       Next page: clicked: Next
+15:37:22  INFO       Page 89: 30 rows (total: 2682)
+15:37:22  INFO       Next page: clicked: Next
+15:37:24  INFO       Page 90: 30 rows (total: 2712)
+15:37:24  INFO       Next page: clicked: Next
+15:37:26  INFO       Page 91: 30 rows (total: 2742)
+15:37:26  INFO       Next page: clicked: Next
+15:37:28  INFO       Page 92: 30 rows (total: 2772)
+15:37:28  INFO       Next page: clicked: Next
+15:37:31  INFO       Page 93: 30 rows (total: 2802)
+15:37:31  INFO       Next page: clicked: Next
+15:37:33  INFO       Page 94: 30 rows (total: 2832)
+15:37:33  INFO       Next page: clicked: Next
+15:37:35  INFO       Page 95: 30 rows (total: 2862)
+15:37:35  INFO       Next page: clicked: Next
+15:37:37  INFO       Page 96: 30 rows (total: 2892)
+15:37:37  INFO       Next page: clicked: Next
+15:37:39  INFO       Page 97: 30 rows (total: 2922)
+15:37:39  INFO       Next page: clicked: Next
+15:37:41  INFO       Page 98: 30 rows (total: 2952)
+15:37:41  INFO       Next page: clicked: Next
+15:37:43  INFO       Page 99: 30 rows (total: 2982)
+15:37:43  INFO       Next page: clicked: Next
+15:37:45  INFO       Page 100: 30 rows (total: 3012)
+15:37:45  INFO       Next page: clicked: Next
+15:37:47  WARNING    Hit 100-page safety cap.
+15:37:47  INFO       Total: 208 records
+15:37:48  INFO     --- Searching: MEDLN ---
+15:37:49  INFO       Submitted. Waiting...
+15:37:51  INFO       Page 1: 3 rows (total: 3)
+15:37:51  INFO       Pager HTML: <div id="resultsActionBar" class="hide-no-results" style=""><div id="resultActionButtons"><button id="printVisible" class="btn btn-primary btn-xs btn-print hide-print btn-result-action hide-no-results
+15:37:51  INFO       Next page: clicked: Next
+15:37:53  INFO       Page 2: 3 rows (total: 6)
+15:37:53  INFO       Next page: clicked: Next
+15:37:55  INFO       Page 3: 3 rows (total: 9)
+15:37:55  INFO       Next page: clicked: Next
+15:37:57  INFO       Page 4: 3 rows (total: 12)
+15:37:57  INFO       Next page: clicked: Next
+15:37:59  INFO       Page 5: 3 rows (total: 15)
+15:37:59  INFO       Next page: clicked: Next
+15:38:01  INFO       Page 6: 3 rows (total: 18)
+15:38:01  INFO       Next page: clicked: Next
+15:38:03  INFO       Page 7: 3 rows (total: 21)
+15:38:03  INFO       Next page: clicked: Next
+15:38:05  INFO       Page 8: 3 rows (total: 24)
+15:38:05  INFO       Next page: clicked: Next
+15:38:07  INFO       Page 9: 3 rows (total: 27)
+15:38:07  INFO       Next page: clicked: Next
+15:38:09  INFO       Page 10: 3 rows (total: 30)
+15:38:09  INFO       Next page: clicked: Next
+15:38:11  INFO       Page 11: 3 rows (total: 33)
+15:38:11  INFO       Next page: clicked: Next
+15:38:13  INFO       Page 12: 3 rows (total: 36)
+15:38:13  INFO       Next page: clicked: Next
+15:38:15  INFO       Page 13: 3 rows (total: 39)
+15:38:15  INFO       Next page: clicked: Next
+15:38:17  INFO       Page 14: 3 rows (total: 42)
+15:38:17  INFO       Next page: clicked: Next
+15:38:19  INFO       Page 15: 3 rows (total: 45)
+15:38:19  INFO       Next page: clicked: Next
+15:38:21  INFO       Page 16: 3 rows (total: 48)
+15:38:21  INFO       Next page: clicked: Next
+15:38:23  INFO       Page 17: 3 rows (total: 51)
+15:38:23  INFO       Next page: clicked: Next
+15:38:25  INFO       Page 18: 3 rows (total: 54)
+15:38:25  INFO       Next page: clicked: Next
+15:38:27  INFO       Page 19: 3 rows (total: 57)
+15:38:27  INFO       Next page: clicked: Next
+15:38:29  INFO       Page 20: 3 rows (total: 60)
+15:38:29  INFO       Next page: clicked: Next
+15:38:31  INFO       Page 21: 3 rows (total: 63)
+15:38:31  INFO       Next page: clicked: Next
+15:38:33  INFO       Page 22: 3 rows (total: 66)
+15:38:33  INFO       Next page: clicked: Next
+15:38:35  INFO       Page 23: 3 rows (total: 69)
+15:38:35  INFO       Next page: clicked: Next
+15:38:37  INFO       Page 24: 3 rows (total: 72)
+15:38:37  INFO       Next page: clicked: Next
+15:38:40  INFO       Page 25: 3 rows (total: 75)
+15:38:40  INFO       Next page: clicked: Next
+15:38:42  INFO       Page 26: 3 rows (total: 78)
+15:38:42  INFO       Next page: clicked: Next
+15:38:44  INFO       Page 27: 3 rows (total: 81)
+15:38:44  INFO       Next page: clicked: Next
+15:38:46  INFO       Page 28: 3 rows (total: 84)
+15:38:46  INFO       Next page: clicked: Next
+15:38:48  INFO       Page 29: 3 rows (total: 87)
+15:38:48  INFO       Next page: clicked: Next
+15:38:50  INFO       Page 30: 3 rows (total: 90)
+15:38:50  INFO       Next page: clicked: Next
+15:38:52  INFO       Page 31: 3 rows (total: 93)
+15:38:52  INFO       Next page: clicked: Next
+15:38:54  INFO       Page 32: 3 rows (total: 96)
+15:38:54  INFO       Next page: clicked: Next
+15:38:56  INFO       Page 33: 3 rows (total: 99)
+15:38:56  INFO       Next page: clicked: Next
+15:38:58  INFO       Page 34: 3 rows (total: 102)
+15:38:58  INFO       Next page: clicked: Next
+15:39:00  INFO       Page 35: 3 rows (total: 105)
+15:39:00  INFO       Next page: clicked: Next
+15:39:02  INFO       Page 36: 3 rows (total: 108)
+15:39:02  INFO       Next page: clicked: Next
+15:39:04  INFO       Page 37: 3 rows (total: 111)
+15:39:04  INFO       Next page: clicked: Next
+15:39:06  INFO       Page 38: 3 rows (total: 114)
+15:39:06  INFO       Next page: clicked: Next
+15:39:08  INFO       Page 39: 3 rows (total: 117)
+15:39:08  INFO       Next page: clicked: Next
+15:39:10  INFO       Page 40: 3 rows (total: 120)
+15:39:10  INFO       Next page: clicked: Next
+15:39:12  INFO       Page 41: 3 rows (total: 123)
+15:39:12  INFO       Next page: clicked: Next
+15:39:14  INFO       Page 42: 3 rows (total: 126)
+15:39:14  INFO       Next page: clicked: Next
+15:39:16  INFO       Page 43: 3 rows (total: 129)
+15:39:16  INFO       Next page: clicked: Next
+15:39:18  INFO       Page 44: 3 rows (total: 132)
+15:39:18  INFO       Next page: clicked: Next
+15:39:20  INFO       Page 45: 3 rows (total: 135)
+15:39:20  INFO       Next page: clicked: Next
+15:39:22  INFO       Page 46: 3 rows (total: 138)
+15:39:22  INFO       Next page: clicked: Next
+15:39:24  INFO       Page 47: 3 rows (total: 141)
+15:39:24  INFO       Next page: clicked: Next
+15:39:26  INFO       Page 48: 3 rows (total: 144)
+15:39:26  INFO       Next page: clicked: Next
+15:39:28  INFO       Page 49: 3 rows (total: 147)
+15:39:28  INFO       Next page: clicked: Next
+15:39:30  INFO       Page 50: 3 rows (total: 150)
+15:39:30  INFO       Next page: clicked: Next
+15:39:32  INFO       Page 51: 3 rows (total: 153)
+15:39:33  INFO       Next page: clicked: Next
+15:39:35  INFO       Page 52: 3 rows (total: 156)
+15:39:35  INFO       Next page: clicked: Next
+15:39:37  INFO       Page 53: 3 rows (total: 159)
+15:39:37  INFO       Next page: clicked: Next
+15:39:39  INFO       Page 54: 3 rows (total: 162)
+15:39:39  INFO       Next page: clicked: Next
+15:39:41  INFO       Page 55: 3 rows (total: 165)
+15:39:41  INFO       Next page: clicked: Next
+15:39:43  INFO       Page 56: 3 rows (total: 168)
+15:39:43  INFO       Next page: clicked: Next
+15:39:45  INFO       Page 57: 3 rows (total: 171)
+15:39:45  INFO       Next page: clicked: Next
+15:39:47  INFO       Page 58: 3 rows (total: 174)
+15:39:47  INFO       Next page: clicked: Next
+15:39:49  INFO       Page 59: 3 rows (total: 177)
+15:39:49  INFO       Next page: clicked: Next
+15:39:51  INFO       Page 60: 3 rows (total: 180)
+15:39:51  INFO       Next page: clicked: Next
+15:39:53  INFO       Page 61: 3 rows (total: 183)
+15:39:53  INFO       Next page: clicked: Next
+15:39:55  INFO       Page 62: 3 rows (total: 186)
+15:39:55  INFO       Next page: clicked: Next
+15:39:57  INFO       Page 63: 3 rows (total: 189)
+15:39:57  INFO       Next page: clicked: Next
+15:39:59  INFO       Page 64: 3 rows (total: 192)
+15:39:59  INFO       Next page: clicked: Next
+15:40:01  INFO       Page 65: 3 rows (total: 195)
+15:40:01  INFO       Next page: clicked: Next
+15:40:03  INFO       Page 66: 3 rows (total: 198)
+15:40:03  INFO       Next page: clicked: Next
+15:40:05  INFO       Page 67: 3 rows (total: 201)
+15:40:05  INFO       Next page: clicked: Next
+15:40:07  INFO       Page 68: 3 rows (total: 204)
+15:40:07  INFO       Next page: clicked: Next
+15:40:09  INFO       Page 69: 3 rows (total: 207)
+15:40:09  INFO       Next page: clicked: Next
+15:40:11  INFO       Page 70: 3 rows (total: 210)
+15:40:11  INFO       Next page: clicked: Next
+15:40:13  INFO       Page 71: 3 rows (total: 213)
+15:40:13  INFO       Next page: clicked: Next
+15:40:15  INFO       Page 72: 3 rows (total: 216)
+15:40:15  INFO       Next page: clicked: Next
+15:40:17  INFO       Page 73: 3 rows (total: 219)
+15:40:17  INFO       Next page: clicked: Next
+15:40:19  INFO       Page 74: 3 rows (total: 222)
+15:40:19  INFO       Next page: clicked: Next
+15:40:21  INFO       Page 75: 3 rows (total: 225)
+15:40:21  INFO       Next page: clicked: Next
+15:40:23  INFO       Page 76: 3 rows (total: 228)
+15:40:23  INFO       Next page: clicked: Next
+15:40:25  INFO       Page 77: 3 rows (total: 231)
+15:40:25  INFO       Next page: clicked: Next
+15:40:27  INFO       Page 78: 3 rows (total: 234)
+15:40:27  INFO       Next page: clicked: Next
+15:40:30  INFO       Page 79: 3 rows (total: 237)
+15:40:30  INFO       Next page: clicked: Next
+15:40:32  INFO       Page 80: 3 rows (total: 240)
+15:40:32  INFO       Next page: clicked: Next
+15:40:34  INFO       Page 81: 3 rows (total: 243)
+15:40:34  INFO       Next page: clicked: Next
+15:40:36  INFO       Page 82: 3 rows (total: 246)
+15:40:36  INFO       Next page: clicked: Next
+15:40:38  INFO       Page 83: 3 rows (total: 249)
+15:40:38  INFO       Next page: clicked: Next
+15:40:40  INFO       Page 84: 3 rows (total: 252)
+15:40:40  INFO       Next page: clicked: Next
+15:40:42  INFO       Page 85: 3 rows (total: 255)
+15:40:42  INFO       Next page: clicked: Next
+15:40:44  INFO       Page 86: 3 rows (total: 258)
+15:40:44  INFO       Next page: clicked: Next
+15:40:46  INFO       Page 87: 3 rows (total: 261)
+15:40:46  INFO       Next page: clicked: Next
+15:40:46  INFO       Page 88: 3 rows (total: 264)
+15:40:46  INFO       Next page: clicked: Next
+15:40:48  INFO       Page 89: 3 rows (total: 267)
+15:40:48  INFO       Next page: clicked: Next
+15:40:50  INFO       Page 90: 3 rows (total: 270)
+15:40:50  INFO       Next page: clicked: Next
+15:40:52  INFO       Page 91: 3 rows (total: 273)
+15:40:52  INFO       Next page: clicked: Next
+15:40:54  INFO       Page 92: 3 rows (total: 276)
+15:40:54  INFO       Next page: clicked: Next
+15:40:56  INFO       Page 93: 3 rows (total: 279)
+15:40:56  INFO       Next page: clicked: Next
+15:40:58  INFO       Page 94: 3 rows (total: 282)
+15:40:58  INFO       Next page: clicked: Next
+15:41:00  INFO       Page 95: 3 rows (total: 285)
+15:41:00  INFO       Next page: clicked: Next
+15:41:02  INFO       Page 96: 3 rows (total: 288)
+15:41:02  INFO       Next page: clicked: Next
+15:41:04  INFO       Page 97: 3 rows (total: 291)
+15:41:04  INFO       Next page: clicked: Next
+15:41:06  INFO       Page 98: 3 rows (total: 294)
+15:41:06  INFO       Next page: clicked: Next
+15:41:08  INFO       Page 99: 3 rows (total: 297)
+15:41:08  INFO       Next page: clicked: Next
+15:41:10  INFO       Page 100: 3 rows (total: 300)
+15:41:10  INFO       Next page: clicked: Next
+15:41:12  WARNING    Hit 100-page safety cap.
+15:41:12  INFO       Total: 0 records
+15:41:13  INFO     --- Searching: PRO ---
+15:41:14  INFO       Submitted. Waiting...
+15:41:16  INFO       Page 1: 32 rows (total: 32)
+15:41:16  INFO       Pager HTML: <div id="resultsActionBar" class="hide-no-results" style=""><div id="resultActionButtons"><button id="printVisible" class="btn btn-primary btn-xs btn-print hide-print btn-result-action hide-no-results
+15:41:16  INFO       Next page: clicked: Next
+15:41:18  INFO       Page 2: 32 rows (total: 64)
+15:41:19  INFO       Next page: clicked: Next
+15:41:21  INFO       Page 3: 32 rows (total: 96)
+15:41:21  INFO       Next page: clicked: Next
+15:41:23  INFO       Page 4: 32 rows (total: 128)
+15:41:23  INFO       Next page: clicked: Next
+15:41:25  INFO       Page 5: 32 rows (total: 160)
+15:41:25  INFO       Next page: clicked: Next
+15:41:27  INFO       Page 6: 32 rows (total: 192)
+15:41:27  INFO       Next page: clicked: Next
+15:41:29  INFO       Page 7: 32 rows (total: 224)
+15:41:29  INFO       Next page: clicked: Next
+15:41:31  INFO       Page 8: 32 rows (total: 256)
+15:41:31  INFO       Next page: clicked: Next
+15:41:33  INFO       Page 9: 10 rows (total: 266)
+15:41:33  INFO       Next page: clicked: Next
+15:41:35  INFO       Page 10: 10 rows (total: 276)
+15:41:35  INFO       Next page: clicked: Next
+15:41:37  INFO       Page 11: 10 rows (total: 286)
+15:41:38  INFO       Next page: clicked: Next
+15:41:40  INFO       Page 12: 10 rows (total: 296)
+15:41:40  INFO       Next page: clicked: Next
+15:41:42  INFO       Page 13: 10 rows (total: 306)
+15:41:42  INFO       Next page: clicked: Next
+15:41:44  INFO       Page 14: 10 rows (total: 316)
+15:41:44  INFO       Next page: clicked: Next
+15:41:46  INFO       Page 15: 10 rows (total: 326)
+15:41:46  INFO       Next page: clicked: Next
+15:41:48  INFO       Page 16: 10 rows (total: 336)
+15:41:48  INFO       Next page: clicked: Next
+15:41:50  INFO       Page 17: 10 rows (total: 346)
+15:41:50  INFO       Next page: clicked: Next
+15:41:52  INFO       Page 18: 10 rows (total: 356)
+15:41:52  INFO       Next page: clicked: Next
+15:41:54  INFO       Page 19: 10 rows (total: 366)
+15:41:54  INFO       Next page: clicked: Next
+15:41:56  INFO       Page 20: 10 rows (total: 376)
+15:41:56  INFO       Next page: clicked: Next
+15:41:58  INFO       Page 21: 10 rows (total: 386)
+15:41:58  INFO       Next page: clicked: Next
+15:42:00  INFO       Page 22: 10 rows (total: 396)
+15:42:00  INFO       Next page: clicked: Next
+15:42:02  INFO       Page 23: 10 rows (total: 406)
+15:42:02  INFO       Next page: clicked: Next
+15:42:04  INFO       Page 24: 10 rows (total: 416)
+15:42:04  INFO       Next page: clicked: Next
+15:42:06  INFO       Page 25: 10 rows (total: 426)
+15:42:06  INFO       Next page: clicked: Next
+15:42:08  INFO       Page 26: 10 rows (total: 436)
+15:42:08  INFO       Next page: clicked: Next
+15:42:10  INFO       Page 27: 10 rows (total: 446)
+15:42:10  INFO       Next page: clicked: Next
+15:42:12  INFO       Page 28: 10 rows (total: 456)
+15:42:12  INFO       Next page: clicked: Next
+15:42:14  INFO       Page 29: 10 rows (total: 466)
+15:42:14  INFO       Next page: clicked: Next
+15:42:16  INFO       Page 30: 10 rows (total: 476)
+15:42:16  INFO       Next page: clicked: Next
+15:42:18  INFO       Page 31: 10 rows (total: 486)
+15:42:18  INFO       Next page: clicked: Next
+15:42:20  INFO       Page 32: 10 rows (total: 496)
+15:42:20  INFO       Next page: clicked: Next
+15:42:22  INFO       Page 33: 10 rows (total: 506)
+15:42:22  INFO       Next page: clicked: Next
+15:42:24  INFO       Page 34: 10 rows (total: 516)
+15:42:25  INFO       Next page: clicked: Next
+15:42:27  INFO       Page 35: 10 rows (total: 526)
+15:42:27  INFO       Next page: clicked: Next
+15:42:29  INFO       Page 36: 10 rows (total: 536)
+15:42:29  INFO       Next page: clicked: Next
+15:42:31  INFO       Page 37: 10 rows (total: 546)
+15:42:31  INFO       Next page: clicked: Next
+15:42:33  INFO       Page 38: 10 rows (total: 556)
+15:42:33  INFO       Next page: clicked: Next
+15:42:35  INFO       Page 39: 10 rows (total: 566)
+15:42:35  INFO       Next page: clicked: Next
+15:42:37  INFO       Page 40: 10 rows (total: 576)
+15:42:38  INFO       Next page: clicked: Next
+15:42:40  INFO       Page 41: 10 rows (total: 586)
+15:42:40  INFO       Next page: clicked: Next
+15:42:42  INFO       Page 42: 10 rows (total: 596)
+15:42:42  INFO       Next page: clicked: Next
+15:42:44  INFO       Page 43: 10 rows (total: 606)
+15:42:44  INFO       Next page: clicked: Next
+15:42:46  INFO       Page 44: 10 rows (total: 616)
+15:42:46  INFO       Next page: clicked: Next
+15:42:48  INFO       Page 45: 10 rows (total: 626)
+15:42:48  INFO       Next page: clicked: Next
+15:42:50  INFO       Page 46: 10 rows (total: 636)
+15:42:50  INFO       Next page: clicked: Next
+15:42:52  INFO       Page 47: 10 rows (total: 646)
+15:42:52  INFO       Next page: clicked: Next
+15:42:54  INFO       Page 48: 10 rows (total: 656)
+15:42:54  INFO       Next page: clicked: Next
+15:42:56  INFO       Page 49: 10 rows (total: 666)
+15:42:56  INFO       Next page: clicked: Next
+15:42:58  INFO       Page 50: 10 rows (total: 676)
+15:42:58  INFO       Next page: clicked: Next
+15:43:00  INFO       Page 51: 10 rows (total: 686)
+15:43:00  INFO       Next page: clicked: Next
+15:43:02  INFO       Page 52: 10 rows (total: 696)
+15:43:02  INFO       Next page: clicked: Next
+15:43:04  INFO       Page 53: 10 rows (total: 706)
+15:43:04  INFO       Next page: clicked: Next
+15:43:06  INFO       Page 54: 10 rows (total: 716)
+15:43:06  INFO       Next page: clicked: Next
+15:43:08  INFO       Page 55: 10 rows (total: 726)
+15:43:08  INFO       Next page: clicked: Next
+15:43:10  INFO       Page 56: 10 rows (total: 736)
+15:43:10  INFO       Next page: clicked: Next
+15:43:12  INFO       Page 57: 10 rows (total: 746)
+15:43:12  INFO       Next page: clicked: Next
+15:43:14  INFO       Page 58: 10 rows (total: 756)
+15:43:14  INFO       Next page: clicked: Next
+15:43:16  INFO       Page 59: 10 rows (total: 766)
+15:43:16  INFO       Next page: clicked: Next
+15:43:18  INFO       Page 60: 10 rows (total: 776)
+15:43:18  INFO       Next page: clicked: Next
+15:43:20  INFO       Page 61: 10 rows (total: 786)
+15:43:20  INFO       Next page: clicked: Next
+15:43:22  INFO       Page 62: 10 rows (total: 796)
+15:43:22  INFO       Next page: clicked: Next
+15:43:25  INFO       Page 63: 10 rows (total: 806)
+15:43:25  INFO       Next page: clicked: Next
+15:43:27  INFO       Page 64: 10 rows (total: 816)
+15:43:27  INFO       Next page: clicked: Next
+15:43:29  INFO       Page 65: 10 rows (total: 826)
+15:43:29  INFO       Next page: clicked: Next
+15:43:31  INFO       Page 66: 10 rows (total: 836)
+15:43:31  INFO       Next page: clicked: Next
+15:43:33  INFO       Page 67: 10 rows (total: 846)
+15:43:33  INFO       Next page: clicked: Next
+15:43:35  INFO       Page 68: 10 rows (total: 856)
+15:43:35  INFO       Next page: clicked: Next
+15:43:37  INFO       Page 69: 10 rows (total: 866)
+15:43:37  INFO       Next page: clicked: Next
+15:43:39  INFO       Page 70: 10 rows (total: 876)
+15:43:39  INFO       Next page: clicked: Next
+15:43:41  INFO       Page 71: 10 rows (total: 886)
+15:43:41  INFO       Next page: clicked: Next
+15:43:43  INFO       Page 72: 10 rows (total: 896)
+15:43:43  INFO       Next page: clicked: Next
+15:43:45  INFO       Page 73: 10 rows (total: 906)
+15:43:45  INFO       Next page: clicked: Next
+15:43:47  INFO       Page 74: 10 rows (total: 916)
+15:43:47  INFO       Next page: clicked: Next
+15:43:49  INFO       Page 75: 10 rows (total: 926)
+15:43:49  INFO       Next page: clicked: Next
+15:43:51  INFO       Page 76: 10 rows (total: 936)
+15:43:51  INFO       Next page: clicked: Next
+15:43:53  INFO       Page 77: 10 rows (total: 946)
+15:43:53  INFO       Next page: clicked: Next
+15:43:55  INFO       Page 78: 10 rows (total: 956)
+15:43:55  INFO       Next page: clicked: Next
+15:43:57  INFO       Page 79: 10 rows (total: 966)
+15:43:57  INFO       Next page: clicked: Next
+15:43:59  INFO       Page 80: 10 rows (total: 976)
+15:43:59  INFO       Next page: clicked: Next
+15:44:01  INFO       Page 81: 10 rows (total: 986)
+15:44:01  INFO       Next page: clicked: Next
+15:44:04  INFO       Page 82: 10 rows (total: 996)
+15:44:04  INFO       Next page: clicked: Next
+15:44:06  INFO       Page 83: 10 rows (total: 1006)
+15:44:06  INFO       Next page: clicked: Next
+15:44:08  INFO       Page 84: 10 rows (total: 1016)
+15:44:08  INFO       Next page: clicked: Next
+15:44:10  INFO       Page 85: 10 rows (total: 1026)
+15:44:10  INFO       Next page: clicked: Next
+15:44:12  INFO       Page 86: 10 rows (total: 1036)
+15:44:12  INFO       Next page: clicked: Next
+15:44:14  INFO       Page 87: 10 rows (total: 1046)
+15:44:14  INFO       Next page: clicked: Next
+15:44:16  INFO       Page 88: 10 rows (total: 1056)
+15:44:16  INFO       Next page: clicked: Next
+15:44:18  INFO       Page 89: 10 rows (total: 1066)
+15:44:18  INFO       Next page: clicked: Next
+15:44:20  INFO       Page 90: 10 rows (total: 1076)
+15:44:20  INFO       Next page: clicked: Next
+15:44:22  INFO       Page 91: 10 rows (total: 1086)
+15:44:22  INFO       Next page: clicked: Next
+15:44:24  INFO       Page 92: 10 rows (total: 1096)
+15:44:24  INFO       Next page: clicked: Next
+15:44:26  INFO       Page 93: 10 rows (total: 1106)
+15:44:26  INFO       Next page: clicked: Next
+15:44:28  INFO       Page 94: 10 rows (total: 1116)
+15:44:28  INFO       Next page: clicked: Next
+15:44:30  INFO       Page 95: 10 rows (total: 1126)
+15:44:30  INFO       Next page: clicked: Next
+15:44:32  INFO       Page 96: 10 rows (total: 1136)
+15:44:32  INFO       Next page: clicked: Next
+15:44:34  INFO       Page 97: 10 rows (total: 1146)
+15:44:34  INFO       Next page: clicked: Next
+15:44:36  INFO       Page 98: 10 rows (total: 1156)
+15:44:36  INFO       Next page: clicked: Next
+15:44:38  INFO       Page 99: 10 rows (total: 1166)
+15:44:38  INFO       Next page: clicked: Next
+15:44:40  INFO       Page 100: 10 rows (total: 1176)
+15:44:40  INFO       Next page: clicked: Next
+15:44:42  WARNING    Hit 100-page safety cap.
+15:44:42  INFO       Total: 248 records
+15:44:43  INFO     --- Searching: NOTICE ---
+15:44:45  INFO       Submitted. Waiting...
+15:44:46  INFO       Page 1: 3 rows (total: 3)
+15:44:46  INFO       Pager HTML: <div id="resultsActionBar" class="hide-no-results" style=""><div id="resultActionButtons"><button id="printVisible" class="btn btn-primary btn-xs btn-print hide-print btn-result-action hide-no-results
+15:44:46  INFO       Next page: clicked: Next
+15:44:48  INFO       Page 2: 3 rows (total: 6)
+15:44:48  INFO       Next page: clicked: Next
+15:44:50  INFO       Page 3: 3 rows (total: 9)
+15:44:50  INFO       Next page: clicked: Next
+15:44:52  INFO       Page 4: 3 rows (total: 12)
+15:44:52  INFO       Next page: clicked: Next
+15:44:54  INFO       Page 5: 3 rows (total: 15)
+15:44:54  INFO       Next page: clicked: Next
+15:44:56  INFO       Page 6: 3 rows (total: 18)
+15:44:56  INFO       Next page: clicked: Next
+15:44:58  INFO       Page 7: 3 rows (total: 21)
+15:44:58  INFO       Next page: clicked: Next
+15:45:00  INFO       Page 8: 3 rows (total: 24)
+15:45:00  INFO       Next page: clicked: Next
+15:45:02  INFO       Page 9: 3 rows (total: 27)
+15:45:02  INFO       Next page: clicked: Next
+15:45:04  INFO       Page 10: 3 rows (total: 30)
+15:45:04  INFO       Next page: clicked: Next
+15:45:06  INFO       Page 11: 3 rows (total: 33)
+15:45:06  INFO       Next page: clicked: Next
+15:45:08  INFO       Page 12: 3 rows (total: 36)
+15:45:08  INFO       Next page: clicked: Next
+15:45:10  INFO       Page 13: 3 rows (total: 39)
+15:45:10  INFO       Next page: clicked: Next
+15:45:12  INFO       Page 14: 3 rows (total: 42)
+15:45:12  INFO       Next page: clicked: Next
+15:45:14  INFO       Page 15: 3 rows (total: 45)
+15:45:14  INFO       Next page: clicked: Next
+15:45:16  INFO       Page 16: 3 rows (total: 48)
+15:45:16  INFO       Next page: clicked: Next
+15:45:18  INFO       Page 17: 3 rows (total: 51)
+15:45:18  INFO       Next page: clicked: Next
+15:45:21  INFO       Page 18: 3 rows (total: 54)
+15:45:21  INFO       Next page: clicked: Next
+15:45:23  INFO       Page 19: 3 rows (total: 57)
+15:45:23  INFO       Next page: clicked: Next
+15:45:25  INFO       Page 20: 3 rows (total: 60)
+15:45:25  INFO       Next page: clicked: Next
+15:45:27  INFO       Page 21: 3 rows (total: 63)
+15:45:27  INFO       Next page: clicked: Next
+15:45:29  INFO       Page 22: 3 rows (total: 66)
+15:45:29  INFO       Next page: clicked: Next
+15:45:31  INFO       Page 23: 3 rows (total: 69)
+15:45:31  INFO       Next page: clicked: Next
+15:45:33  INFO       Page 24: 3 rows (total: 72)
+15:45:33  INFO       Next page: clicked: Next
+15:45:35  INFO       Page 25: 3 rows (total: 75)
+15:45:35  INFO       Next page: clicked: Next
+15:45:37  INFO       Page 26: 3 rows (total: 78)
+15:45:37  INFO       Next page: clicked: Next
+15:45:39  INFO       Page 27: 3 rows (total: 81)
+15:45:39  INFO       Next page: clicked: Next
+15:45:41  INFO       Page 28: 3 rows (total: 84)
+15:45:41  INFO       Next page: clicked: Next
+15:45:43  INFO       Page 29: 3 rows (total: 87)
+15:45:43  INFO       Next page: clicked: Next
+15:45:45  INFO       Page 30: 3 rows (total: 90)
+15:45:45  INFO       Next page: clicked: Next
+15:45:47  INFO       Page 31: 3 rows (total: 93)
+15:45:47  INFO       Next page: clicked: Next
+15:45:49  INFO       Page 32: 3 rows (total: 96)
+15:45:49  INFO       Next page: clicked: Next
+15:45:51  INFO       Page 33: 3 rows (total: 99)
+15:45:51  INFO       Next page: clicked: Next
+15:45:53  INFO       Page 34: 3 rows (total: 102)
+15:45:53  INFO       Next page: clicked: Next
+15:45:55  INFO       Page 35: 3 rows (total: 105)
+15:45:55  INFO       Next page: clicked: Next
+15:45:57  INFO       Page 36: 3 rows (total: 108)
+15:45:57  INFO       Next page: clicked: Next
+15:45:59  INFO       Page 37: 3 rows (total: 111)
+15:45:59  INFO       Next page: clicked: Next
+15:46:01  INFO       Page 38: 3 rows (total: 114)
+15:46:01  INFO       Next page: clicked: Next
+15:46:03  INFO       Page 39: 3 rows (total: 117)
+15:46:03  INFO       Next page: clicked: Next
+15:46:05  INFO       Page 40: 3 rows (total: 120)
+15:46:05  INFO       Next page: clicked: Next
+15:46:07  INFO       Page 41: 3 rows (total: 123)
+15:46:07  INFO       Next page: clicked: Next
+15:46:09  INFO       Page 42: 3 rows (total: 126)
+15:46:09  INFO       Next page: clicked: Next
+15:46:11  INFO       Page 43: 3 rows (total: 129)
+15:46:11  INFO       Next page: clicked: Next
+15:46:13  INFO       Page 44: 3 rows (total: 132)
+15:46:14  INFO       Next page: clicked: Next
+15:46:16  INFO       Page 45: 3 rows (total: 135)
+15:46:16  INFO       Next page: clicked: Next
+15:46:18  INFO       Page 46: 3 rows (total: 138)
+15:46:18  INFO       Next page: clicked: Next
+15:46:20  INFO       Page 47: 3 rows (total: 141)
+15:46:20  INFO       Next page: clicked: Next
+15:46:22  INFO       Page 48: 3 rows (total: 144)
+15:46:22  INFO       Next page: clicked: Next
+15:46:24  INFO       Page 49: 3 rows (total: 147)
+15:46:24  INFO       Next page: clicked: Next
+15:46:26  INFO       Page 50: 3 rows (total: 150)
+15:46:26  INFO       Next page: clicked: Next
+15:46:28  INFO       Page 51: 3 rows (total: 153)
+15:46:28  INFO       Next page: clicked: Next
+15:46:30  INFO       Page 52: 3 rows (total: 156)
+15:46:30  INFO       Next page: clicked: Next
+15:46:32  INFO       Page 53: 3 rows (total: 159)
+15:46:32  INFO       Next page: clicked: Next
+15:46:34  INFO       Page 54: 3 rows (total: 162)
+15:46:34  INFO       Next page: clicked: Next
+15:46:36  INFO       Page 55: 3 rows (total: 165)
+15:46:36  INFO       Next page: clicked: Next
+15:46:38  INFO       Page 56: 3 rows (total: 168)
+15:46:38  INFO       Next page: clicked: Next
+15:46:40  INFO       Page 57: 3 rows (total: 171)
+15:46:40  INFO       Next page: clicked: Next
+15:46:42  INFO       Page 58: 3 rows (total: 174)
+15:46:42  INFO       Next page: clicked: Next
+15:46:44  INFO       Page 59: 3 rows (total: 177)
+15:46:44  INFO       Next page: clicked: Next
+15:46:46  INFO       Page 60: 3 rows (total: 180)
+15:46:46  INFO       Next page: clicked: Next
+15:46:48  INFO       Page 61: 3 rows (total: 183)
+15:46:48  INFO       Next page: clicked: Next
+15:46:50  INFO       Page 62: 3 rows (total: 186)
+15:46:50  INFO       Next page: clicked: Next
+15:46:52  INFO       Page 63: 3 rows (total: 189)
+15:46:52  INFO       Next page: clicked: Next
+15:46:54  INFO       Page 64: 3 rows (total: 192)
+15:46:54  INFO       Next page: clicked: Next
+15:46:56  INFO       Page 65: 3 rows (total: 195)
+15:46:56  INFO       Next page: clicked: Next
+15:46:58  INFO       Page 66: 3 rows (total: 198)
+15:46:58  INFO       Next page: clicked: Next
+15:47:00  INFO       Page 67: 3 rows (total: 201)
+15:47:00  INFO       Next page: clicked: Next
+15:47:02  INFO       Page 68: 3 rows (total: 204)
+15:47:02  INFO       Next page: clicked: Next
+15:47:04  INFO       Page 69: 3 rows (total: 207)
+15:47:04  INFO       Next page: clicked: Next
+15:47:07  INFO       Page 70: 3 rows (total: 210)
+15:47:07  INFO       Next page: clicked: Next
+15:47:09  INFO       Page 71: 3 rows (total: 213)
+15:47:09  INFO       Next page: clicked: Next
+15:47:11  INFO       Page 72: 3 rows (total: 216)
+15:47:11  INFO       Next page: clicked: Next
+15:47:13  INFO       Page 73: 3 rows (total: 219)
+15:47:13  INFO       Next page: clicked: Next
+15:47:15  INFO       Page 74: 3 rows (total: 222)
+15:47:15  INFO       Next page: clicked: Next
+15:47:17  INFO       Page 75: 3 rows (total: 225)
+15:47:17  INFO       Next page: clicked: Next
+15:47:19  INFO       Page 76: 3 rows (total: 228)
+15:47:19  INFO       Next page: clicked: Next
+15:47:21  INFO       Page 77: 3 rows (total: 231)
+15:47:21  INFO       Next page: clicked: Next
+15:47:23  INFO       Page 78: 3 rows (total: 234)
+15:47:23  INFO       Next page: clicked: Next
+15:47:25  INFO       Page 79: 3 rows (total: 237)
+15:47:25  INFO       Next page: clicked: Next
+15:47:27  INFO       Page 80: 3 rows (total: 240)
+15:47:27  INFO       Next page: clicked: Next
+15:47:29  INFO       Page 81: 3 rows (total: 243)
+15:47:29  INFO       Next page: clicked: Next
+15:47:31  INFO       Page 82: 3 rows (total: 246)
+15:47:31  INFO       Next page: clicked: Next
+15:47:33  INFO       Page 83: 3 rows (total: 249)
+15:47:33  INFO       Next page: clicked: Next
+15:47:35  INFO       Page 84: 3 rows (total: 252)
+15:47:35  INFO       Next page: clicked: Next
+15:47:37  INFO       Page 85: 3 rows (total: 255)
+15:47:37  INFO       Next page: clicked: Next
+15:47:39  INFO       Page 86: 3 rows (total: 258)
+15:47:39  INFO       Next page: clicked: Next
+15:47:41  INFO       Page 87: 3 rows (total: 261)
+15:47:41  INFO       Next page: clicked: Next
+15:47:43  INFO       Page 88: 3 rows (total: 264)
+15:47:43  INFO       Next page: clicked: Next
+15:47:45  INFO       Page 89: 3 rows (total: 267)
+15:47:45  INFO       Next page: clicked: Next
+15:47:47  INFO       Page 90: 3 rows (total: 270)
+15:47:47  INFO       Next page: clicked: Next
+15:47:49  INFO       Page 91: 3 rows (total: 273)
+15:47:49  INFO       Next page: clicked: Next
+15:47:51  INFO       Page 92: 3 rows (total: 276)
+15:47:51  INFO       Next page: clicked: Next
+15:47:53  INFO       Page 93: 3 rows (total: 279)
+15:47:53  INFO       Next page: clicked: Next
+15:47:55  INFO       Page 94: 3 rows (total: 282)
+15:47:56  INFO       Next page: clicked: Next
+15:47:58  INFO       Page 95: 3 rows (total: 285)
+15:47:58  INFO       Next page: clicked: Next
+15:48:00  INFO       Page 96: 3 rows (total: 288)
+15:48:00  INFO       Next page: clicked: Next
+15:48:02  INFO       Page 97: 3 rows (total: 291)
+15:48:02  INFO       Next page: clicked: Next
+15:48:04  INFO       Page 98: 3 rows (total: 294)
+15:48:04  INFO       Next page: clicked: Next
+15:48:06  INFO       Page 99: 3 rows (total: 297)
+15:48:06  INFO       Next page: clicked: Next
+15:48:08  INFO       Page 100: 3 rows (total: 300)
+15:48:08  INFO       Next page: clicked: Next
+15:48:10  WARNING    Hit 100-page safety cap.
+15:48:10  INFO       Total: 0 records
+15:48:11  INFO     Clerk records: 1217
+15:48:11  INFO     Looking up addresses in HCPA for 1217 records...
+15:48:13  INFO     PA API working! Test: 'DORAZIL J.' >> 6121 CEZANNE AVE
+15:48:13  INFO       [1/1217] DORAZIL J.                     >> 6121 CEZANNE AVE
+15:48:14  INFO       [2/1217] VEGA ADRIAN                    >> 7410 VAN DYKE RD
+15:48:14  INFO       [3/1217] GREEN GRASS ASSOCIATES, L.L.C  >> 5226 TENNIS COURT CIR
+15:48:14  INFO       [4/1217] TENANT UNKNOWN                 >> 2117 OAK CHACE CT
+15:48:15  INFO       [5/1217] TENANT UNKNOWN                 >> 2117 OAK CHACE CT
+15:48:15  INFO       [6/1217] UNKNOWN TENANT #1              >> TAMPA
+15:48:15  INFO       [7/1217] REINA TOMMY                    >> 14007 BASIN ST
+15:48:16  INFO       [8/1217] UNKNOWN TENANT                 >> TAMPA
+15:48:16  INFO       [9/1217] WORD MARIE                     >> 15607 CASHMERE LN
+15:48:17  INFO       [11/1217] PEREZ ALLEN NATANLIE           >> 8501 BETH CT
+15:48:18  INFO       [13/1217] FERRALES RAY ALCIDES SMITH     >> 9047 HICKORY CIR
+15:48:18  INFO       [14/1217] NAIK SARUABH                   >> 16105 WENTWORTH WAY
+15:48:19  INFO       [17/1217] PEREZ CARMEN J                 >> 8501 BETH CT
+15:48:19  INFO       [18/1217] UNKNOWN TENANT #1              >> TAMPA
+15:48:19  INFO       [19/1217] BROWN SHARON D.                >> 19670 HIAWATHA RD
+15:48:19  INFO       [20/1217] UNKNOWN TENANT 1               >> TAMPA
+15:48:20  INFO       [21/1217] DHANRAJ RODNEY                 >> 3801 SOUTHVIEW DR
+15:48:21  INFO       [22/1217] KRAACK MITSIE H                >> 209 NW 17TH ST
+15:48:21  INFO       [23/1217] PARKS ALISSA                   >> 10411 LAKE GROVE DR
+15:48:21  INFO       [24/1217] UNKNOWN TENANT #1              >> TAMPA
+15:48:21  INFO       [25/1217] IH5 PROPERTY FLORIDA, L.P., A  >> 5425 WINDBRUSH DR
+15:48:22  INFO       [26/1217] COTE JOELLE L                  >> 4031 TUMBLE WOOD TRL, UNIT 201
+15:48:22  INFO       [27/1217] GONZALEZ REGUERA SERGIO        >> 7008 COLLEY RD
+15:48:22  INFO       [28/1217] LEWIS ARLENE                   >> 7224 CYPRESS LAKE DR
+15:48:22  INFO       [29/1217] CONGIUSTI JOSEPH J             >> 6153 KITERIDGE DR
+15:48:22  INFO       [30/1217] IH6 PROPERTY FLORIDA, L.P., A  >> 19929 WYNDMILL CIR
+15:48:23  INFO       [31/1217] MELTON NICOLE D                >> 10254 OASIS PALM DR
+15:48:23  INFO       [32/1217] HOLGUIN ANA                    >> 12536 CASTLE HILL DR
+15:48:23  INFO       [33/1217] DAVIS YAUNTA LANARRIS          >> 19626 LAKE OSCEOLA LN
+15:48:23  INFO       [34/1217] CEBULA ALEXANDER               >> 2412 S 46TH ST
+15:48:24  INFO       [35/1217] SALAVARRIETA VINCENT           >> 16612 BRIGADOON DR
+15:48:24  INFO       [36/1217] HALL KYLE                      >> 19819 ANGEL LN
+15:48:25  INFO       [37/1217] ALEXANDER LYCIA A.             >> 16211 DEW DROP LN
+15:48:25  INFO       [38/1217] BURNS WILLIAM                  >> 19302 HIAWATHA RD
+15:48:27  INFO       [39/1217] HAMLET BOBBY JOE               >> 934 SEMINOLE SKY DR
+15:48:27  INFO       [40/1217] STALLWORTH MIA                 >> 7729 STILL LAKES DR
+15:48:28  INFO       [41/1217] FEARS JOHN W                   >> 14809 MCGRADY RD
+15:48:28  INFO       [42/1217] BRAUN KEVIN                    >> 6529 SPRING OAK CT
+15:48:28  INFO       [43/1217] SOUTHERS DAMON                 >> 13514 PALMERA VISTA DR
+15:48:29  INFO       [44/1217] KHABIBULIN RUSLAN              >> 4221 W SPRUCE ST, UNIT 1331
+15:48:29  INFO       [45/1217] SHIPLEY TARA                   >> 7001 LARIMER CT
+15:48:29  INFO       [46/1217] BRITO NANCY                    >> 11916 CYPRESS HILL CIR
+15:48:29  INFO       [47/1217] CRUZ MARISSA                   >> 8217 PETERSON RD
+15:48:29  INFO       [48/1217] WELLS DAVID                    >> 17314 BALLMONT PARK DR
+15:48:30  INFO       [49/1217] DEJESUS JASMINE                >> 15630 INDIAN QUEEN DR
+15:48:30  INFO       [50/1217] WEBER ANDREW                   >> 4334 BAYSIDE VILLAGE DR, UNIT 202
+15:48:30  INFO       [51/1217] UNKNOWN TENANT                 >> TAMPA
+15:48:31  INFO       [52/1217] GARCIA HERNANDEZ ODALYS        >> ODESSA
+15:48:31  INFO       [53/1217] UNKNOWN TENANT 1               >> TAMPA
+15:48:32  INFO       [54/1217] SCHLEICH PAUL                  >> 7451 OXFORD GARDEN CIR
+15:48:33  INFO       [55/1217] CLAYTON ROBERT                 >> 10434 SPRINGROSE DR
+15:48:33  INFO       [56/1217] MILLER KEUNE KRISTEN           >> 7706 W COUNTY LINE RD
+15:48:34  INFO       [59/1217] THOMAS SHELDON                 >> 19632 LAKE OSCEOLA LN
+15:48:34  INFO       [60/1217] PICHARDO LINERY DANITZA        >> 9004 EXPOSITION DR
+15:48:35  INFO       [61/1217] MARLOR JANE                    >> 10144 ARBOR RUN DR, UNIT 29
+15:48:35  INFO       [62/1217] PARKER MICHAEL                 >> 7635 HORSE POND RD
+15:48:35  INFO       [63/1217] GUTIERREZ MARTHA L.            >> 18136 GUNN HWY
+15:48:35  INFO       [64/1217] BURKE KARA                     >> 9101 ROBERTS RD
+15:48:35  INFO       [65/1217] CRYSTAL KAREN E                >> 200 CRYSTAL GROVE BLVD
+15:48:36  INFO       [66/1217] ABRAHAM SHEENA                 >> ODESSA
+15:48:36  INFO       [67/1217] KAGAN SONIA M                  >> 3402 W HEITER ST
+15:48:36  INFO       [68/1217] RABASA ALAIN                   >> 6003 N LOIS AVE
+15:48:37  INFO       [69/1217] HOPKINS SHAMECKA               >> 19018 BLAKE RD
+15:48:37  INFO       [70/1217] MARSHALL TYLER                 >> 7766 STILL LAKES DR
+15:48:37  INFO       [71/1217] COOPER JUSTIN CHARLES          >> 19620 LAKE OSCEOLA LN
+15:48:38  INFO       [72/1217] TYRONE JOHNSON CHRISTOPHER     >> 11319 ALACHUA CREEK LN
+15:48:38  INFO       [73/1217] GARCIA NICAURY                 >> ODESSA
+15:48:38  INFO       [74/1217] BARGINERE SHAVEIA              >> 7318 TANGLE BEND DR
+15:48:39  INFO       [75/1217] AVILES JEANNIE                 >> 5628 BROOKDALE WAY
+15:48:39  INFO       [76/1217] ANGEL MANUEL                   >> 19460 ANGEL LN
+15:48:39  INFO       [77/1217] JOSEPH FRITZNEL                >> 12304 PORTRUSH CT
+15:48:39  INFO       [78/1217] HERNANDEZ GONZALEZ ERNESTO     >> 7320 W COUNTY LINE RD
+15:48:39  INFO       [79/1217] NEWELL JACKEY                  >> 17120 BEVILL RD
+15:48:40  INFO       [80/1217] OFFICE MOVERS OF FLORIDA LLC   >> 18582 N DALE MABRY HWY
+15:48:40  INFO       [81/1217] MCCOLLOUGH RAMON S             >> 18404 KEYSTONE MANOR RD
+15:48:40  INFO       [82/1217] SINGER KERRI                   >> 19205 PRISTINE PL
+15:48:40  INFO       [83/1217] OCA M MONTES DE                >> 8913 EXPOSITION DR
+15:48:41  INFO       [84/1217] PALMORE DEMETTRIUS             >> 8448 CARRIAGE POINTE DR
+15:48:41  INFO       [85/1217] RODRIGUEZ JEAN MICHAEL         >> 18844 CRESCENT RD
+15:48:41  INFO       [86/1217] CASTANO HENRY                  >> 5608 FULMAR DR
+15:48:41  INFO       [87/1217] LEWIS KATHY                    >> 7224 CYPRESS LAKE DR
+15:48:42  INFO       [88/1217] STATE FARM MUTUAL AUTOMOBILE I >> 4505 TOWN N COUNTRY BLVD
+15:48:42  INFO       [89/1217] BAIN LESTER                    >> 6407 NIKKI LN
+15:48:43  INFO       [91/1217] CUCUTA CARMENELENA             >> 8522 FANTASIA PARK PKWY
+15:48:44  INFO       [92/1217] PROGRESSIVE AMERICAN INSURANCE >> 3302 CRESCENT PARK DR
+15:48:44  INFO       [93/1217] CHAVARRIA WALTER               >> 9010 HICKORY CIR
+15:48:45  INFO       [95/1217] POMEROY KENITRA DEA            >> 6015 THERESA ST
+15:48:46  INFO       [96/1217] FRAZIER DECARLOS               >> 18519 COUNCIL CREST DR
+15:48:46  INFO       [97/1217] RODRIGUEZ JUSTO                >> 18844 CRESCENT RD
+15:48:46  INFO       [98/1217] DEL MAR SILVA ORTIZ ALEXANDRA  >> 19501 ANGEL LN
+15:48:46  INFO       [99/1217] ADKINS MELISSA                 >> 6003 BAYSIDE KEY DR
+15:48:47  INFO       [100/1217] GARCIA ANDRES GONZALEZ         >> ODESSA
+15:48:47  INFO       [101/1217] JONES KEISHA                   >> 19714 WYNDMILL CIR
+15:48:47  INFO       [102/1217] TUCKER MICHELLE                >> 19845 MICHIGAN AVE
+15:48:48  INFO       [103/1217] GRETTON DENNIS                 >> 11412 TUTEN LOOP
+15:48:48  INFO       [104/1217] ROE CADEN                      >> 17307 CARRIAGE WAY
+15:48:49  INFO       [105/1217] CHARLES MARIE                  >> 16107 BELLE MEADE BLVD
+15:48:49  INFO       [106/1217] PINO MAYDENIS PALENZUELA       >> 19703 WYNDMILL CIR
+15:48:49  INFO       [107/1217] RODRIGUEZ CHRISTINA            >> 18844 CRESCENT RD
+15:48:50  INFO       [108/1217] GONZALEZ ILIAMAR               >> 7008 COLLEY RD
+15:48:50  INFO       [109/1217] TYSON LEROY                    >> 10030 BROMPTON DR
+15:48:50  INFO       [110/1217] MARTINEZ CLARA LUNA            >> 19313 EASTBROOK DR
+15:48:50  INFO       [111/1217] ZAMBRANA WILLIAM               >> 2712 DOERUN CT
+15:48:51  INFO       [112/1217] HOOVER JUSTIN                  >> 15103 BALD EAGLE ST
+15:48:51  INFO       [113/1217] GASPAR DANIEL                  >> 9666 LAKE CHASE ISLAND WAY
+15:48:51  INFO       [114/1217] CALDERONI CARLI                >> 8645 HUNTFIELD ST
+15:48:51  INFO       [115/1217] LOPEZ RONNIE                   >> 18116 BROWN RD
+15:48:51  INFO       [116/1217] CRUM ANDREW N                  >> 10937 TARPON SPRINGS RD
+15:48:52  INFO       [117/1217] DOANE NICHOLAS                 >> 4114 HOLLOWTRAIL DR
+15:48:52  INFO       [118/1217] ADORNO LUZ PEREZ               >> 11227 MADISON PARK DR
+15:48:52  INFO       [119/1217] ROSELLO BROOKE                 >> 6419 NIKKI LN
+15:48:52  INFO       [120/1217] BETANCOURT MICHAEL             >> 18210 CRAWLEY RD
+15:48:53  INFO       [121/1217] FAIRLEY ASHLEY                 >> 2860 DUNCAN TREE CIR
+15:48:53  INFO       [122/1217] CIRA MICELIA                   >> 2809 MAPLE BROOK LOOP
+15:48:53  INFO       [123/1217] AGOSTO JULIA                   >> 12406 QUEENSLAND LN
+15:48:54  INFO       [125/1217] ERVIN RANDALL UREK CASANOVA    >> 5134 PHEASANT WOODS DR
+15:48:54  INFO       [126/1217] JONES KATRINA                  >> 19714 WYNDMILL CIR
+15:48:55  INFO       [127/1217] SCHOCH PATSY J                 >> 2716 WILDER TRACE CT
+15:48:55  INFO       [128/1217] POTRILLE ADA                   >> 7806 FELICE AVE
+15:48:55  INFO       [130/1217] GILFORD ANTHONY                >> 6309 CALAMARI PL
+15:48:55  INFO       [131/1217] HENRY WILLIAM                  >> 19621 LAKE OSCEOLA DR
+15:48:56  INFO       [132/1217] LANCE VONYA                    >> 8522 PAMIE ST
+15:48:56  INFO       [134/1217] ROBERTSON JACK                 >> 17918 SIMMS RD
+15:48:56  INFO       [135/1217] STEPHENS GREGORY               >> 19440 ANGEL LN
+15:48:57  INFO       [136/1217] COHEN BRENDA                   >> 11523 TROTTING DOWN DR
+15:48:57  INFO       [137/1217] LOZOYA DORA                    >> 13451 GRAHAM YARDEN DR
+15:48:57  INFO       [138/1217] GREER ALEX                     >> 18334 SPENCER RD
+15:48:57  INFO       [139/1217] MORENO MARIELICZA              >> 14502 FARM HILLS PL
+15:48:57  INFO       [140/1217] BROWN JOHN                     >> 19670 HIAWATHA RD
+15:48:58  INFO       [142/1217] DIRECT GENERAL INSURANCE COMPA >> 8024
+15:48:59  INFO       [143/1217] WEBB JASON                     >> 19801 PINE TREE RD
+15:48:59  INFO       [144/1217] HILL BRITTANEY                 >> ST PETERSBURG
+15:48:59  INFO       [145/1217] MALDONADO CARMEN               >> 19204 BRIDGBORO DR
+15:49:00  INFO       [146/1217] AMENDA GARY A                  >> 6910 BLOSSOM AVE
+15:49:00  INFO       [147/1217] HURTADO BARBARA                >> 9830 LAKE CHASE ISLAND WAY
+15:49:00  INFO       [148/1217] CARTER SHIRLEY HOLMES          >> 12620 TYLER RUN AVE
+15:49:00  INFO       [149/1217] MITCHELL DUANE DAVID           >> 6913 COLLEY RD
+15:49:01  INFO       [150/1217] NEES DON                       >> 11251 RUNNING PINE DR
+15:49:01  INFO       [151/1217] LUCAS ANNA                     >> 19601 WYNDMILL CIR
+15:49:01  INFO       [152/1217] QUINONES BRANDON X             >> 8928 DONNA LU DR
+15:49:01  INFO       [153/1217] VELAZQUEZ JASON D              >> 12820 STANWYCK CIR
+15:49:02  INFO       [155/1217] RODRIGUEZ DEREK                >> 18844 CRESCENT RD
+15:49:02  INFO       [156/1217] RODRIGUEZ RUTH                 >> 18844 CRESCENT RD
+15:49:02  INFO       [157/1217] KELLY JABARI KYREE             >> 19402 ANGEL LN
+15:49:02  INFO       [158/1217] LEWIS RACHAEL SHARETTA         >> 7224 CYPRESS LAKE DR
+15:49:02  INFO       [159/1217] WOODRUFF DEONTE                >> 5808 BITTER ORANGE AVE
+15:49:03  INFO       [160/1217] DIEZ OSMEL                     >> 17928 SPENCER RD
+15:49:03  INFO       [161/1217] HALL RICHARD ERVIN             >> 19819 ANGEL LN
+15:49:03  INFO       [162/1217] SETTLES TONNIAH                >> 715 CLIPPER PL
+15:49:04  INFO       [163/1217] GARCIA GAMEZ ALEXIS            >> ODESSA
+15:49:04  INFO       [164/1217] ARORA NITIN K                  >> 16105 CRAIGEND PL, UNIT B
+15:49:06  INFO       [166/1217] CAPITANO SUSAN                 >> 14624 ROCKY BROOK DR
+15:49:06  INFO       [167/1217] ORTIZ ALEX                     >> 8356 WILDFLOWER GLEN AVE
+15:49:06  INFO       [168/1217] WILLIAMS MICHELE               >> 7624 LUTZ LAKE FERN RD
+15:49:07  INFO       [170/1217] SUNCOAST TRUCK AND EQUIPMENT S >> 4509 CARLYLE RD
+15:49:08  INFO       [171/1217] VALE SUSAN J                   >> 17414 EQUESTRIAN TRL
+15:49:08  INFO       [172/1217] JEAN-BAPTISTE ESAU             >> 9807 SIR FREDERICK ST
+15:49:09  INFO       [173/1217] MILNER ALVIN JR                >> 14610 GALT LAKE DR
+15:49:10  INFO       [174/1217] SEEPERSAD KIMBERLY             >> 17030 WAVE TRESSLE PL
+15:49:10  INFO       [175/1217] PROGRESSIVE SELECT INSURANCE C >> 3302 CRESCENT PARK DR
+15:49:11  INFO       [177/1217] SCOTTO CHRISTOPHER             >> 4822 E OKARA RD
+15:49:11  INFO       [178/1217] HILL FABIAN                    >> ST PETERSBURG
+15:49:11  INFO       [179/1217] MIDLAND CREDIT MANAGEMENT INC  >> 2524 CHESTNUT ST
+15:49:11  INFO       [180/1217] REYNOLDS JAMIE LYNN            >> 19311 SHORTLEAF PINE LN
+15:49:11  INFO       [181/1217] RIVERA ALEXANDER J             >> 17118 LONGACRES LN
+15:49:12  INFO       [182/1217] WILSON SARAH ANNE              >> 19260 CRESCENT RD
+15:49:12  INFO       [184/1217] VERSACE JASON                  >> 203 STONEHOUSE CT
+15:49:13  INFO       [185/1217] DAVIS ALFRED JUNIUS III        >> 19626 LAKE OSCEOLA LN
+15:49:14  INFO       [186/1217] DAVIS ALFRED JUNIUS            >> 19626 LAKE OSCEOLA LN
+15:49:14  INFO       [187/1217] ROMERO FRANK                   >> 7515 N MOBLEY RD
+15:49:14  INFO       [189/1217] ORTIZ JUAN                     >> 8356 WILDFLOWER GLEN AVE
+15:49:14  INFO       [190/1217] ADKINS NATE QUANDRA            >> 6003 BAYSIDE KEY DR
+15:49:15  INFO       [192/1217] BUTLER JAMES A                 >> 19031 HUCKAVALLE RD
+15:49:15  INFO       [193/1217] MENARD VICTOIRE                >> 15742 SCRIMSHAW DR
+15:49:15  INFO       [194/1217] JONES ASHLEY                   >> 19714 WYNDMILL CIR
+15:49:15  INFO       [195/1217] BONILLA JOVANNI ERNESTO        >> 14255 DAMSELFLY DR
+15:49:16  INFO       [196/1217] GREENE PHILIP ALEXANDER        >> 12716 STANWYCK CIR
+15:49:16  INFO       [197/1217] SPENCER BRANDI ANITA           >> 17205 EQUESTRIAN TRL
+15:49:16  INFO       [198/1217] GALAN PEREZ SHERLEY MASSIEL    >> 14018 POMELO PL
+15:49:16  INFO       [199/1217] GREENE PHILIP ALEXANDER        >> 12716 STANWYCK CIR
+15:49:16  INFO       [200/1217] SIGLER JERMAINE LOTHARIO       >> 17822 HANNA RD
+15:49:17  INFO       [201/1217] ZELAYA LOPEZ DANY ALEXANDER    >> 926 SPRINGVILLE CT
+15:49:17  INFO       [202/1217] KINSEY EDGAR                   >> 14643 CORAL BERRY DR
+15:49:18  INFO       [205/1217] MORENO ANGELICA MARY           >> 14502 FARM HILLS PL
+15:49:18  INFO       [206/1217] MCHALE AIDAN ANTHONY           >> 5310 AMBROSE CT
+15:49:19  INFO       [207/1217] DEAN JAYDE RILEY               >> 17602 BANTRY PL
+15:49:19  INFO       [208/1217] MORENO SCOTT CHRISTOPHER       >> 14502 FARM HILLS PL
+15:49:19  INFO       [210/1217] WILFORD ASHLEY NICOLE          >> 9507 RIPLEY RD
+15:49:20  INFO       [211/1217] SEABROOK CHELSEY JEANNE        >> 8333 PINE RIVER RD
+15:49:20  INFO       [212/1217] FRIED PAIGE ASHLEY             >> 9521 COLONY DR
+15:49:20  INFO       [213/1217] JOYCE DANNY WOODROW            >> 7216 NORTH MOBLEY RD
+15:49:20  INFO       [214/1217] OGLESBY PORCHE SADE            >> 3132 RESEDA ST
+15:49:20  INFO       [215/1217] DUONG NHUT HONG                >> 7702 BRETTONWOOD DR
+15:49:21  INFO       [216/1217] COLE JORY KINCAID              >> 18511 CRAWLEY RD
+15:49:21  INFO       [217/1217] GRANT ADRIAN FRANKLIN          >> 17510 BOY SCOUT RD
+15:49:21  INFO       [218/1217] SHOUMAN MOHAMAD SAID           >> 5009 SUNRIDGE PALMS, UNIT 302
+15:49:21  INFO       [219/1217] JONES KEISHA                   >> 19714 WYNDMILL CIR
+15:49:21  INFO       [220/1217] BROWN SHANE                    >> 19670 HIAWATHA RD
+15:49:22  INFO       [221/1217] BRUTUS DENEUVE                 >> 401 SUNSET COVE LN
+15:49:22  INFO       [222/1217] BROWN TANITHIA                 >> 19670 HIAWATHA RD
+15:49:23  INFO       [223/1217] MCCAIN CHANCEY                 >> PALEO POINT DR
+15:49:23  INFO       [224/1217] DOUGLAS MELANY M               >> 5710 KNEELAND LN
+15:49:23  INFO       [225/1217] BARNARD JAMES C                >> 12830 TAR FLOWER DR
+15:49:23  INFO       [226/1217] MORGAN MERIDIAN M              >> 16914 CRAWLEY RD
+15:49:24  INFO       [228/1217] PAULINE SHARON                 >> 6918 ARABIAN RD
+15:49:24  INFO       [229/1217] FEARS SHIRLEY M                >> 3817 BELLEWATER BLVD
+15:49:24  INFO       [230/1217] KING PAUL                      >> 7619 DUNBRIDGE DR
+15:49:25  INFO       [231/1217] MAHER NATALIE RAYNE            >> 7620 DUNBRIDGE DR
+15:49:25  INFO       [232/1217] MARIE AYLA                     >> 11318 POCKET BROOK DR
+15:49:25  INFO       [234/1217] LOPEZ COROMOTO                 >> 18116 BROWN RD
+15:49:26  INFO       [235/1217] BRANDYWINE HOMES USA LLC       >> 5029 N 40TH ST
+15:49:26  INFO       [236/1217] HALL EDMOND DERRICK            >> 19819 ANGEL LN
+15:49:26  INFO       [237/1217] BENNETT CATHERINE ANNA ELLEN   >> 19506 PINE VALLEY DR
+15:49:27  INFO       [238/1217] LOWE JERMAINE                  >> 17105 BREEDERS CUP DR
+15:49:27  INFO       [239/1217] HERNANDEZ EDWIN                >> 7320 W COUNTY LINE RD
+15:49:27  INFO       [240/1217] HERNANDEZ JORGE                >> 7320 W COUNTY LINE RD
+15:49:28  INFO       [241/1217] SIMPKINS DIANE                 >> 14805 BRIAR WAY
+15:49:28  INFO       [242/1217] ARIAS ELTODACO                 >> 15924 TIMBERWOOD DR
+15:49:28  INFO       [244/1217] CRAWFORD TERRIA SHEINA         >> 19715 WYNDHAM LAKES DR
+15:49:29  INFO       [245/1217] LEWIS MARCUS DEVANE            >> 7224 CYPRESS LAKE DR
+15:49:29  INFO       [246/1217] BENNETT CATHERINE ANNA ELLEN   >> 19506 PINE VALLEY DR
+15:49:29  INFO       [247/1217] HALL EDMOND DERRICK            >> 19819 ANGEL LN
+15:49:29  INFO       [248/1217] JENRETTE JOSHUA DIONTAE        >> 15530 TELFORD SPRING DR
+15:49:30  INFO       [250/1217] DAVIS JEFFREY C                >> 17837 SIMMS RD
+15:49:30  INFO       [251/1217] BELLAMY CONNIE                 >> TAMPA
+15:49:30  INFO       [252/1217] WILLIAMS CURTIS                >> 7624 LUTZ LAKE FERN RD
+15:49:30  INFO       [253/1217] CORLEY HASSAN NATHANIEL        >> LUTZ
+15:49:31  INFO       [254/1217] MILLENNIUM TRANSPORT & TOWING  >> 11932 TARPON SPRINGS RD
+15:49:31  INFO       [255/1217] PRICE ASAAD DE'ZION            >> 17240 BREEDERS CUP DR
+15:49:32  INFO       [256/1217] GRAHAM DORIAN DETRIC           >> ROBERTS RD
+15:49:32  INFO       [257/1217] VILLANUEVA WILLIAMS            >> 12622 PORTMARNOCK DR
+15:49:32  INFO       [258/1217] MESSER ARCHIE DAVID            >> 805 BRANTENBURG WAY
+15:49:32  INFO       [259/1217] HAMILTON CHRISTOPHER HAYWARD D >> 7405 MIRACLE LN
+15:49:32  INFO       [260/1217] HATCHER NICOLE                 >> 17118 BREEDERS CUP DR
+15:49:33  INFO       [261/1217] GRABOWSKI LEE                  >> 4102 SPARROW CT
+15:49:33  INFO       [262/1217] GUINTO MACKENZIE GRACE         >> 4206 PINE ISLE DR
+15:49:33  INFO       [263/1217] POWELL GEORGE                  >> 19807 PINE TREE RD
+15:49:33  INFO       [264/1217] BAYS WHITLEY J                 >> 8302 LUTZ LAKE FERN RD
+15:49:34  INFO       [267/1217] FERNANDEZ CHRIS ESCOBEDO       >> 19622 LAKE OSCEOLA LN
+15:49:34  INFO       [268/1217] BARKER BRANDI                  >> 19403 WYNDMILL CIR
+15:49:34  INFO       [269/1217] RAMIREZDANA GERARDO            >> 528 LAGUNA MILL DR
+15:49:35  INFO       [270/1217] MOORE MAIMA                    >> 17725 BOY SCOUT RD
+15:49:35  INFO       [271/1217] MARSHALL ZA'KIAH JOHAAN        >> 7766 STILL LAKES DR
+15:49:35  INFO       [272/1217] BURROW MARK ALLAN              >> 8625 FANCY FINCH DR, UNIT 202
+15:49:36  INFO       [276/1217] UNKNOWN TENANT 1               >> TAMPA
+15:49:36  INFO       [277/1217] GS CENTER, LLC                 >> 3801 W GANDY BLVD
+15:49:37  INFO       [278/1217] ROMERO ARMANDO C               >> 7515 N MOBLEY RD
+15:49:37  INFO       [279/1217] BERRY JAYME ROSE               >> 8810 CHARLIE WALKER DR
+15:49:37  INFO       [280/1217] BATRONIE ARLEEN                >> 905 EASTWOOD DR
+15:49:37  INFO       [281/1217] JERNIGAN PATRICIA              >> 18953 MAISONS DR
+15:49:38  INFO       [282/1217] SANCHEZ REYNA                  >> 18916 CRESCENT RD
+15:49:38  INFO       [283/1217] CRESPO LISET                   >> 6521 YELLOWHAMMER AVE
+15:49:38  INFO       [284/1217] LOVETT ANTHONY                 >> 17401 MARY CHARLOTTE PL
+15:49:38  INFO       [285/1217] BERTI LAWRENCE                 >> 6915 N COOLIDGE AVE
+15:49:39  INFO       [287/1217] JUNQUERA IMILSYS               >> 12203 GLENCLIFF CIR
+15:49:39  INFO       [288/1217] TORRES JORGE                   >> 15702 JERICHO DR
+15:49:39  INFO       [289/1217] JOHNSON LEROY JACOB            >> 7439 MIRACLE LN
+15:49:40  INFO       [290/1217] SMITH SONDRA MICHELE           >> 7006 JONES RD
+15:49:40  INFO       [291/1217] GRAHAM DORIAN DETRIC           >> ROBERTS RD
+15:49:40  INFO       [293/1217] CAMPBELL MICHAEL               >> 8612 DOLCE VITA LN
+15:49:40  INFO       [294/1217] DUPREE GWENDOLYN               >> 17402 HIALEAH DR
+15:49:41  INFO       [295/1217] HECTOR BENTLEY ALWIN JR        >> 15720 TIMBERWOOD DR
+15:49:41  INFO       [296/1217] NASH JAMI                      >> 6411 THOROUGHBRED LOOP
+15:49:41  INFO       [297/1217] ALLEN NAKIA                    >> 19502 LAKE OSCEOLA LN
+15:49:42  INFO       [300/1217] MADDOX ARNESHIA                >> 8602 N RIVER RD
+15:49:42  INFO       [301/1217] POPE PARKER                    >> 16313 COLWOOD DR
+15:49:43  INFO       [302/1217] JAMES RAY LA VEL               >> 19420 PINE TREE RD
+15:49:43  INFO       [303/1217] VALLADARES CLAUDIA A           >> 15712 PINTO PL
+15:49:43  INFO       [304/1217] TORRES RAMON I                 >> 15702 JERICHO DR
+15:49:43  INFO       [305/1217] SILVER JESSE A                 >> ODESSA
+15:49:43  INFO       [306/1217] HILL KIMBERLY                  >> ST PETERSBURG
+15:49:44  INFO       [307/1217] POPE CYNTHIA S                 >> 16313 COLWOOD DR
+15:49:44  INFO       [308/1217] ANDERSON VALRIE ROACHE         >> 19603 WYNDMILL CIR
+15:49:44  INFO       [309/1217] MCCALL LEWIS KENTURY           >> 14711 CASTELLETTO DR
+15:49:44  INFO       [310/1217] HAYES CORNELIUS EDWARD         >> 7208 NORTH MOBLEY RD
+15:49:44  INFO       [311/1217] GARY WYONA                     >> 415 E COUNTY LINE RD
+15:49:45  INFO       [312/1217] TORRES LORRAINE M              >> 15702 JERICHO DR
+15:49:45  INFO       [313/1217] ROE GEORGE                     >> 10524 CHAMBERS DR
+15:49:45  INFO       [314/1217] HAYES CORNELIUS EDWARD         >> 7208 NORTH MOBLEY RD
+15:49:45  INFO       [315/1217] GARG MANINDRA                  >> 9823 GRETNA GREEN DR
+15:49:45  INFO       [316/1217] WALDRON HUGH                   >> 10607 ECHO LAKE DR
+15:49:46  INFO       [317/1217] GRIER QUANZIAL                 >> 19117 FERN MEADOW LOOP
+15:49:46  INFO       [318/1217] RODRIGUEZ RICHARD              >> 18844 CRESCENT RD
+15:49:46  INFO       [319/1217] STACK CAITLIN                  >> 19314 HOLLY LN
+15:49:46  INFO       [320/1217] MIZE TOMI                      >> 15653 EASTBOURN DR
+15:49:47  INFO       [322/1217] HUNEYCUTT DOROTHY              >> 10720 N PAWNEE AVE
+15:49:47  INFO       [323/1217] DRE                            >> 17436 ISBELL LN
+15:49:47  INFO       [324/1217] LEWIS RAZJHONE LORENE          >> 7224 CYPRESS LAKE DR
+15:49:48  INFO       [325/1217] WILLIAMS SHARECE               >> 7624 LUTZ LAKE FERN RD
+15:49:48  INFO       [327/1217] PRUITT NADIA                   >> 10119 DOWNEY LN
+15:49:49  INFO       [328/1217] LEDFORD GARY                   >> 501 SHADOW GROVE CT
+15:49:49  INFO       [329/1217] HAAS BRIAN                     >> 13215 OAK ST
+15:49:49  INFO       [330/1217] JOHNSON QUINETTE               >> 7439 MIRACLE LN
+15:49:49  INFO       [331/1217] CALLAWAY ANGEL                 >> 9510 GEORGIAN PARK LN, UNIT 101
+15:49:50  INFO       [332/1217] CITY OF TAMPA                  >> GUNN HWY
+15:49:50  INFO       [333/1217] DOE JANE                       >> 6934 W COUNTY LINE RD
+15:49:51  INFO       [334/1217] PETIT FRERE WILKY              >> 8740 TERRACINA LAKE DR
+15:49:51  INFO       [335/1217] MORALES LISA G                 >> 19212 EASTBROOK DR
+15:49:51  INFO       [336/1217] OLIVIER CHRISTOPHER            >> 7405 ALBANY DR
+15:49:52  INFO       [338/1217] RIVERA ROLANDO JUNIOR          >> 19604 HIAWATHA RD
+15:49:52  INFO       [339/1217] PEREZ LEONARDO                 >> 8501 BETH CT
+15:49:53  INFO       [342/1217] HORN JUDY                      >> 19130 BECKETT DR
+15:49:53  INFO       [343/1217] FOX DANNY                      >> 17825 SIMMS RD
+15:49:54  INFO       [345/1217] JOHNPIERRE KAJA                >> 1037 ROYAL EMPRESS DR
+15:49:54  INFO       [346/1217] MIDULLA COURTNEY DIANE         >> 10715 OUT ISLAND DR
+15:49:54  INFO       [347/1217] WEST TAMARA                    >> 19116 LARCHMONT DR
+15:49:54  INFO       [348/1217] LAW SHADAE                     >> 19520 MICHIGAN AVE
+15:49:55  INFO       [350/1217] FIX APRIL                      >> 3112 MARINE GRASS DR
+15:49:55  INFO       [351/1217] KEEN ROGER JASON               >> 18888 CRESCENT RD
+15:49:55  INFO       [352/1217] DAVIS WESLEY                   >> 19626 LAKE OSCEOLA LN
+15:49:55  INFO       [353/1217] TUCKER NIKISHA N               >> 10410 LAKE GROVE DR
+15:49:56  INFO       [354/1217] GILL STEVEN                    >> 9026 WALTER MICHAELS RD
+15:49:56  INFO       [355/1217] EVANS KESHEM                   >> 18915 CRESCENT RD
+15:49:56  INFO       [356/1217] CABRAL JOSE                    >> 15615 SHOAL CREEK PL
+15:49:56  INFO       [357/1217] GREEN CHARLIE L                >> 8302 BRIARFIELD CT
+15:49:57  INFO       [358/1217] DOUGLAS MICHAEL JR             >> 5710 KNEELAND LN
+15:49:57  INFO       [359/1217] WILLIAMS LEJONI                >> 7624 LUTZ LAKE FERN RD
+15:49:57  INFO       [360/1217] HOFSTETTER GREGORY J           >> 2208 PRESERVATION GREEN CT
+15:49:57  INFO       [361/1217] GRACE RONNIKIA ERONDA          >> 8115 SILENT CREEK DR
+15:49:57  INFO       [362/1217] LEON MARITZA                   >> 14810 REDCLIFF DR
+15:49:58  INFO       [363/1217] SANCHEZ JAVIER                 >> 18916 CRESCENT RD
+15:49:58  INFO       [364/1217] MARTIN LAWRENCE O              >> 19606 ANGEL LN
+15:49:58  INFO       [365/1217] MCCALL LEWIS KENTURY           >> 14711 CASTELLETTO DR
+15:49:58  INFO       [366/1217] HILL MARCEL LEE                >> ST PETERSBURG
+15:49:59  INFO       [367/1217] WOOD MYA                       >> 7707 COLLEY RD
+15:49:59  INFO       [368/1217] HARTER GREGORY                 >> 15706 JERICHO DR
+15:49:59  INFO       [369/1217] BURNS CHARLES                  >> 19302 HIAWATHA RD
+15:50:00  INFO       [371/1217] SHERIFF CHAD CHRONISTER        >> 18315 LEAFMORE ST
+15:50:00  INFO       [372/1217] WICKER KURT J                  >> 500 SIDEVIEW CT
+15:50:00  INFO       [373/1217] LLANOS JESUS M                 >> 15635 INDIAN QUEEN DR
+15:50:01  INFO       [375/1217] LOZADA RICKY                   >> 11917 DERBYSHIRE DR
+15:50:01  INFO       [376/1217] ROBERTS JARIEL                 >> 19402 PINE VALLEY RD
+15:50:01  INFO       [377/1217] PIERCE WESLEY II               >> 15802 BEREA DR
+15:50:01  INFO       [378/1217] FLEENER HEATH                  >> 370 HOPE BAY LOOP
+15:50:01  INFO       [379/1217] DOUGLAS MICHAEL JR             >> 5710 KNEELAND LN
+15:50:02  INFO       [380/1217] PIERCE WESLEY II               >> 15802 BEREA DR
+15:50:02  INFO       [381/1217] BISHUN AMANDA                  >> 3406 E 9TH AVE
+15:50:02  INFO       [382/1217] DAVIS SHARONA                  >> 19626 LAKE OSCEOLA LN
+15:50:02  INFO       [383/1217] STOWE KELLI WOODRUFF           >> 7342 BROOKVIEW CIR
+15:50:03  INFO       [384/1217] CALHOUN DAVID                  >> 18908 BELLFLOWER RD
+15:50:03  INFO       [385/1217] WALTERS JOSEPH                 >> 19516 MICHIGAN AVE
+15:50:03  INFO       [386/1217] AHERN KERRY                    >> 12016 BREWSTER DR
+15:50:03  INFO       [387/1217] TORRES LINDSAY                 >> 15702 JERICHO DR
+15:50:04  INFO       [389/1217] MCCALL LEWIS                   >> 14711 CASTELLETTO DR
+15:50:04  INFO       [390/1217] UPSHAW RASHAD                  >> 15607 EASTBOURN DR
+15:50:04  INFO       [391/1217] HICKS ADRIONNA D               >> 16141 CARDEN DR
+15:50:04  INFO       [392/1217] CARR JOSHUA M                  >> 16573 HUTCHISON RD
+15:50:05  INFO       [393/1217] SANTIZO RAFAEL                 >> 7711 BINGHAM CT
+15:50:05  INFO       [394/1217] CHARLES JEANNITHA              >> 16107 BELLE MEADE BLVD
+15:50:05  INFO       [395/1217] HAYES CORNELIUS EDWARD         >> 7208 NORTH MOBLEY RD
+15:50:06  INFO       [396/1217] PINKSTON LORENZO               >> 11525 SAND STONE ROCK DR
+15:50:06  INFO       [397/1217] BOYKINS II JONATHON K          >> 17420 OLD TOBACCO RD
+15:50:06  INFO       [398/1217] ORTIZ DEANNA                   >> 8356 WILDFLOWER GLEN AVE
+15:50:17  INFO       [400/1217] MENDOZA RICARDO                >> 15115 GOLDEN EAGLE WAY
+15:50:18  INFO       [402/1217] BUFFERY PHILIP                 >> 18928 WILLOWMORE CEDAR DR
+15:50:19  INFO       [405/1217] MITCHELL PHILLIP JAMAR         >> 6913 COLLEY RD
+15:50:20  INFO       [406/1217] CIFUENTES EDGUAR LIZANDRO      >> 12285 COUNTRY WHITE CIR
+15:50:20  INFO       [407/1217] CIFUENTES EDGUAR LIZANDRO      >> 12285 COUNTRY WHITE CIR
+15:50:20  INFO       [408/1217] WYATT DAVID LEWIS              >> 8906 ROCKY RUN CT
+15:50:21  INFO       [409/1217] HEANEY CONOR FRANCIS           >> 18207 CLEAR LAKE DR
+15:50:21  INFO       [410/1217] WESLEY GABRIEL                 >> 16133 LYTHAM DR
+15:50:22  INFO       [412/1217] TIMMONS DAVONA D.              >> 10625 ASHFORD OAKS DR
+15:50:22  INFO       [414/1217] PINTO JUAN                     >> 8340 WILDFLOWER GLEN AVE
+15:50:23  INFO       [415/1217] COLEY PEDRO L                  >> 8114 TURKEY HILL CT
+15:50:24  INFO       [416/1217] MAY SEAN                       >> 10408 GROVE LN
+15:50:24  INFO       [417/1217] GUERRA NERISLEIDY              >> 14008 FULLERTON DR
+15:50:24  INFO       [418/1217] MICHAEL ALEXIS                 >> 11910 MERIDIAN POINT DR
+15:50:24  INFO       [419/1217] TAYLOR VICTOR                  >> 19202 ROGERS RD
+15:50:25  INFO       [420/1217] REDDEN TYLER                   >> TAMPA
+15:50:26  INFO       [421/1217] WELLS FARGO BANK,  N.A.        >> 6908 SUMMERBRIDGE DR
+15:50:26  INFO       [422/1217] BOOKER CHRISTINA               >> 14834 OAK VINE DR
+15:50:27  INFO       [424/1217] SAMS SHERIS                    >> 10413 GREEN LINKS DR
+15:50:28  INFO       [426/1217] ELLIS FARIN                    >> 12526 TYLER RUN AVE
+15:50:29  INFO       [427/1217] EVERETT LATESHA                >> 13028 EAGLES ENTRY DR
+15:50:30  INFO       [428/1217] PASTORE ANTHONY                >> 9610 IVORY DR
+15:50:30  INFO       [429/1217] BELL AARON QUINCY              >> 19805 WYNDMILL CIR
+15:50:30  INFO       [430/1217] YOUNG NATHAN                   >> 6521 GRAZING LN
+15:50:31  INFO       [431/1217] BARRINGTON BRANDON             >> 2401 NANTUCKET GLEN PL
+15:50:31  INFO       [432/1217] TENANT UNKNOWN                 >> 2117 OAK CHACE CT
+15:50:32  INFO       [433/1217] YOUNG CHRISTOPHER RYAN         >> 6521 GRAZING LN
+15:50:32  INFO       [434/1217] DOUGLAS MICHAEL                >> 5710 KNEELAND LN
+15:50:32  INFO       [435/1217] DOUGLAS MICHAEL                >> 5710 KNEELAND LN
+15:50:33  INFO       [437/1217] SIN DONG                       >> 19615 MICHIGAN AVE
+15:50:34  INFO       [438/1217] ADAMS DAVID                    >> 19101 FORREST DR
+15:50:34  INFO       [439/1217] PARMLEY JUDY S                 >> 2602 SOUTHERN OAKS PL
+15:50:34  INFO       [440/1217] BETTS KIM                      >> 526 CRYSTAL LAKE RD
+15:50:35  INFO       [441/1217] HENRY WILLIE E.                >> 19621 LAKE OSCEOLA DR
+15:50:35  INFO       [442/1217] OLIVERO REYES ALEXIS           >> 6444 REEF CIR
+15:50:35  INFO       [443/1217] ANDERSON HARRIET               >> 19603 WYNDMILL CIR
+15:50:36  INFO       [444/1217] PARK JOSEPH                    >> 19120 BECKETT DR
+15:50:36  INFO       [445/1217] MOLINA KEVIN JOEL              >> 16102 TURNBURY OAK DR
+15:50:36  INFO       [447/1217] GREEN BRANDY                   >> 8302 BRIARFIELD CT
+15:50:37  INFO       [449/1217] MILLIGAN KHENOI                >> 7002 FORESTVIEW CT
+15:50:38  INFO       [450/1217] PEREZ MANUEL                   >> 8501 BETH CT
+15:50:38  INFO       [451/1217] OZUNA RIVAS MANUEL ALEXANDER   >> 11629 HIDDEN HOLLOW CIR
+15:50:38  INFO       [452/1217] MENDEZ PHILLIP CORNEILUS       >> 7407 HABER WAY
+15:50:38  INFO       [453/1217] HANNA JULIA AMGED              >> 16102 BELLE MEADE BLVD
+15:50:39  INFO       [454/1217] GEARY KOURTNEY                 >> 10109 PARLEY DR
+15:50:39  INFO       [455/1217] DAUBERMAN DEBRA                >> 11208 BRUSSELS BOY LN
+15:50:39  INFO       [456/1217] SMITH TIPHANIE                 >> 7006 JONES RD
+15:50:40  INFO       [458/1217] SPEARS SAMUEL                  >> 19450 ANGEL LN
+15:50:41  INFO       [459/1217] EDWARDS MICHAEL                >> 8818 PONDERING CV
+15:50:41  INFO       [460/1217] CHAN GRETCHEN                  >> 19707 ANGEL LN
+15:50:41  INFO       [461/1217] MONTELIONE JOIE                >> 12712 EAGLES ENTRY DR
+15:50:41  INFO       [462/1217] WILLIAMS JAMAL                 >> 7624 LUTZ LAKE FERN RD
+15:50:41  INFO       [463/1217] ELIAS, LLC                     >> 9822 BAYBORO BRIDGE DR
+15:50:42  INFO       [464/1217] COLUCCI JOSEPH                 >> 10464 GREENDALE DR
+15:50:42  INFO       [465/1217] BATISTA VERDECIA SARAY         >> 16518 HUTCHISON RD
+15:50:42  INFO       [466/1217] BATISTA VERDECIA SARAY         >> 16518 HUTCHISON RD
+15:50:43  INFO       [468/1217] ENGEL ALYSSA ERIN              >> 11717 DERBYSHIRE DR
+15:50:43  INFO       [469/1217] WILLIAMS AUBREY                >> 7624 LUTZ LAKE FERN RD
+15:50:44  INFO       [471/1217] JOHNSON JOZEE                  >> 7439 MIRACLE LN
+15:50:45  INFO       [472/1217] MARTE FRANKLIN D               >> 11407 ZENITH CIR
+15:50:45  INFO       [473/1217] HASSAN IYANI                   >> 11819 LANCASHIRE DR
+15:50:45  INFO       [474/1217] ALSTON RAPHAEL                 >> 6934 DIMARCO RD
+15:50:45  INFO       [475/1217] DIAZ MARY                      >> 19806 WYNDMILL CIR
+15:50:46  INFO       [476/1217] ALSTON RAPHAEL                 >> 6934 DIMARCO RD
+15:50:46  INFO       [477/1217] OGIE ANDREW                    >> 8412 CARRIAGE POINTE DR
+15:50:46  INFO       [478/1217] ELLIS JOSHUA                   >> 12526 TYLER RUN AVE
+15:50:47  INFO       [480/1217] SWABY DAMION R                 >> 5524 SUMMER SUNSET DR
+15:50:48  INFO       [481/1217] FREITAS MICHAEL G              >> 5465 LOGAN CAVE AVE
+15:50:48  INFO       [482/1217] GUTIERREZ LILY H               >> 18136 GUNN HWY
+15:50:48  INFO       [483/1217] WILFORD ASHLEY NICOLE          >> 9507 RIPLEY RD
+15:50:49  INFO       [484/1217] SEABROOK CHELSEY JEANNE        >> 8333 PINE RIVER RD
+15:50:49  INFO       [485/1217] NEAL PENNY                     >> 16116 VANDERBILT DR
+15:50:50  INFO       [486/1217] PELLEGRINO JOSEPH ANTHONY III  >> 7012 FILBERT LN
+15:50:50  INFO       [487/1217] DIAZ HEYLING VALESKA           >> 19806 WYNDMILL CIR
+15:50:50  INFO       [488/1217] JOYCE DANNY WOODROW            >> 7216 NORTH MOBLEY RD
+15:50:51  INFO       [489/1217] MEDINA BRENDA                  >> 15903 NORTHLAKE VILLAGE DR
+15:50:51  INFO       [490/1217] MEDINA BRENDA                  >> 15903 NORTHLAKE VILLAGE DR
+15:50:51  INFO       [491/1217] SACHS JUDITH ANN               >> 14011 SHADY SHORES DR
+15:50:52  INFO       [492/1217] JOHNSON VANESSA                >> 7439 MIRACLE LN
+15:50:52  INFO       [493/1217] SACHS JUDITH ANN               >> 14011 SHADY SHORES DR
+15:50:52  INFO       [494/1217] SACHS JUDITH ANN               >> 14011 SHADY SHORES DR
+15:50:53  INFO       [495/1217] BARBIERI JOHN ANTHONY          >> 12107 ECHO BASIN CV
+15:50:54  INFO       [496/1217] BARBIERI JOHN ANTHONY          >> 12107 ECHO BASIN CV
+15:50:54  INFO       [497/1217] STEVENS JENNIFER LYNNMARIE     >> 19909 PINE TREE RD
+15:50:54  INFO       [498/1217] FIJALKOWSKI KATELYN ANN        >> 10907 PURPLE MARTIN BLVD
+15:50:54  INFO       [499/1217] GLYNN DEVON SCOTT              >> 517 VISTA RIDGE DR
+15:50:55  INFO       [500/1217] FABIAN FRANKLIN RAUL           >> 5811 MIDDLESEX DR
+15:50:55  INFO       [501/1217] SACHS JUDITH ANN               >> 14011 SHADY SHORES DR
+15:50:56  INFO       [502/1217] SAMUELS MOSES                  >> 5532 PENTAIL CIR
+15:50:56  INFO       [503/1217] CHANDLER JADA DENISE           >> 7613 LAKE CYPRESS DR
+15:50:56  INFO       [504/1217] HAWKINS HEATH                  >> 19815 ANGEL LN
+15:50:57  INFO       [505/1217] FORD JEROME                    >> 13036 TYLER RUN AVE
+15:50:57  INFO       [506/1217] COWAN SUZETTE                  >> 16008 PRESTON TRAIL WAY
+15:50:57  INFO       [507/1217] PARKER ZACHARY                 >> 7635 HORSE POND RD
+15:50:58  INFO       [508/1217] WOODRUFF EARNEST               >> 1602 PAINT BRANCH WAY
+15:50:58  INFO       [509/1217] CRANDON RAEGON                 >> 11006 NEST CT
+15:50:59  INFO       [510/1217] SWINTON OTIZ TONY JR           >> 4002 ASBURY CT
+15:50:59  INFO       [511/1217] ESCALONA HECTOR                >> 7708 CITRONELLA CT
+15:51:00  INFO       [512/1217] AMEZQUITA GLORIA               >> 7911 CROTON AVE
+15:51:00  INFO       [513/1217] GRECO NINA M                   >> 14433 PEPPERPINE DR
+15:51:00  INFO       [514/1217] FERNANDEZ VILKA                >> 19622 LAKE OSCEOLA LN
+15:51:01  INFO       [515/1217] BLOHM MARK                     >> 18104 VILLA CREEK DR
+15:51:01  INFO       [516/1217] ODELL NAKESHIA                 >> 5202 QUARRYSTONE LN
+15:51:01  INFO       [517/1217] RODRIGUEZ LAUREN               >> 18844 CRESCENT RD
+15:51:02  INFO       [518/1217] DAVID AUTO BODY                >> 18906 CRESCENT RD
+15:51:02  INFO       [519/1217] GONZALEZ SAMUEL                >> 7008 COLLEY RD
+15:51:02  INFO       [520/1217] MULLER BERTHA                  >> 5717 PINEY LANE DR
+15:51:03  INFO       [521/1217] AMT SIX THOUSAND $005.91 U.S.  >> 6910 GREENHILL PL
+15:51:03  INFO       [522/1217] SHORT ANNIE                    >> 15209 RACE TRACK RD
+15:51:04  INFO       [523/1217] FINLEY NICOLE                  >> 9202 BRINDLEWOOD DR
+15:51:04  INFO       [525/1217] BILLINGTON AMANDA              >> 6518 SPRING OAK CT
+15:51:05  INFO       [526/1217] UNKNOWN PARTY OR PARTIES IN PO >> TAMPA
+15:51:06  INFO       [528/1217] HAMILTON CHRISTOPHER HAYWARD D >> 7405 MIRACLE LN
+15:51:06  INFO       [529/1217] NOCK MICHAEL ANTHONY JR        >> 2106 RIVER TURIA CIR
+15:51:06  INFO       [530/1217] KILPATRICK MARKEASE LAMONT     >> 5011 AVENUE AVIGNON
+15:51:07  INFO       [531/1217] CARRILLO HENRY                 >> 14109 LONEWOOD PL
+15:51:07  INFO       [532/1217] CITY OF TAMPA                  >> GUNN HWY
+15:51:07  INFO       [533/1217] COLLINS VONSHAELA M            >> 9612 BECKER CARSON TRL
+15:51:08  INFO       [534/1217] GANDY ROBERT LEE               >> 11316 BLOOMINGTON DR
+15:51:08  INFO       [535/1217] OTERO ANGEL                    >> 11092 WINDSOR PLACE CIR
+15:51:09  INFO       [537/1217] VASQUEZ NILSSER R              >> 9108 SHADOW POND CT
+15:51:09  INFO       [538/1217] WIGGINS MIRACLE ARTRICE RAYSHO >> 11103 INDIAN OAKS DR
+15:51:09  INFO       [539/1217] JOLLY CHARYSE                  >> 802 W 124TH AVE
+15:51:09  INFO       [540/1217] BENNETT CLAYTON JONATHAN       >> 19506 PINE VALLEY DR
+15:51:10  INFO       [542/1217] CITIZENS PROPERTY INSURANCE CO >> 14002 N DALE MABRY HWY
+15:51:11  INFO       [543/1217] ROYSE EDWARD CAL               >> 3124 S NORTHVIEW RD
+15:51:11  INFO       [544/1217] CITY OF TAMPA                  >> GUNN HWY
+15:51:11  INFO       [545/1217] HALL EDMOND DERRICK            >> 19819 ANGEL LN
+15:51:12  INFO       [546/1217] PINCKNEY WILLIE                >> 14764 SAN MARSALA CT
+15:51:12  INFO       [547/1217] SPECTRUM CU                    >> RIVERVIEW
+15:51:12  INFO       [548/1217] HALL EDMOND DERRICK            >> 19819 ANGEL LN
+15:51:13  INFO       [549/1217] NORRIS JOALE                   >> 16212 LAKE ARMISTEAD WAY
+15:51:13  INFO       [550/1217] GONZALEZ VANESSA               >> 7008 COLLEY RD
+15:51:13  INFO       [551/1217] MARTIN MICHELE IVETTE          >> 19606 ANGEL LN
+15:51:14  INFO       [553/1217] HOOKS ROBERT CARLOS JR         >> 1002 PINE RIDGE CIR
+15:51:15  INFO       [554/1217] NEALY WILLIE JAMES             >> 4410 ATWOOD DR
+15:51:15  INFO       [555/1217] OGILVIE AMANDA L               >> 18918 CRESCENT RD
+15:51:16  INFO       [557/1217] HOOKS ROBERT CARLOS JR         >> 1002 PINE RIDGE CIR
+15:51:16  INFO       [558/1217] NEALY WILLIE JAMES             >> 4410 ATWOOD DR
+15:51:17  INFO       [559/1217] SANCHEZ SARAH MARIE            >> 18916 CRESCENT RD
+15:51:17  INFO       [560/1217] REED SARAH                     >> 16018 MILAM DR
+15:51:18  INFO       [561/1217] SWINDLE DARLENE G              >> 7709 ALVINA ST
+15:51:18  INFO       [562/1217] TILLMAN CHEQUITKA VALARIE      >> 16017 CHASTAIN RD
+15:51:18  INFO       [563/1217] WALTON DONNIE                  >> 19125 LARCHMONT DR
+15:51:18  INFO       [564/1217] REED SARAH                     >> 16018 MILAM DR
+15:51:19  INFO       [565/1217] WILLIAMS JAZZMAN SAM           >> 7624 LUTZ LAKE FERN RD
+15:51:19  INFO       [566/1217] REED SARAH                     >> 16018 MILAM DR
+15:51:19  INFO       [567/1217] WILLIAMS JAZZMAN SAM           >> 7624 LUTZ LAKE FERN RD
+15:51:19  INFO       [568/1217] WILLIAMS TIFFANY NICOLE        >> 7624 LUTZ LAKE FERN RD
+15:51:19  INFO       [569/1217] BOUDREAU TAIYA                 >> 11306 ECHO VIEW DR
+15:51:20  INFO       [570/1217] ALGARIN ANGELIN RUBY           >> 15624 GREENLEAF BAY ST
+15:51:21  INFO       [571/1217] HARRIS RICHARD EDDIE JR        >> 12958 ROYAL GEORGE AVE
+15:51:21  INFO       [572/1217] HOWARD RAEKWON JAQUEZ          >> 7804 COLLEY RD
+15:51:21  INFO       [573/1217] AMIR ALI LUAY ABDEL            >> 6121 CHENE CT
+15:51:21  INFO       [574/1217] JENNINGS CHELSIE LYNN          >> 13205 ROYAL GEORGE AVE
+15:51:22  INFO       [575/1217] TROY TAYLOR DEVON              >> 4808 HAYRIDE CT
+15:51:22  INFO       [576/1217] WYATT DAVID LEWIS              >> 8906 ROCKY RUN CT
+15:51:22  INFO       [577/1217] LOPEZ CHRISTIAN                >> 18116 BROWN RD
+15:51:22  INFO       [578/1217] DUPREE MONIQUE JACQUELINE      >> 17402 HIALEAH DR
+15:51:23  INFO       [580/1217] MARTINEZ JANET                 >> 19313 EASTBROOK DR
+15:51:23  INFO       [581/1217] CASTELLANOS CADE JULIAN        >> 17590 BROWN RD
+15:51:23  INFO       [582/1217] STEPHENS DARRIUS LEMARR        >> 19440 ANGEL LN
+15:51:23  INFO       [583/1217] STRASMANN HELIO                >> 12516 SHINING WILLOW ST
+15:51:24  INFO       [585/1217] HEANEY CONOR FRANCIS           >> 18207 CLEAR LAKE DR
+15:51:24  INFO       [586/1217] RAMOS HUALY                    >> 19705 SPRING WILLOW CT
+15:51:24  INFO       [587/1217] GARCIA CEBRIAN SAMUEL LEANDRO  >> ODESSA
+15:51:24  INFO       [588/1217] PORTALES HERNANDEZ JOSE VLADIM >> 7107 HAZELWOOD CT
+15:51:25  INFO       [589/1217] ZELAYA LOPEZ DANY ALEXANDER    >> 926 SPRINGVILLE CT
+15:51:25  INFO       [591/1217] BENAVENTE ORDONEZ GERBER ROLAN >> 15001 LAUREL COVE CIR
+15:51:25  INFO       [592/1217] DREW DANIEL M                  >> 14305 BRIARTHORN DR
+15:51:26  INFO       [593/1217] BARSBY DANIEL KEITH            >> 1436 CLARION DR
+15:51:26  INFO       [594/1217] RUSSO MARCUS GIANI             >> 16420 TURNBURY OAK DR
+15:51:26  INFO       [595/1217] GUZMAN RUBEN ALEXANDER         >> 15008 ARBOR HOLLOW DR
+15:51:26  INFO       [596/1217] HELI JOHN CARLOS               >> 18258 WAYNE RD
+15:51:27  INFO       [597/1217] TRIMARCO ANGELINA              >> 8806 AMOS DR
+15:51:27  INFO       [598/1217] SWINDLE DARLENE G              >> 7709 ALVINA ST
+15:51:27  INFO       [599/1217] NEAL FELICITY                  >> 16116 VANDERBILT DR
+15:51:27  INFO       [600/1217] CHAMPION THOMAS COLE           >> 8408 STILLBROOK AVE
+15:51:28  INFO       [603/1217] HERNANDEZ JENNIFER             >> 7320 W COUNTY LINE RD
+15:51:28  INFO       [604/1217] RUSSELL WYATT DUANE            >> 17913 SPENCER RD
+15:51:29  INFO       [606/1217] SILLER CRESENCIO JR            >> 6012 PORTSDALE PL, UNIT 201
+15:51:29  INFO       [608/1217] ODAY QUAMIR KYLEEM             >> 9971 STOCKBRIDGE DR
+15:51:30  INFO       [609/1217] MCCULLOUGH CARLTON             >> 13211 ELM ST
+15:51:30  INFO       [610/1217] PEEK KRYSTAL D                 >> 12321 COUNTRY WHITE CIR
+15:51:30  INFO       [611/1217] PRESSLEY MARTY ANDRA           >> 18310 PLEASANT RIDGE PL
+15:51:30  INFO       [612/1217] SPRADLIN BEVERLY               >> 7318 BAJA CT
+15:51:31  INFO       [613/1217] ELITE HOME WARRANTY            >> TAMPA
+15:51:31  INFO       [614/1217] VICKERS TIFFANI                >> 6406 OAKDELL DR
+15:51:32  INFO       [615/1217] LATTIMORE KAYLA                >> VALRICO
+15:51:32  INFO       [616/1217] MUNGIN DWAYNE                  >> 5411 ARAGON CT
+15:51:33  INFO       [617/1217] RAMOS MARIA                    >> 19705 SPRING WILLOW CT
+15:51:33  INFO       [618/1217] SNELLGROVE KELLIE CHANTEL      >> 11702 LIPSEY RD
+15:51:33  INFO       [619/1217] STATE FARM FLORIDA INSURANCE C >> 3602 E SPECTRUM BLVD
+15:51:34  INFO       [620/1217] COSTON ANDRE SCORPIO           >> 12523 RAWHIDE DR
+15:51:34  INFO       [621/1217] EMANUEL ROSCOE LEE             >> 18508 CRAWLEY RD
+15:51:34  INFO       [622/1217] EMANUEL ROSCOE LEE             >> 18508 CRAWLEY RD
+15:51:35  INFO       [623/1217] CUESTA NANCY                   >> 11814 MEADOWDALE DR
+15:51:35  INFO       [624/1217] RUFFIN ERIC LEE JR             >> 6815 S DAUPHIN AVE
+15:51:35  INFO       [625/1217] KENNERDY ERIC WILLIAMS JR      >> 2408 WISHING WELL CIR
+15:51:36  INFO       [628/1217] CALL TINA                      >> 19704 WYNDHAM LAKES DR
+15:51:36  INFO       [629/1217] PITTI LIZBETH                  >> 9908 WOODBAY DR
+15:51:37  INFO       [630/1217] MCNEAL CHRISTOPHER B           >> 15957 N FLORIDA AVE
+15:51:37  INFO       [631/1217] SANTIAGO REY                   >> 17303 EQUESTRIAN TRL
+15:51:37  INFO       [632/1217] BOYD JOVON                     >> 17504 TALLY HO CT
+15:51:37  INFO       [633/1217] MESSER ARCHIE DAVID            >> 805 BRANTENBURG WAY
+15:51:38  INFO       [634/1217] HUTCHINSON SETH MICHAEL LEE    >> 5821 MYRTLE LN
+15:51:38  INFO       [635/1217] GARCIA FERNANDO                >> ODESSA
+15:51:38  INFO       [636/1217] GARCIA FERNANDO                >> ODESSA
+15:51:38  INFO       [637/1217] FLOYD CHRISTOPHER DEVAUGHN     >> 9910 MENANDER WOOD CT
+15:51:38  INFO       [638/1217] JACKSON TARANDY REID           >> 18102 BURRELL RD
+15:51:38  INFO       [639/1217] HOWARD CHAVELE ANTONIO         >> 7804 COLLEY RD
+15:51:39  INFO       [640/1217] WEST JERMAINE IVORY            >> 19116 LARCHMONT DR
+15:51:39  INFO       [641/1217] HECTOR BENTLEY ALWIN JR        >> 15720 TIMBERWOOD DR
+15:51:39  INFO       [643/1217] RILEY MARVIN BERNARD           >> 13029 ROYAL GEORGE AVE
+15:51:40  INFO       [644/1217] WILSON MARCISE JAUREL          >> 19260 CRESCENT RD
+15:51:40  INFO       [645/1217] WORD AZRIELL N                 >> 15607 CASHMERE LN
+15:51:40  INFO       [646/1217] CARLTON SHARON MARIE           >> 5511 RAVEN CT
+15:51:40  INFO       [647/1217] SWEET KANISHA LATORIA          >> 4333 BAYSIDE VILLAGE DR, UNIT 114
+15:51:41  INFO       [648/1217] PIERCE CHRISTOPHER LEE         >> 15802 BEREA DR
+15:51:41  INFO       [649/1217] MOSQUERA JASMINE               >> 4514 W JEAN ST
+15:51:41  INFO       [650/1217] SIMCIC JUSTIN PHILLIP          >> 3902 E HENRY AVE
+15:51:41  INFO       [651/1217] JOYNER DAVARCUS                >> 16412 TURNBURY OAK DR
+15:51:41  INFO       [652/1217] OWENS DEDRICK                  >> 17501 CANAL SHORES DR
+15:51:42  INFO       [653/1217] ANTONIO CHRISTIEN              >> 9542 CHARLESBERG DR
+15:51:42  INFO       [654/1217] ODAY QUAMIR KYLEEM             >> 9971 STOCKBRIDGE DR
+15:51:42  INFO       [655/1217] MIDDLETON DILLON               >> 16459 TURNBURY OAK DR
+15:51:42  INFO       [656/1217] DAVIS TERRY                    >> 19626 LAKE OSCEOLA LN
+15:51:43  INFO       [657/1217] RIVERA JOAO                    >> 19604 HIAWATHA RD
+15:51:43  INFO       [658/1217] ODAY QUAMIR KYLEEM             >> 9971 STOCKBRIDGE DR
+15:51:43  INFO       [659/1217] CARDOSO FLAVIA C               >> 12228 BISHOPSFORD DR
+15:51:43  INFO       [660/1217] SEQUEIRA FRANCISCO DE          >> 16022 EAGLE RIVER WAY
+15:51:43  INFO       [661/1217] MOORE MIGUEL DEANGELO JR       >> 17725 BOY SCOUT RD
+15:51:44  INFO       [662/1217] MOORE MIGUEL DEANGELO JR       >> 17725 BOY SCOUT RD
+15:51:44  INFO       [663/1217] TRACTOR SUPPLY CO              >> 7213 TURNMOR DR
+15:51:44  INFO       [664/1217] AYLOR JOHN JACOB               >> 4118 SILVERCREST LN
+15:51:44  INFO       [665/1217] COOPER WILLIAM W               >> 19620 LAKE OSCEOLA LN
+15:51:45  INFO       [666/1217] ANGEL ENRIQUE C. MELENDEZ      >> 19460 ANGEL LN
+15:51:45  INFO       [667/1217] VALLE HERNANDEZ THIAM EAVIER   >> 12716 TRUCIOUS PL
+15:51:45  INFO       [668/1217] WALLACE CHAD E                 >> 19704 LAKE OSCEOLA LN
+15:51:45  INFO       [669/1217] VALLE HERNANDEZ THIAM EAVIER   >> 12716 TRUCIOUS PL
+15:51:46  INFO       [671/1217] VEGA NATHAN ISHMEAL            >> 7410 VAN DYKE RD
+15:51:46  INFO       [672/1217] OJEDA LUIS                     >> 15902 PRINCE WILLIAM PL
+15:51:46  INFO       [673/1217] BOONE MORRIS JR                >> 7438 GUNN HWY
+15:51:46  INFO       [674/1217] GOULD MELISSA                  >> 10463 GREENDALE DR
+15:51:46  INFO       [675/1217] RAMIREZ ANGEL                  >> 5614 TERN CT
+15:51:47  INFO       [676/1217] BROOKS KEVION MYKEL            >> 7217 CYPRESS LAKE DR
+15:51:47  INFO       [677/1217] SHIVER LESLIE                  >> 13759 ORANGE SUNSET DR, UNIT 203
+15:51:47  INFO       [679/1217] BARBERY DARRYL ANTONIO RODRELL >> 3407 ELLENWOOD LN, UNIT 18
+15:51:48  INFO       [680/1217] JOYNER DAVARCUS                >> 16412 TURNBURY OAK DR
+15:51:48  INFO       [681/1217] JOYNER DAVARCUS                >> 16412 TURNBURY OAK DR
+15:51:48  INFO       [682/1217] JOYNER DAVARCUS MELTON         >> 16412 TURNBURY OAK DR
+15:51:48  INFO       [683/1217] JOYNER DAVARCUS MELTON         >> 16412 TURNBURY OAK DR
+15:51:48  INFO       [684/1217] PARKS ANTHONY MARQUIS          >> 10411 LAKE GROVE DR
+15:51:49  INFO       [685/1217] LONG MICHAEL LE VELL FRANK     >> 8522 BETH CT
+15:51:49  INFO       [686/1217] GOMEZ LISETTE                  >> 16205 ARMISTEAD LN
+15:51:49  INFO       [687/1217] VILLASENOR RANDY C             >> 9817 SIR FREDERICK ST
+15:51:49  INFO       [688/1217] RODRIGUEZ JEREMIAH LUCAS       >> 18844 CRESCENT RD
+15:51:50  INFO       [690/1217] SUAREZ JAVIER JR               >> 10405 LAKE GROVE DR
+15:51:50  INFO       [691/1217] SPENCER BYRON KEITH            >> 17205 EQUESTRIAN TRL
+15:51:51  INFO       [693/1217] MCCARTER ELAINE M.             >> 17536 WILLOW POND DR
+15:51:51  INFO       [694/1217] AGUILAR ABRIL TOMASA           >> 7207 LUNITA CT
+15:51:51  INFO       [695/1217] ROYAL DEANDRE                  >> 19223 GUNN HWY
+15:51:52  INFO       [696/1217] LUGO JENNIFER ANN              >> 5607 PINEY LANE DR
+15:51:52  INFO       [697/1217] GRICE IAN MARTEL               >> 2449 DOVESONG TRACE DR
+15:51:52  INFO       [698/1217] COLTRANE CECIL CASS JR         >> 13902 BITTERSWEET WAY
+15:51:53  INFO       [699/1217] STEVENSON WYKERIA NEYSHAWN     >> LAKE MAURINE DR
+15:51:53  INFO       [700/1217] HORNE CIENJUAN J'DRISSA SANAE  >> 19906 WYNDMILL CIR
+15:51:53  INFO       [701/1217] WALKER DELANO ANTOINE JR       >> ODESSA
+15:51:54  INFO       [702/1217] GRICE IAN M                    >> 2449 DOVESONG TRACE DR
+15:51:54  INFO       [703/1217] RODRIGUEZ NAYELLIE             >> 18844 CRESCENT RD
+15:51:54  INFO       [704/1217] WALKER DELANO ANTOINE JR       >> ODESSA
+15:51:55  INFO       [705/1217] MARIN NEGRON WILFREDO          >> 16020 ROYAL ABERDEEN PL
+15:51:55  INFO       [706/1217] RODRIGUEZ NAYELLIE             >> 18844 CRESCENT RD
+15:51:55  INFO       [707/1217] VILLASENOR RANDY CHARDON       >> 9817 SIR FREDERICK ST
+15:51:55  INFO       [708/1217] AGUILAR OBADIAH                >> 7207 LUNITA CT
+15:51:56  INFO       [709/1217] JACOBSEN JUANA                 >> 7621 TAMARIND AVE
+15:51:56  INFO       [711/1217] GARCIA AUGUSTO E               >> ODESSA
+15:51:56  INFO       [712/1217] MATEO WALESKA                  >> 13913 LYNMAR BLVD
+15:51:57  INFO       [713/1217] PINKNEY CATERA RENAE           >> 15013 ROCKY LEDGE DR
+15:51:57  INFO       [714/1217] FRANCIS DARRELL KIRK           >> 18513 DAKOTA RD
+15:51:58  INFO       [715/1217] BYRD KYLE RICHARD              >> 16014 SHINNECOCK DR
+15:51:58  INFO       [716/1217] FIS MORALES YOELBYS            >> 10524 WOODSTOCK RD
+15:51:58  INFO       [717/1217] PETERSON DENNIS KEITH          >> 19808 HIAWATHA RD
+15:51:58  INFO       [718/1217] SINGH BALRAJ                   >> 17120 BOY SCOUT RD
+15:51:59  INFO       [719/1217] PARIDO ERIC MIKEAL             >> MIDWAY ST
+15:51:59  INFO       [720/1217] WILLIAMS ZION                  >> 7624 LUTZ LAKE FERN RD
+15:51:59  INFO       [721/1217] WILLIAMS ZION CHRISTIAN        >> 7624 LUTZ LAKE FERN RD
+15:51:59  INFO       [722/1217] PIETRYKA DEMI CHANEL           >> 1320 W KNOLLWOOD ST
+15:52:00  INFO       [723/1217] PORTALATIN VANESSA IRENE       >> 14121 STOWBRIDGE AVE
+15:52:00  INFO       [725/1217] HARDY TELISHIA                 >> 15003 LAUREL COVE CIR
+15:52:01  INFO       [727/1217] BERROA YANISET                 >> 13540 BELLINGHAM DR
+15:52:01  INFO       [728/1217] AYOUBI UZAIR A                 >> 17203 BROADOAK DR
+15:52:01  INFO       [729/1217] GUTIERREZ YAHAIRA              >> 18136 GUNN HWY
+15:52:01  INFO       [730/1217] HUTCHINSON DAVID W             >> 5821 MYRTLE LN
+15:52:02  INFO       [731/1217] GOMEZ DANIEL                   >> 16205 ARMISTEAD LN
+15:52:02  INFO       [732/1217] MURPHY THOMAS J                >> 7716 VAN DYKE RD
+15:52:02  INFO       [733/1217] MANIGO ANTONIO J SR            >> 5143 SHAKESPEARE DR
+15:52:02  INFO       [734/1217] HAMRICK ASHLEY                 >> 19308 HIAWATHA RD
+15:52:03  INFO       [736/1217] ELLIOTT LONZIE E.              >> 6914 JONES RD
+15:52:03  INFO       [737/1217] ABREU JOHANNA                  >> 14940 REDCLIFF DR
+15:52:03  INFO       [738/1217] ROMERO REYDEL                  >> 7515 N MOBLEY RD
+15:52:03  INFO       [739/1217] SMITH DOMINKIA SHANKIA         >> 7006 JONES RD
+15:52:04  INFO       [740/1217] PIERCE TADERRA                 >> 15802 BEREA DR
+15:52:04  INFO       [741/1217] RAMOS CECILIA                  >> 19705 SPRING WILLOW CT
+15:52:04  INFO       [742/1217] GARNER JAQUARIUS               >> 15122 CRAGGY CLIFF ST
+15:52:04  INFO       [743/1217] BLUE ALEXIS                    >> 19804 HIAWATHA RD
+15:52:05  INFO       [744/1217] GONZALEZ STEPHANIE A           >> 7008 COLLEY RD
+15:52:05  INFO       [745/1217] RODRIGUEZ LAUREN               >> 18844 CRESCENT RD
+15:52:05  INFO       [746/1217] WILLIAMS GEORGIA               >> 7624 LUTZ LAKE FERN RD
+15:52:05  INFO       [747/1217] BROWN JAZMYNE                  >> 19670 HIAWATHA RD
+15:52:05  INFO       [748/1217] IGNACIO FRANCISCO AKA MIGUEL F >> 2606 FIDDLESTICK CIR
+15:52:06  INFO       [749/1217] RANDALL DERRYE                 >> 16324 ROCK LAKE DR
+15:52:06  INFO       [750/1217] MURRAY JOHN                    >> 7226 WOODBROOK DR
+15:52:06  INFO       [751/1217] CINENA JEIZREEL                >> 3404 N 11TH ST
+15:52:06  INFO       [752/1217] ACKFELD JILL M                 >> 10908 AUSTRALIAN PINE DR
+15:52:07  INFO       [753/1217] JOHNSON QUAILLA                >> 7439 MIRACLE LN
+15:52:08  INFO       [754/1217] DODSON BRADLEY WILLIS          >> 12519 FOUR WHEEL DR
+15:52:08  INFO       [755/1217] DEHAVEN MICHAEL                >> 7804 NIAGARA AVE, UNIT 0221
+15:52:08  INFO       [756/1217] MCKINNEY TANYA                 >> 19907 ANGEL LN
+15:52:08  INFO       [757/1217] CHAPMAN LAKESHIA               >> 16006 NORTHLAKE VILLAGE DR
+15:52:09  INFO       [758/1217] KIRKHOM JOSEPH                 >> 11017 STANDING STONE DR
+15:52:09  INFO       [759/1217] WALKER DELANO ANTOINE JR       >> ODESSA
+15:52:09  INFO       [760/1217] LEO FRANCESCA                  >> 19910 WYNDMILL CIR
+15:52:10  INFO       [763/1217] GEORGE PETER APOLLO            >> 12823 STANWYCK CIR
+15:52:10  INFO       [764/1217] HAFEZ AHMED GAMAL              >> 5709 YELLOW HORNBILL AVE
+15:52:10  INFO       [765/1217] SMITH KIANGELA                 >> 7006 JONES RD
+15:52:10  INFO       [766/1217] YANG XIAOYIN                   >> 16014 ROYAL ABERDEEN PL
+15:52:11  INFO       [767/1217] BONIVICH DAVID                 >> 1112 WINDTON OAK DR
+15:52:11  INFO       [768/1217] LAWSON STEVEN                  >> 12610 ASHDOWN DR
+15:52:11  INFO       [769/1217] HINSON KEION                   >> 2681 BUTTERCUP LUCINE LN
+15:52:11  INFO       [770/1217] FISHER ARTHUR SR.              >> 10524 WOODSTOCK RD
+15:52:12  INFO       [772/1217] CANTY ISAAC                    >> 1000 HELENA ST
+15:52:12  INFO       [773/1217] NEXT DAY ACCESS                >> 8702 GARDNER RD
+15:52:12  INFO       [774/1217] RODRIGUEZ JAHAIRA              >> 18844 CRESCENT RD
+15:52:12  INFO       [775/1217] ACEVEDO OSVALDO                >> 15006 TRAIL CREEK PL
+15:52:13  INFO       [777/1217] ACOSTA KATALIN                 >> 17509 BROWN RD
+15:52:14  INFO       [780/1217] JAAFAR JAAFAR                  >> 5808 PINEY LANE DR
+15:52:16  INFO       [784/1217] ALL FLORIDA POWER & AIR SERVIC >> 8301 BRIARFIELD CT
+15:52:16  INFO       [785/1217] KRUCZEWSKI JULIUS JR           >> GIBSONTON
+15:52:17  INFO       [786/1217] DALESSANDRO CONSTANCE          >> 2906 HILLSIDE RAMBLE DR
+15:52:17  INFO       [787/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:17  INFO       [788/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:17  INFO       [789/1217] BEARD WILLIE                   >> 10104 DOWNEY LN
+15:52:18  INFO       [790/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:18  INFO       [791/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:18  INFO       [792/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:19  INFO       [793/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:19  INFO       [794/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:19  INFO       [795/1217] CHADWELL MICHAEL               >> 5115 JOANNE KEARNEY BLVD
+15:52:22  INFO       [799/1217] DOUCETTE WILLIAM A.            >> 6030 PRINTERY ST, UNIT 103
+15:52:22  INFO       [800/1217] PARVIN ISRAT OISHI KHUSHNUR    >> 12716 EVINGTON POINT DR
+15:52:22  INFO       [801/1217] JAMES CHRISTINA FAYE           >> 19420 PINE TREE RD
+15:52:23  INFO       [802/1217] ALVAREZ MARIA AUXILIADORA OREL >> 11012 OAKDALE HOLLOW LN
+15:52:23  INFO       [803/1217] ERVIN ERIKA MARIE              >> 5134 PHEASANT WOODS DR
+15:52:23  INFO       [804/1217] MOORE DEAN                     >> 17725 BOY SCOUT RD
+15:52:24  INFO       [806/1217] NELSON LORI A.                 >> 19610 WYNDHAM LAKES DR
+15:52:24  INFO       [807/1217] CAM SERVICES REPAIRS LLC       >> 7004 JONES RD
+15:52:24  INFO       [808/1217] ASHLEY TAMPA LLC               >> 11401 N DALE MABRY HWY
+15:52:24  INFO       [809/1217] BRANDON RENTAL NORTH           >> 19315 SEA MIST LN
+15:52:24  INFO       [810/1217] LITTLE DOC LLC                 >> 19311 GUNN HWY
+15:52:25  INFO       [811/1217] LYONS WILLIE BEATRICE          >> 18000 MCKINNON RD
+15:52:25  INFO       [812/1217] MEJBEL AHMED                   >> 10639 LUCAYA DR
+15:52:26  INFO       [813/1217] YOUNG MICHELCO LASHON          >> 6521 GRAZING LN
+15:52:27  INFO       [815/1217] WEST PARK VILLAGE CONDOMINIUM  >> 19116 LARCHMONT DR
+15:52:27  INFO       [816/1217] WEST PARK VILLAGE CONDOMINIUM  >> 19116 LARCHMONT DR
+15:52:27  INFO       [817/1217] AZA ENGELS DANIEL CONTRERAS DE >> 18450 WAYNE RD
+15:52:28  INFO       [818/1217] LINDEN SHANTEL                 >> 9426 CHARLESBERG DR
+15:52:28  INFO       [819/1217] SCHNEIDER MATTHEW THOMAS       >> 9626 CHARLESBERG DR
+15:52:28  INFO       [820/1217] CLARK LARRY                    >> 19616 PINE TREE RD
+15:52:29  INFO       [821/1217] WGA CREEKBRIDGE LLC            >> 1002 CREEKBRIDGE RD
+15:52:29  INFO       [822/1217] GONZALEZ TYINA N               >> 7008 COLLEY RD
+15:52:29  INFO       [823/1217] SMITH BRIAN                    >> 7006 JONES RD
+15:52:29  INFO       [824/1217] CHOWDHURY MUHAMMAD ASIF        >> 7930 TERRACE RIDGE DR
+15:52:30  INFO       [825/1217] TRANS AND COMPANIES LLC, A FLO >> 10290 PURPLE LEAF CT
+15:52:31  INFO       [829/1217] AVRAMIS POLAELENA B.           >> 10253 PURPLE LEAF CT
+15:52:31  INFO       [830/1217] ECKERD PRESS LLC               >> 6138 MARSH TRAIL DR
+15:52:32  INFO       [831/1217] VELOCITY PAINTING & PRESSURE W >> 1514 W COMANCHE AVE
+15:52:32  INFO       [832/1217] DEVOLDER LAW FIRM PLLC         >> 17720 ESPRIT DR
+15:52:33  INFO       [835/1217] CLARK MARY J.                  >> 19616 PINE TREE RD
+15:52:33  INFO       [836/1217] VAUGHN ANGELINE                >> 18106 PEREGRINES PERCH PL, UNIT 5204
+15:52:33  INFO       [837/1217] RICHARDSON CINDY LEE           >> 11304 HUTCHENS AVE
+15:52:34  INFO       [838/1217] FENNELL CHEIVIA EVADNI         >> 417 NEWMONT CIR
+15:52:35  INFO       [839/1217] SWAINSON TYRONE ANTHONY        >> 756 BARCLAY WOOD DR
+15:52:35  INFO       [840/1217] KANE FRANK R.                  >> 13131 ROYAL GEORGE AVE
+15:52:35  INFO       [841/1217] COHEN GADI                     >> 11523 TROTTING DOWN DR
+15:52:36  INFO       [842/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:36  INFO       [843/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:37  INFO       [844/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:37  INFO       [845/1217] RENEW FINANCIAL                >> 8302 DRYCREEK DR
+15:52:37  INFO       [846/1217] MAGNESS RONALD WAYNE           >> 4904 ROCK ISLAND CT
+15:52:38  INFO       [847/1217] CALERO AIDA                    >> 6009 W JEAN ST
+15:52:39  INFO       [848/1217] SUNBELT RENTALS INC            >> 8406 E DR MARTIN LUTHER KING JR BLVD
+15:52:39  INFO       [849/1217] LINDBERG GREG                  >> 10548 BROADLAND PASS
+15:52:41  INFO       [853/1217] FAIROAKS SOUTH, INC.           >> TAMPA
+15:52:41  INFO       [854/1217] LINDBERG GREG E.               >> 10548 BROADLAND PASS
+15:52:42  INFO       [856/1217] OAKS AT RIVERVIEW COMMUNITY AS >> TAMPA
+15:52:42  INFO       [857/1217] OAKS AT RIVERVIEW COMMUNITY AS >> TAMPA
+15:52:43  INFO       [858/1217] TAMPA GREEK FESTIVAL           >> HUCKAVALLE RD
+15:52:43  INFO       [860/1217] OAKS AT RIVERVIEW COMMUNITY AS >> TAMPA
+15:52:43  INFO       [861/1217] CAYMAN FISH COMPANY LLC        >> 12811 N NEBRASKA AVE
+15:52:44  INFO       [862/1217] OAKS AT RIVERVIEW COMMUNITY AS >> TAMPA
+15:52:44  INFO       [863/1217] REIS AUTO SERVICE              >> 8006 FOUNTAIN AVE
+15:52:44  INFO       [864/1217] ANDERSON DANIEL                >> 19603 WYNDMILL CIR
+15:52:44  INFO       [865/1217] REIS AUTO SERVICE              >> 8006 FOUNTAIN AVE
+15:52:45  INFO       [866/1217] DEVALLA LLC                    >> 1302 N 34TH ST
+15:52:46  INFO       [868/1217] FANTASYLAND II                 >> 4715 N LOIS AVE
+15:52:48  INFO       [876/1217] HUFF MUFFLER OF BRANDON LLC    >> 9204 LAKE CHASE ISLAND WAY
+15:52:48  INFO       [877/1217] PLANT CITY HOUSING LLC         >> 6206 FORRESTAL DR
+15:52:50  INFO       [884/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:50  INFO       [885/1217] JACKSON HOWARD B.              >> 18102 BURRELL RD
+15:52:50  INFO       [886/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:50  INFO       [887/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:50  INFO       [888/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:51  INFO       [889/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:51  INFO       [890/1217] HILLSBOROUGH COUNTY            >> ST PETERSBURG
+15:52:51  INFO       [891/1217] RUIZ YELENA GONZALEZ           >> 18201 PATTERSON RD
+15:52:51  INFO       [892/1217] ASSOCIATION BRANDYCHASE CONDOM >> 11311 WICKERSLEY PL
+15:52:51  INFO       [893/1217] ARROYO LAKEISHA                >> 8506 FAWN CREEK DR
+15:52:52  INFO       [895/1217] SUNCOAST PAVING INC            >> 8201 W WATERS AVE
+15:52:52  INFO       [896/1217] FLORES BENJAMIN C              >> 7604 LAKE CYPRESS DR
+15:52:52  INFO       [897/1217] BERROCAL KEVIN                 >> 6919 SETON LN
+15:52:53  INFO       [898/1217] CONCEPCION JENNIFER            >> 11838 LANCASHIRE DR
+15:52:53  INFO       [899/1217] DUNCAN TODD                    >> 11311 HUTCHENS AVE
+15:52:53  INFO       [900/1217] BROWN DIANA R                  >> 19670 HIAWATHA RD
+15:52:53  INFO       [901/1217] GILLIAM TYRELL                 >> 16112 VANDERBILT DR
+15:52:53  INFO       [902/1217] BROWN SHANELLY                 >> 19670 HIAWATHA RD
+15:52:54  INFO       [903/1217] THOMAS ELIZABETH               >> 19632 LAKE OSCEOLA LN
+15:52:54  INFO       [904/1217] ROBBINS JACOB III              >> 7715 COLLEY RD
+15:52:54  INFO       [905/1217] NARVAEZ JOSEPH J               >> 17325 HUBERS CT
+15:52:54  INFO       [906/1217] DIAZ JOSE E                    >> 19806 WYNDMILL CIR
+15:52:55  INFO       [908/1217] AUSTIN JOYCE A                 >> 14634 CORAL BERRY DR
+15:52:55  INFO       [909/1217] SANDEL RAFEL                   >> 5806 CRESTHILL DR
+15:52:55  INFO       [910/1217] DECOLA PAUL                    >> 2303 ASHBERRY RIDGE DR
+15:52:55  INFO       [911/1217] TOVAR MARIANNA LARA            >> 7610 CARACAL CT
+15:52:56  INFO       [912/1217] GOMEZ VLADIMIR NUNEZ           >> 16205 ARMISTEAD LN
+15:52:56  INFO       [913/1217] PETERS KIANA P                 >> 12917 ROYAL GEORGE AVE
+15:52:56  INFO       [914/1217] DOLOBACH KRISTY                >> 212 NW 13TH ST
+15:52:57  INFO       [915/1217] BATISTA WALDEMAR               >> 16518 HUTCHISON RD
+15:52:57  INFO       [916/1217] HILBURN JOYCE                  >> 11913 MYRTLE ROCK DR
+15:52:57  INFO       [917/1217] GUZMAN KARLA                   >> 15008 ARBOR HOLLOW DR
+15:52:57  INFO       [918/1217] CASTILLO SANTIAGO DE LEON      >> 17503 BROWN RD
+15:52:58  INFO       [919/1217] GARZA RENE                     >> 5608 SILVER SUN DR
+15:52:58  INFO       [920/1217] ACOSTA IDALYS G                >> 17509 BROWN RD
+15:52:58  INFO       [921/1217] COLON CARLOS                   >> 8803 WYNDBROOK CT
+15:52:58  INFO       [922/1217] CISNEROS INES                  >> 8503 WOODLAKE DR
+15:52:59  INFO       [924/1217] DURHAM JOHN                    >> 6111 CHENE CT
+15:53:00  INFO       [925/1217] MURRAY REVARDA                 >> 8320 JANA DR
+15:53:00  INFO       [927/1217] LAGE ESTEFANI                  >> 6008 CRESTHILL DR
+15:53:00  INFO       [928/1217] MACHESKY JOHN                  >> 3131 EMERSON PL
+15:53:01  INFO       [929/1217] LASHLEY ALISSA                 >> 13343 SYDNEY RD
+15:53:02  INFO       [930/1217] DUAN RUI                       >> 20314 OAK KEY CT
+15:53:02  INFO       [931/1217] URBAEZ SUGEYLIS ELENA          >> 9486 SANDERS PARK PL
+15:53:03  INFO       [932/1217] BENNETT CIERA DOMINIQUE        >> 19506 PINE VALLEY DR
+15:53:03  INFO       [933/1217] STICKNEY DAISY                 >> 6101 ALICE AVE
+15:53:03  INFO       [934/1217] OWENS THANE MATTHEW            >> 17501 CANAL SHORES DR
+15:53:04  INFO       [935/1217] SWEAT SHIELA RENEE             >> 4209 FAIRWAY CIR
+15:53:04  INFO       [936/1217] ALSTON MOTAVIA SHANDRAI        >> 6934 DIMARCO RD
+15:53:04  INFO       [937/1217] CHANDRADAT GANESH              >> 13169 CALCITE BLUE AVE
+15:53:05  INFO       [938/1217] SLIDER CARE PLUS LLC           >> 16105 WASHBURN PL
+15:53:05  INFO       [939/1217] MALCOLM NEVILLE SEGREE         >> 7711 PALMBROOK DR
+15:53:06  INFO       [940/1217] ALBIN GREGORY A                >> 19037 FISHERMANS BEND DR
+15:53:06  INFO       [941/1217] PAUL JOY KANNAMPUZHAKOOLA      >> 13803 FAIRWAY BUNKER DR
+15:53:06  INFO       [942/1217] CHAVEZ ALEXIS                  >> 16110 CHASTAIN RD
+15:53:06  INFO       [943/1217] TKC INVESTMENT INC             >> 1450 SKIPPER RD
+15:53:07  INFO       [945/1217] KHAJA FASEEH                   >> 4228 GAUGE LINE LOOP
+15:53:07  INFO       [947/1217] BIANCHI DOMINICK J JR          >> 14228 N FLORIDA AVE
+15:53:07  INFO       [948/1217] AMERICAN HYDRAULICS INC        >> 7702 CEDARHURST LN
+15:53:09  INFO       [952/1217] HALL LEE MAIRSE                >> 19819 ANGEL LN
+15:53:09  INFO       [953/1217] BOTANICA SAN FRANCISCO CORP    >> 8906 N ORLEANS AVE
+15:53:09  INFO       [955/1217] MINISTRY OF SPIRIT & TRUTH INC >> 6800 THOMAS CIR
+15:53:10  INFO       [957/1217] JIMENEZ ROBLES FRANCISCO JAVIE >> 6601 HONEY BEAR CT
+15:53:10  INFO       [958/1217] SCOTT SHYE                     >> 19308 EASTBROOK DR
+15:53:11  INFO       [960/1217] RAMOS VELIZ YOELVI             >> 19705 SPRING WILLOW CT
+15:53:12  INFO       [962/1217] RODRIGUEZ ISMAEL               >> 18844 CRESCENT RD
+15:53:12  INFO       [965/1217] TALIAFERRO-HOLMES DEBRA        >> 1304 TRAILWATER ST
+15:53:13  INFO       [966/1217] HERNANDEZ PEDRO BAUTISTA       >> 7320 W COUNTY LINE RD
+15:53:13  INFO       [967/1217] MURRAY FLIPS LLC               >> 8320 JANA DR
+15:53:13  INFO       [968/1217] PERSAD ALISA L                 >> 8806 CHARLIE WALKER DR
+15:53:14  INFO       [969/1217] ASHWOOD KIMBERLY               >> 2105 LACEFLOWER DR
+15:53:18  INFO       [980/1217] DUMKE KAREN                    >> 4608 BUGG RD
+15:53:59  INFO       [1111/1217] GARCIA JOSE LUIS               >> ODESSA
+15:54:19  INFO       [1173/1217] PERKINS ALDEN E DECD           >> 10334 ABBOTSFORD DR
+15:54:19  INFO       [1174/1217] LAVADO HENRY JR                >> 3308 E YUKON ST
+15:54:20  INFO       [1179/1217] REEDER AVRICK TIM'VEL          >> 10039 NEW PARKE RD
+15:54:21  INFO       [1181/1217] REEDER AVRICK TIM'VEL          >> 10039 NEW PARKE RD
+15:54:21  INFO       [1182/1217] REEDER AVRICK TIM'VEL          >> 10039 NEW PARKE RD
+15:54:30  INFO       [1212/1217] COLON SANDRA                   >> 8803 WYNDBROOK CT
+15:54:32  INFO     PA enrichment: 840/1217 records have address
+15:54:32  INFO     Saved >> C:\Users\dmars\OneDrive\Desktop\Hillsborough_County_INTEL\hillsborough-scraper_2\hillsborough-scraper\dashboard\records.json
+15:54:32  INFO     Saved >> C:\Users\dmars\OneDrive\Desktop\Hillsborough_County_INTEL\hillsborough-scraper_2\hillsborough-scraper\data\records.json
+15:54:32  INFO     CSV  >> C:\Users\dmars\OneDrive\Desktop\Hillsborough_County_INTEL\hillsborough-scraper_2\hillsborough-scraper\data\leads_2026-04-25.csv  (1217 rows)
+15:54:32  INFO     ========================================================
+15:54:32  INFO     Total        : 1217
+15:54:32  INFO     With address : 840
+15:54:32  INFO     Hot  (>=70)  : 68
+15:54:32  INFO     Warm (50-69) : 818
+15:54:32  INFO     Dashboard >> python -m http.server 8000 --directory dashboard
+15:54:32  INFO     ========================================================
