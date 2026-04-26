@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-04-25T15:54:32.296962",
+  "fetched_at": "2026-04-26T01:33:44.158076",
   "source": "Hillsborough County Clerk of Court",
   "date_range": {
-    "from": "04/18/2026",
-    "to": "04/25/2026"
+    "from": "04/19/2026",
+    "to": "04/26/2026"
   },
   "total": 1217,
-  "with_address": 840,
+  "with_address": 841,
   "records": [
     {
       "doc_num": "2026159620",
@@ -10409,20 +10409,21 @@
       "grantee": "CAPITAL ONE, N.A., SUCCESSOR BY MERGER TO DISCOVER BANK",
       "amount": null,
       "legal": "",
-      "prop_address": "",
-      "prop_city": "",
+      "prop_address": "12403 BRISTOL COMMONS CIR",
+      "prop_city": "TAMPA",
       "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
+      "prop_zip": "33626",
+      "mail_address": "12403 BRISTOL COMMONS CIR",
+      "mail_city": "TAMPA",
       "mail_state": "FL",
-      "mail_zip": "",
+      "mail_zip": "33626",
       "clerk_url": "https://publicaccess.hillsclerk.com/oripublicaccess/?instrument=2026156131",
       "flags": [
         "Judgment lien",
-        "New this week"
+        "New this week",
+        "Has address"
       ],
-      "score": 45
+      "score": 50
     },
     {
       "doc_num": "2026156129",
