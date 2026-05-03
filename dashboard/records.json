@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-05-02T13:51:38.649433",
+  "fetched_at": "2026-05-03T13:49:39.923120",
   "source": "Hillsborough County Clerk of Court",
   "date_range": {
-    "from": "04/25/2026",
-    "to": "05/02/2026"
+    "from": "04/26/2026",
+    "to": "05/03/2026"
   },
   "total": 1295,
-  "with_address": 979,
+  "with_address": 980,
   "records": [
     {
       "doc_num": "2026169039",
@@ -11683,24 +11683,25 @@
       "filed": "2026-04-28",
       "cat": "JUD",
       "cat_label": "Judgment",
-      "owner": "N/A",
-      "grantee": "N/A (View document)",
+      "owner": "QUASHIE NERIZA",
+      "grantee": "MIDLAND CREDIT MANAGEMENT INC",
       "amount": null,
-      "legal": "",
-      "prop_address": "",
-      "prop_city": "",
+      "legal": "25 CC 036089",
+      "prop_address": "552 19TH ST NW",
+      "prop_city": "RUSKIN",
       "prop_state": "FL",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
+      "prop_zip": "33570",
+      "mail_address": "552 19TH ST NW",
+      "mail_city": "RUSKIN",
       "mail_state": "FL",
-      "mail_zip": "",
+      "mail_zip": "33570",
       "clerk_url": "https://publicaccess.hillsclerk.com/oripublicaccess/?instrument=2026162475",
       "flags": [
         "Judgment lien",
-        "New this week"
+        "New this week",
+        "Has address"
       ],
-      "score": 45
+      "score": 50
     },
     {
       "doc_num": "2026162425",
