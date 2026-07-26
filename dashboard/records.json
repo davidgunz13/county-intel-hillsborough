@@ -1,9 +1,9 @@
 {
-  "fetched_at": "2026-07-25T14:16:18.634990",
+  "fetched_at": "2026-07-26T14:10:38.498608",
   "source": "Hillsborough County Clerk of Court",
   "date_range": {
-    "from": "07/18/2026",
-    "to": "07/25/2026"
+    "from": "07/19/2026",
+    "to": "07/26/2026"
   },
   "total": 2458,
   "with_address": 1931,
@@ -8918,18 +8918,18 @@
       "filed": "2026-07-24",
       "cat": "JUD",
       "cat_label": "Judgment",
-      "owner": "STINSON MICAH B",
+      "owner": "STINSON AYANA J",
       "grantee": "LECTOR VENTURE, LLC DBA LECTOR 85",
       "amount": null,
       "legal": "",
-      "prop_address": "6107 NIKKI LN",
-      "prop_city": "ODESSA",
+      "prop_address": "3338 SE 36TH AVE",
+      "prop_city": "RUSKIN",
       "prop_state": "FL",
-      "prop_zip": "33556",
-      "mail_address": "6107 NIKKI LN",
-      "mail_city": "ODESSA",
+      "prop_zip": "33570",
+      "mail_address": "3338 SE 36TH AVE",
+      "mail_city": "RUSKIN",
       "mail_state": "FL",
-      "mail_zip": "33556",
+      "mail_zip": "33570",
       "clerk_url": "https://publicaccess.hillsclerk.com/oripublicaccess/?instrument=2026287746",
       "flags": [
         "Judgment lien",
